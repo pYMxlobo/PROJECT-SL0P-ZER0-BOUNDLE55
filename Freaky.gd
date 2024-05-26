@@ -1,6 +1,6 @@
 extends CharacterBody3D
 
-@export var maxdj = 2
+@export var maxdj = 3
 var dj = 0
 const SPEED = 8
 const JUMP_VELOCITY = 6

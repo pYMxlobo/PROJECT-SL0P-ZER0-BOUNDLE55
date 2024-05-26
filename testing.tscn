@@ -1,9 +1,15 @@
-[gd_scene load_steps=21 format=3 uid="uid://co31ljd0vd5d1"]
+[gd_scene load_steps=29 format=3 uid="uid://co31ljd0vd5d1"]
 
 [ext_resource type="Texture2D" uid="uid://cack1ool64l55" path="res://icon.svg" id="1_6jc5x"]
 [ext_resource type="PackedScene" uid="uid://bjcdnipkga6a5" path="res://Freak.tscn" id="2_saqcr"]
 [ext_resource type="Texture2D" uid="uid://dxdswcmd706th" path="res://images/20220105_002931.jpg" id="3_d6r16"]
 [ext_resource type="Texture2D" uid="uid://b1dprmj33id7t" path="res://images/20230418_014133.jpg" id="4_pq2y1"]
+[ext_resource type="Script" path="res://rotate.gd" id="5_rolor"]
+[ext_resource type="Texture2D" uid="uid://wd1n7sf4w1i8" path="res://images/FrZUIT3aYAAYjmS.png" id="6_0muwb"]
+[ext_resource type="Script" path="res://rotate2d.gd" id="7_ma4jh"]
+[ext_resource type="Texture2D" uid="uid://b614grptiuxcr" path="res://images/FouQLVWXwAIlpYQ.png" id="8_aplfu"]
+[ext_resource type="Texture2D" uid="uid://d3fw65i1u6jvx" path="res://images/DVpzw7VVwAAlmOr.png" id="9_l3akv"]
+[ext_resource type="Texture2D" uid="uid://6mv27dawmch1" path="res://images/thisisnotadrilltransparent.png" id="10_lcwa7"]
 
 [sub_resource type="Gradient" id="Gradient_wft4t"]
 interpolation_mode = 2
@@ -114,6 +120,12 @@ turbulence_initial_displacement_max = 1.0
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_pt635"]
 
+[sub_resource type="PrismMesh" id="PrismMesh_t55x5"]
+size = Vector3(1, 4.985, 1)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_bg0yl"]
+points = PackedVector3Array(0.0143254, 2.53206, 0.568214, -0.539563, -2.53206, -0.539563, -0.539563, -2.53206, 0.568214, 0.568214, -2.53206, -0.539563, -0.0647241, 2.53206, -0.539563, 0.568214, -2.53206, 0.568214, 0.0933749, 2.37294, -0.539563, -0.143882, 1.89855, 0.568214, -0.539563, -2.05718, -0.539563, 0.0933749, 2.37294, 0.568214, -0.539563, -2.05718, 0.568214, 0.568214, -2.37294, -0.539563, 0.568214, -2.37294, 0.568214, -0.143882, 1.89855, -0.539563, -0.0647241, 2.53206, 0.568214)
+
 [node name="Node3D" type="Node3D"]
 
 [node name="Sprite3D" type="Sprite3D" parent="."]
@@ -170,3 +182,40 @@ fixed_fps = 10
 interpolate = false
 process_material = SubResource("ParticleProcessMaterial_4ghga")
 draw_pass_1 = SubResource("PlaneMesh_pt635")
+
+[node name="AnimatableBody3D" type="AnimatableBody3D" parent="."]
+script = ExtResource("5_rolor")
+spin = 6
+speed = 0.1
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="AnimatableBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.4513, 5.08969, 0)
+mesh = SubResource("PrismMesh_t55x5")
+skeleton = NodePath("../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="AnimatableBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.4513, 5.08969, 0)
+shape = SubResource("ConvexPolygonShape3D_bg0yl")
+
+[node name="FrZuit3aYaaYjmS" type="Sprite2D" parent="."]
+position = Vector2(56.9233, 46)
+scale = Vector2(0.103245, 0.103245)
+texture = ExtResource("6_0muwb")
+script = ExtResource("7_ma4jh")
+spin = true
+speed = -0.1
+
+[node name="FouQlvwXwAIlpYq" type="Sprite2D" parent="."]
+position = Vector2(16, 408.569)
+scale = Vector2(0.053872, 0.053872)
+texture = ExtResource("8_aplfu")
+
+[node name="DVpzw7vVwAAlmOr" type="Sprite2D" parent="."]
+position = Vector2(584, 38)
+scale = Vector2(0.0923809, 0.092381)
+texture = ExtResource("9_l3akv")
+
+[node name="Thisisnotadrilltransparent" type="Sprite2D" parent="."]
+position = Vector2(534, 399)
+scale = Vector2(0.473824, 0.473824)
+texture = ExtResource("10_lcwa7")
