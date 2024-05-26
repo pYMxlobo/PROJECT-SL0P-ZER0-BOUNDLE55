@@ -3,14 +3,14 @@ extends CharacterBody3D
 @export var maxdj = 3
 var dj = 0
 const SPEED = 8
-const JUMP_VELOCITY = 6
+const JUMP_VELOCITY = 2#6
 var momentum : float = 0.0
 const  maxspeed : int = 5
 @export var mouse_sense : float = 0.001
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity") #its 6.3
 @onready var neck := $Neck
 @onready var camera := $Neck/Camera3D
-@onready var speedmeter := $Neck/Camera3D/ProgressBar
+@onready var speedmeter := $overlay/ProgressBar
 @onready var light := $Neck/Camera3D/MeshInstance3D2/SpotLight3D
 
 func _unhandled_input(event: InputEvent) -> void:
@@ -44,7 +44,7 @@ func _physics_process(delta):
 	
 	
 	if Input.is_action_just_pressed("space") and dj > 0:
-		velocity.y = JUMP_VELOCITY
+		velocity.y = clamp((JUMP_VELOCITY * momentum), 0, maxspeed * 1.5)
 		dj -= 1
 		momentum -= momentum / 10
 

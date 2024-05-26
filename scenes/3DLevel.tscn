@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://bb8afcuat8u68"]
 
-[ext_resource type="Script" path="res://Freaky.gd" id="1_tpvfr"]
+[ext_resource type="Script" path="res://scripts/Freaky.gd" id="1_tpvfr"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_cxs28"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)

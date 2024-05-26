@@ -1,6 +1,11 @@
-[gd_scene load_steps=10 format=3 uid="uid://bjcdnipkga6a5"]
+[gd_scene load_steps=15 format=3 uid="uid://bjcdnipkga6a5"]
 
-[ext_resource type="Script" path="res://Freaky.gd" id="1_w8pip"]
+[ext_resource type="Script" path="res://scripts/Freaky.gd" id="1_w8pip"]
+[ext_resource type="Texture2D" uid="uid://wd1n7sf4w1i8" path="res://images/FrZUIT3aYAAYjmS.png" id="2_6bm67"]
+[ext_resource type="Script" path="res://scripts/rotate2d.gd" id="3_mnwb5"]
+[ext_resource type="Texture2D" uid="uid://b614grptiuxcr" path="res://images/FouQLVWXwAIlpYQ.png" id="4_jnwca"]
+[ext_resource type="Texture2D" uid="uid://d3fw65i1u6jvx" path="res://images/DVpzw7VVwAAlmOr.png" id="5_h7umb"]
+[ext_resource type="Texture2D" uid="uid://6mv27dawmch1" path="res://images/thisisnotadrilltransparent.png" id="6_p7ra7"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_cd5gn"]
 
@@ -13,6 +18,19 @@ auto_exposure_speed = 0.01
 dof_blur_far_enabled = true
 dof_blur_far_distance = 20.0
 dof_blur_far_transition = 2.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_pm0xd"]
+size = Vector3(0.575, 0.55, 0.755)
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_3mwwd"]
+radius = 0.05
+height = 1.99
+radial_segments = 53
+rings = 3
+
+[sub_resource type="TextMesh" id="TextMesh_ua2ti"]
+text = "Freaky"
+font_size = 32
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qoge3"]
 bg_color = Color(0.278142, 0.612571, 0.512676, 1)
@@ -44,19 +62,6 @@ shadow_size = 15
 shadow_offset = Vector2(12.895, 0)
 anti_aliasing_size = 1.241
 
-[sub_resource type="BoxMesh" id="BoxMesh_pm0xd"]
-size = Vector3(0.575, 0.55, 0.755)
-
-[sub_resource type="CapsuleMesh" id="CapsuleMesh_3mwwd"]
-radius = 0.05
-height = 1.99
-radial_segments = 53
-rings = 3
-
-[sub_resource type="TextMesh" id="TextMesh_ua2ti"]
-text = "Freaky"
-font_size = 32
-
 [node name="Freak" type="CharacterBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 script = ExtResource("1_w8pip")
@@ -74,18 +79,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.586844, 0)
 [node name="Camera3D" type="Camera3D" parent="Neck"]
 attributes = SubResource("CameraAttributesPractical_lh7tv")
 fov = 90.0
-
-[node name="ProgressBar" type="ProgressBar" parent="Neck/Camera3D"]
-offset_left = 578.0
-offset_top = 61.0
-offset_right = 610.0
-offset_bottom = 355.0
-tooltip_text = "yummy meter >h<"
-theme_override_styles/background = SubResource("StyleBoxFlat_qoge3")
-theme_override_styles/fill = SubResource("StyleBoxFlat_omotr")
-max_value = 5.0
-fill_mode = 3
-show_percentage = false
 
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="Neck/Camera3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.253077)
@@ -107,3 +100,42 @@ mesh = SubResource("CapsuleMesh_3mwwd")
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 2.43917, 0)
 mesh = SubResource("TextMesh_ua2ti")
+
+[node name="overlay" type="Node2D" parent="."]
+
+[node name="ProgressBar" type="ProgressBar" parent="overlay"]
+offset_left = 578.0
+offset_top = 61.0
+offset_right = 610.0
+offset_bottom = 355.0
+tooltip_text = "yummy meter >h<"
+theme_override_styles/background = SubResource("StyleBoxFlat_qoge3")
+theme_override_styles/fill = SubResource("StyleBoxFlat_omotr")
+max_value = 5.0
+fill_mode = 3
+show_percentage = false
+
+[node name="FrZuit3aYaaYjmS" type="Sprite2D" parent="overlay"]
+modulate = Color(0.486275, 0, 0.745098, 1)
+self_modulate = Color(0.786164, 0.628105, 0.603306, 1)
+position = Vector2(56.9233, 46)
+scale = Vector2(0.103245, 0.103245)
+texture = ExtResource("2_6bm67")
+script = ExtResource("3_mnwb5")
+spin = true
+speed = -0.1
+
+[node name="FouQlvwXwAIlpYq" type="Sprite2D" parent="overlay"]
+position = Vector2(16, 408.569)
+scale = Vector2(0.053872, 0.053872)
+texture = ExtResource("4_jnwca")
+
+[node name="DVpzw7vVwAAlmOr" type="Sprite2D" parent="overlay"]
+position = Vector2(584, 38)
+scale = Vector2(0.0923809, 0.092381)
+texture = ExtResource("5_h7umb")
+
+[node name="Thisisnotadrilltransparent" type="Sprite2D" parent="overlay"]
+position = Vector2(534, 399)
+scale = Vector2(0.473824, 0.473824)
+texture = ExtResource("6_p7ra7")
