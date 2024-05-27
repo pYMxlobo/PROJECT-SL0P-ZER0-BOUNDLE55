@@ -16,6 +16,7 @@ var gravity = ProjectSettings.get_setting("physics/3d/default_gravity") #its 6.3
 @onready var hammer := $overlay/Path2D/PathFollow2D/knife
 @onready var hambox := $Neck/attackbox/CollisionShape3D
 @onready var face := $overlay/hi/car
+@onready var jumpbar := $overlay/jumpbar
 @export var max_hp : int = 10
 var hp : int = 1
 
@@ -49,6 +50,7 @@ func _input(event):
 		hammer.position = Vector2.ZERO
 		hambox.disabled = true
 func _process(delta):
+	jumpbar.value = dj
 	if Input.get_vector("left", "right", "up", "down") == Vector2.ZERO:
 		momentum = move_toward(momentum, 0, delta)
 	speedmeter.value = momentum

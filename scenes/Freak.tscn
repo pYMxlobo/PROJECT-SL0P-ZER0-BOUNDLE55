@@ -1,4 +1,4 @@
-[gd_scene load_steps=48 format=3 uid="uid://bjcdnipkga6a5"]
+[gd_scene load_steps=51 format=3 uid="uid://bjcdnipkga6a5"]
 
 [ext_resource type="Script" path="res://scripts/Freaky.gd" id="1_w8pip"]
 [ext_resource type="Texture2D" uid="uid://wd1n7sf4w1i8" path="res://images/FrZUIT3aYAAYjmS.png" id="2_6bm67"]
@@ -35,6 +35,9 @@
 [ext_resource type="Texture2D" uid="uid://dpwlq5x4aspiu" path="res://faces/GCs69tmaYAAxLaJ.jpg" id="18_6fh55"]
 [ext_resource type="Texture2D" uid="uid://bnsaqjphg3q1f" path="res://images/coolgradient.png" id="18_mn4ws"]
 [ext_resource type="Texture2D" uid="uid://1yj3ecvmxs1c" path="res://faces/sigmashogunyan.jpg" id="19_va2ol"]
+[ext_resource type="Texture2D" uid="uid://begha8g50bmpe" path="res://sprites/jumpunder.png" id="36_ef6ws"]
+[ext_resource type="Texture2D" uid="uid://c2ywbp7tpcmwe" path="res://sprites/jumpover.png" id="37_4qdlo"]
+[ext_resource type="Texture2D" uid="uid://dwnbb6jbluj51" path="res://sprites/jumpfill.png" id="38_cmc01"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_cd5gn"]
 
@@ -518,6 +521,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.586844, 0)
 
 [node name="Camera3D" type="Camera3D" parent="Neck"]
 attributes = SubResource("CameraAttributesPractical_lh7tv")
+current = true
 fov = 90.0
 
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="Neck/Camera3D"]
@@ -662,5 +666,18 @@ rotation = -1.5324
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("12_42d7s")
 script = ExtResource("7_7kal5")
+
+[node name="jumpbar" type="TextureProgressBar" parent="overlay"]
+offset_left = 108.0
+offset_top = 6.0
+offset_right = 269.0
+offset_bottom = 59.0
+max_value = 3.0
+value = 3.0
+fill_mode = 3
+nine_patch_stretch = true
+texture_under = ExtResource("36_ef6ws")
+texture_over = ExtResource("37_4qdlo")
+texture_progress = ExtResource("38_cmc01")
 
 [connection signal="body_entered" from="Neck/attackbox" to="." method="_on_attackbox_body_entered"]
