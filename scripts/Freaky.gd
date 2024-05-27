@@ -17,11 +17,13 @@ var gravity = ProjectSettings.get_setting("physics/3d/default_gravity") #its 6.3
 @onready var hambox := $Neck/attackbox/CollisionShape3D
 @onready var face := $overlay/hi/car
 @onready var jumpbar := $overlay/jumpbar
+@onready var healthbar := $overlay/healthbar
 @export var max_hp : int = 10
-var hp : int = 1
+var hp : float = 1
 
 func _ready():
 	hp = max_hp
+	healthbar.max_value = max_hp
 
 func _unhandled_input(event: InputEvent) -> void:	
 	if event is InputEventMouseButton or event.is_action_released("tab"):
@@ -51,6 +53,8 @@ func _input(event):
 		hambox.disabled = true
 func _process(delta):
 	jumpbar.value = dj
+	healthbar.max_value = max_hp
+	healthbar.value = hp
 	if Input.get_vector("left", "right", "up", "down") == Vector2.ZERO:
 		momentum = move_toward(momentum, 0, delta)
 	speedmeter.value = momentum

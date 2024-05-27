@@ -1,12 +1,16 @@
-[gd_scene load_steps=51 format=3 uid="uid://bjcdnipkga6a5"]
+[gd_scene load_steps=59 format=3 uid="uid://bjcdnipkga6a5"]
 
 [ext_resource type="Script" path="res://scripts/Freaky.gd" id="1_w8pip"]
 [ext_resource type="Texture2D" uid="uid://wd1n7sf4w1i8" path="res://images/FrZUIT3aYAAYjmS.png" id="2_6bm67"]
 [ext_resource type="Texture2D" uid="uid://bptcbw25r4hxq" path="res://images/catthought.png" id="2_7tjs2"]
+[ext_resource type="Texture2D" uid="uid://b7e8g0phuubng" path="res://sprites/healthunder.png" id="2_jmg24"]
+[ext_resource type="Texture2D" uid="uid://nq3t0bnuprwl" path="res://sprites/nohand.png" id="3_a8h5p"]
 [ext_resource type="Texture2D" uid="uid://k8ujydxoqvnw" path="res://faces/GCr-vo0aQAABLQ2.jpg" id="3_d8bli"]
 [ext_resource type="Script" path="res://scripts/rotate2d.gd" id="3_mnwb5"]
+[ext_resource type="Texture2D" uid="uid://lhqlp5vyx1u8" path="res://sprites/healthover.png" id="3_xg2dl"]
 [ext_resource type="Texture2D" uid="uid://bqseug7xldvb8" path="res://faces/20220915_222940.jpg" id="4_5084n"]
 [ext_resource type="Texture2D" uid="uid://b614grptiuxcr" path="res://images/FouQLVWXwAIlpYQ.png" id="4_jnwca"]
+[ext_resource type="Texture2D" uid="uid://cwk3rtajahgwj" path="res://sprites/healthfill.png" id="4_pqxsr"]
 [ext_resource type="Texture2D" uid="uid://623tjjq38wy6" path="res://faces/20220105_002931.jpg" id="5_cyold"]
 [ext_resource type="Texture2D" uid="uid://d3fw65i1u6jvx" path="res://images/DVpzw7VVwAAlmOr.png" id="5_h7umb"]
 [ext_resource type="Texture2D" uid="uid://crebaigobio05" path="res://faces/20221022_015309.jpg" id="6_shttj"]
@@ -38,6 +42,7 @@
 [ext_resource type="Texture2D" uid="uid://begha8g50bmpe" path="res://sprites/jumpunder.png" id="36_ef6ws"]
 [ext_resource type="Texture2D" uid="uid://c2ywbp7tpcmwe" path="res://sprites/jumpover.png" id="37_4qdlo"]
 [ext_resource type="Texture2D" uid="uid://dwnbb6jbluj51" path="res://sprites/jumpfill.png" id="38_cmc01"]
+[ext_resource type="Texture2D" uid="uid://cvcxi3mmd0wqa" path="res://sprites/gun.png" id="42_tv2lv"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_cd5gn"]
 
@@ -57,6 +62,38 @@ dof_blur_far_transition = 2.0
 
 [sub_resource type="BoxMesh" id="BoxMesh_pm0xd"]
 size = Vector3(0.575, 0.55, 0.755)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_05g0e"]
+transparency = 2
+alpha_scissor_threshold = 0.001
+alpha_antialiasing_mode = 0
+no_depth_test = true
+albedo_color = Color(0.991606, 1, 0.496144, 1)
+albedo_texture = ExtResource("42_tv2lv")
+albedo_texture_msdf = true
+metallic_specular = 1.0
+metallic_texture = ExtResource("42_tv2lv")
+metallic_texture_channel = 4
+normal_enabled = true
+normal_scale = 16.0
+normal_texture = ExtResource("42_tv2lv")
+disable_receive_shadows = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ht3cb"]
+transparency = 2
+alpha_scissor_threshold = 0.001
+alpha_antialiasing_mode = 0
+no_depth_test = true
+albedo_texture = ExtResource("3_a8h5p")
+albedo_texture_msdf = true
+metallic = 1.0
+metallic_specular = 1.0
+metallic_texture = ExtResource("3_a8h5p")
+metallic_texture_channel = 4
+normal_enabled = true
+normal_scale = 16.0
+normal_texture = ExtResource("3_a8h5p")
+disable_receive_shadows = true
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_3mwwd"]
 radius = 0.05
@@ -501,6 +538,9 @@ _data = {
 }
 point_count = 7
 
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_58lej"]
+blend_mode = 4
+
 [node name="Freak" type="CharacterBody3D" groups=["freak"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 script = ExtResource("1_w8pip")
@@ -512,12 +552,12 @@ mesh = SubResource("CapsuleMesh_cd5gn")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("ConvexPolygonShape3D_s18ki")
 
-[node name="name" type="MeshInstance3D" parent="."]
+[node name="title" type="MeshInstance3D" parent="."]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 2.43917, 0)
 mesh = SubResource("TextMesh_ua2ti")
 
 [node name="Neck" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.586844, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6, 0)
 
 [node name="Camera3D" type="Camera3D" parent="Neck"]
 attributes = SubResource("CameraAttributesPractical_lh7tv")
@@ -534,6 +574,17 @@ visible = false
 light_energy = 2.0
 spot_range = 14.0769
 spot_angle = 20.0
+
+[node name="hands" type="Sprite3D" parent="Neck/Camera3D"]
+transform = Transform3D(-0.898465, -0.439046, 0, 0.439046, -0.898465, 0, 0, 0, 1, 0.29, 0.408156, -0.56)
+material_override = SubResource("StandardMaterial3D_05g0e")
+pixel_size = 0.001
+texture = ExtResource("42_tv2lv")
+
+[node name="gun" type="Sprite3D" parent="Neck/Camera3D/hands"]
+material_override = SubResource("StandardMaterial3D_ht3cb")
+pixel_size = 0.001
+texture = ExtResource("3_a8h5p")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Neck"]
 transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0, -0.607177, 0)
@@ -553,6 +604,22 @@ shape = SubResource("ConvexPolygonShape3D_vyetl")
 disabled = true
 
 [node name="overlay" type="Node2D" parent="."]
+
+[node name="healthbar" type="TextureProgressBar" parent="overlay"]
+offset_left = -6.0
+offset_top = 219.0
+offset_right = 209.0
+offset_bottom = 439.0
+max_value = 10.0
+step = 0.1
+value = 10.0
+fill_mode = 4
+nine_patch_stretch = true
+texture_under = ExtResource("2_jmg24")
+texture_over = ExtResource("3_xg2dl")
+texture_progress = ExtResource("4_pqxsr")
+radial_fill_degrees = 90.0
+radial_center_offset = Vector2(-190.55, 185.385)
 
 [node name="ProgressBar" type="ProgressBar" parent="overlay"]
 offset_left = 578.0
@@ -632,7 +699,7 @@ scale = Vector2(0.421614, 0.421614)
 texture = ExtResource("9_3cxlw")
 
 [node name="guest" type="Sprite2D" parent="overlay"]
-position = Vector2(1.90735e-06, 242)
+position = Vector2(-0.99999, 247)
 rotation = 1.0472
 scale = Vector2(0.0372245, 0.0372245)
 texture = ExtResource("14_7fgav")
@@ -651,7 +718,7 @@ texture = ExtResource("17_yrqrc")
 
 [node name="Coolgradient" type="Sprite2D" parent="overlay"]
 z_index = -10
-position = Vector2(320, 212)
+position = Vector2(320, 213)
 texture = ExtResource("18_mn4ws")
 
 [node name="Path2D" type="Path2D" parent="overlay"]
@@ -668,6 +735,7 @@ texture = ExtResource("12_42d7s")
 script = ExtResource("7_7kal5")
 
 [node name="jumpbar" type="TextureProgressBar" parent="overlay"]
+material = SubResource("CanvasItemMaterial_58lej")
 offset_left = 108.0
 offset_top = 6.0
 offset_right = 269.0
