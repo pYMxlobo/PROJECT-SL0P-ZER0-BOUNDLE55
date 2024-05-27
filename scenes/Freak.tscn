@@ -1,16 +1,49 @@
-[gd_scene load_steps=15 format=3 uid="uid://bjcdnipkga6a5"]
+[gd_scene load_steps=48 format=3 uid="uid://bjcdnipkga6a5"]
 
 [ext_resource type="Script" path="res://scripts/Freaky.gd" id="1_w8pip"]
 [ext_resource type="Texture2D" uid="uid://wd1n7sf4w1i8" path="res://images/FrZUIT3aYAAYjmS.png" id="2_6bm67"]
+[ext_resource type="Texture2D" uid="uid://bptcbw25r4hxq" path="res://images/catthought.png" id="2_7tjs2"]
+[ext_resource type="Texture2D" uid="uid://k8ujydxoqvnw" path="res://faces/GCr-vo0aQAABLQ2.jpg" id="3_d8bli"]
 [ext_resource type="Script" path="res://scripts/rotate2d.gd" id="3_mnwb5"]
+[ext_resource type="Texture2D" uid="uid://bqseug7xldvb8" path="res://faces/20220915_222940.jpg" id="4_5084n"]
 [ext_resource type="Texture2D" uid="uid://b614grptiuxcr" path="res://images/FouQLVWXwAIlpYQ.png" id="4_jnwca"]
+[ext_resource type="Texture2D" uid="uid://623tjjq38wy6" path="res://faces/20220105_002931.jpg" id="5_cyold"]
 [ext_resource type="Texture2D" uid="uid://d3fw65i1u6jvx" path="res://images/DVpzw7VVwAAlmOr.png" id="5_h7umb"]
-[ext_resource type="Texture2D" uid="uid://6mv27dawmch1" path="res://images/thisisnotadrilltransparent.png" id="6_p7ra7"]
+[ext_resource type="Texture2D" uid="uid://crebaigobio05" path="res://faces/20221022_015309.jpg" id="6_shttj"]
+[ext_resource type="Script" path="res://scripts/bob.gd" id="7_7kal5"]
+[ext_resource type="Texture2D" uid="uid://127g5nr0spp0" path="res://faces/GCzJeKWWMAElP0j.jpg" id="7_63iqw"]
+[ext_resource type="Texture2D" uid="uid://yio8vek8nf5l" path="res://images/FtD17-OaEAEKCj_.png" id="7_pw8xr"]
+[ext_resource type="Texture2D" uid="uid://dga31uvprr015" path="res://faces/Ftx0lU4XgAEhmiR.png" id="8_ffplp"]
+[ext_resource type="Shader" path="res://shader/256.gdshader" id="8_sxjux"]
+[ext_resource type="Texture2D" uid="uid://cmropiu0mqna3" path="res://images/dogbutfree.png" id="9_3cxlw"]
+[ext_resource type="Texture2D" uid="uid://fcdkf27qwxaa" path="res://faces/20230327_012103.jpg" id="9_hljx8"]
+[ext_resource type="Texture2D" uid="uid://dhdbvq48wb6h3" path="res://faces/20230402_235518.jpg" id="10_yocpa"]
+[ext_resource type="Texture2D" uid="uid://0q2u4oin11ux" path="res://faces/20230418_014133.jpg" id="11_d4ww6"]
+[ext_resource type="Texture2D" uid="uid://c87s787o4uvlg" path="res://images/knife-with-transparent-background-19.png" id="12_42d7s"]
+[ext_resource type="Texture2D" uid="uid://clw7fv03a2iop" path="res://faces/20230214_132402.jpg" id="12_dkdmh"]
+[ext_resource type="Texture2D" uid="uid://hwh5cgbe8dlh" path="res://images/20230717_222734.jpg" id="12_lokui"]
+[ext_resource type="Texture2D" uid="uid://cos88n54dgg8a" path="res://images/F_5xzoHW0AADCKP.png" id="13_18cbi"]
+[ext_resource type="Texture2D" uid="uid://c30f142h4bs56" path="res://faces/sureyoucouldbuddy.png" id="13_bdhw2"]
+[ext_resource type="Texture2D" uid="uid://dldo3uyy1183h" path="res://images/GCzJeKWWMAElP0j.jpg" id="14_7fgav"]
+[ext_resource type="Texture2D" uid="uid://bcisrlej7vplc" path="res://faces/20230119_003540.jpg" id="14_v50di"]
+[ext_resource type="Texture2D" uid="uid://mu8ork665hlj" path="res://images/jerm.png" id="15_8fdw7"]
+[ext_resource type="Texture2D" uid="uid://bvnl18ehrgfef" path="res://faces/20230320_230716.jpg" id="15_dx64c"]
+[ext_resource type="Texture2D" uid="uid://bhl3o20t8x55h" path="res://faces/20230115_021141.jpg" id="16_tjbva"]
+[ext_resource type="Texture2D" uid="uid://cvu8l0khvi8f0" path="res://images/GDbSl5IXMAAEv5r.jpg" id="16_yvl3f"]
+[ext_resource type="Texture2D" uid="uid://cuuo8cnp2n8lk" path="res://faces/20221217_024246.jpg" id="17_y301l"]
+[ext_resource type="Texture2D" uid="uid://dlojle6g25b78" path="res://images/GCqFcmRWsAAZ5ia.jpg" id="17_yrqrc"]
+[ext_resource type="Texture2D" uid="uid://dpwlq5x4aspiu" path="res://faces/GCs69tmaYAAxLaJ.jpg" id="18_6fh55"]
+[ext_resource type="Texture2D" uid="uid://bnsaqjphg3q1f" path="res://images/coolgradient.png" id="18_mn4ws"]
+[ext_resource type="Texture2D" uid="uid://1yj3ecvmxs1c" path="res://faces/sigmashogunyan.jpg" id="19_va2ol"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_cd5gn"]
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_s18ki"]
 points = PackedVector3Array(-0.125207, -0.532801, -0.480507, 0.0227831, 0.47607, 0.498884, 0.169713, 0.559144, 0.464172, 0.231051, -0.803591, 0.320455, 0.40741, 0.651043, -0.243523, -0.482789, 0.594843, 0.0822132, -0.362868, -0.682312, 0.289697, 0.469044, -0.654529, -0.0662713, -0.127444, 0.842701, -0.338103, -0.393435, -0.683942, -0.244717, 0.438255, 0.623309, 0.200849, 0.0841477, 0.977454, 0.114795, -0.0682023, -0.976458, -0.12927, 0.20055, -0.563129, -0.451454, -0.185527, 0.595453, -0.453475, -0.273363, 0.592268, 0.407754, -0.00693649, -0.476823, 0.49966, 0.375821, -0.588614, 0.316955, 0.111579, 0.563059, -0.481177, -0.41725, 0.527866, -0.270497, -0.484546, -0.596972, -0.0665097, -0.279747, 0.908561, 0.0533361, -0.250197, -0.880712, 0.205319, 0.263647, -0.902771, -0.127394, 0.293368, 0.871526, -0.157196, 0.373412, -0.526319, -0.328246, 0.499663, 0.476641, -0.00688856, 0.0531056, 0.875001, 0.324703, -0.154543, -0.590854, 0.465879, -0.0972799, -0.782358, -0.398188, -0.387649, -0.498171, 0.31565, -0.30068, -0.587995, -0.388901)
+
+[sub_resource type="TextMesh" id="TextMesh_ua2ti"]
+text = "Freaky"
+font_size = 32
 
 [sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_lh7tv"]
 auto_exposure_scale = 0.25
@@ -28,9 +61,8 @@ height = 1.99
 radial_segments = 53
 rings = 3
 
-[sub_resource type="TextMesh" id="TextMesh_ua2ti"]
-text = "Freaky"
-font_size = 32
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_vyetl"]
+points = PackedVector3Array(0.477152, 0.25, 0.334704, -0.492544, -0.25, -0.347114, -0.492544, -0.25, 0.345527, 0.492544, -0.25, -0.347114, -0.477152, 0.25, -0.336291, 0.492544, -0.25, 0.345527, -0.477152, 0.25, 0.334704, 0.477152, 0.25, -0.336291)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qoge3"]
 bg_color = Color(0.278142, 0.612571, 0.512676, 1)
@@ -62,7 +94,411 @@ shadow_size = 15
 shadow_offset = Vector2(12.895, 0)
 anti_aliasing_size = 1.241
 
-[node name="Freak" type="CharacterBody3D"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_gnufj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_d8bli")
+}],
+"loop": false,
+"name": &"abouttoloseit",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_5084n")
+}],
+"loop": false,
+"name": &"beastmode",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_cyold")
+}],
+"loop": false,
+"name": &"bon",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_shttj")
+}],
+"loop": false,
+"name": &"business",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_63iqw")
+}],
+"loop": false,
+"name": &"goodpal",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_ffplp")
+}],
+"loop": false,
+"name": &"he",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_hljx8")
+}],
+"loop": false,
+"name": &"john",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_yocpa")
+}],
+"loop": false,
+"name": &"malt",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_d4ww6")
+}],
+"loop": false,
+"name": &"man",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_dkdmh")
+}],
+"loop": false,
+"name": &"mindblow",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_bdhw2")
+}],
+"loop": false,
+"name": &"rage",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_v50di")
+}],
+"loop": false,
+"name": &"sog",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("15_dx64c")
+}],
+"loop": false,
+"name": &"sop",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("16_tjbva")
+}],
+"loop": false,
+"name": &"stink",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("17_y301l")
+}],
+"loop": false,
+"name": &"sus",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("18_6fh55")
+}],
+"loop": false,
+"name": &"whimsy",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("19_va2ol")
+}],
+"loop": false,
+"name": &"yokai",
+"speed": 5.0
+}]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_2d4bt"]
+shader = ExtResource("8_sxjux")
+shader_parameter/color_0 = Color(1, 1, 1, 1)
+shader_parameter/color_1 = Color(0, 0, 0, 1)
+shader_parameter/color_2 = Color(0.858824, 0.858824, 0.858824, 1)
+shader_parameter/color_3 = Color(0.741176, 0.741176, 0.741176, 1)
+shader_parameter/color_4 = Color(0.658824, 0.658824, 0.658824, 1)
+shader_parameter/color_5 = Color(0.54902, 0.54902, 0.54902, 1)
+shader_parameter/color_6 = Color(0.45098, 0.45098, 0.45098, 1)
+shader_parameter/color_7 = Color(0.34902, 0.34902, 0.34902, 1)
+shader_parameter/color_8 = Color(0.25098, 0.25098, 0.25098, 1)
+shader_parameter/color_9 = Color(0.129412, 0.129412, 0.129412, 1)
+shader_parameter/color_10 = Color(1, 0, 0, 1)
+shader_parameter/color_11 = Color(0.839216, 0, 0, 1)
+shader_parameter/color_12 = Color(0.619608, 0, 0, 1)
+shader_parameter/color_13 = Color(0.368627, 0, 0, 1)
+shader_parameter/color_14 = Color(1, 0.14902, 0.14902, 1)
+shader_parameter/color_15 = Color(1, 0.411765, 0.411765, 1)
+shader_parameter/color_16 = Color(1, 0.54902, 0.54902, 1)
+shader_parameter/color_17 = Color(1, 0.701961, 0.701961, 1)
+shader_parameter/color_18 = Color(1, 0.533333, 0, 1)
+shader_parameter/color_19 = Color(0.870588, 0.462745, 0, 1)
+shader_parameter/color_20 = Color(0.788235, 0.419608, 0, 1)
+shader_parameter/color_21 = Color(0.721569, 0.384314, 0, 1)
+shader_parameter/color_22 = Color(0.470588, 0.25098, 0, 1)
+shader_parameter/color_23 = Color(0.380392, 0.203922, 0, 1)
+shader_parameter/color_24 = Color(1, 0.584314, 0.109804, 1)
+shader_parameter/color_25 = Color(1, 0.760784, 0.278431, 1)
+shader_parameter/color_26 = Color(1, 0.788235, 0.54902, 1)
+shader_parameter/color_27 = Color(1, 0.839216, 0.760784, 1)
+shader_parameter/color_28 = Color(0.85098, 0.670588, 0.466667, 1)
+shader_parameter/color_29 = Color(1, 0.894118, 0.6, 1)
+shader_parameter/color_30 = Color(0.811765, 0.72549, 0.486275, 1)
+shader_parameter/color_31 = Color(0.490196, 0.215686, 0.054902, 1)
+shader_parameter/color_32 = Color(0.380392, 0.168627, 0.0431373, 1)
+shader_parameter/color_33 = Color(0.278431, 0.121569, 0.0313726, 1)
+shader_parameter/color_34 = Color(1, 0.968627, 0, 1)
+shader_parameter/color_35 = Color(0.831373, 0.803922, 0, 1)
+shader_parameter/color_36 = Color(0.701961, 0.678431, 0, 1)
+shader_parameter/color_37 = Color(0.54902, 0.533333, 0, 1)
+shader_parameter/color_38 = Color(0.380392, 0.368627, 0, 1)
+shader_parameter/color_39 = Color(1, 0.972549, 0.211765, 1)
+shader_parameter/color_40 = Color(0.960784, 1, 0.419608, 1)
+shader_parameter/color_41 = Color(0.929412, 1, 0.470588, 1)
+shader_parameter/color_42 = Color(0.666667, 1, 0, 1)
+shader_parameter/color_43 = Color(0.533333, 0.8, 0, 1)
+shader_parameter/color_44 = Color(0.411765, 0.619608, 0, 1)
+shader_parameter/color_45 = Color(0.352941, 0.529412, 0, 1)
+shader_parameter/color_46 = Color(0.278431, 0.419608, 0, 1)
+shader_parameter/color_47 = Color(0, 1, 0.0313726, 1)
+shader_parameter/color_48 = Color(0, 0.85098, 0.027451, 1)
+shader_parameter/color_49 = Color(0, 0.678431, 0.0196078, 1)
+shader_parameter/color_50 = Color(0, 0.568627, 0.0196078, 1)
+shader_parameter/color_51 = Color(0, 0.509804, 0.0156863, 1)
+shader_parameter/color_52 = Color(0, 0.458824, 0.0156863, 1)
+shader_parameter/color_53 = Color(0, 0.388235, 0.0117647, 1)
+shader_parameter/color_54 = Color(0.254902, 1, 0.231373, 1)
+shader_parameter/color_55 = Color(0.478431, 1, 0.513726, 1)
+shader_parameter/color_56 = Color(0.501961, 1, 0.501961, 1)
+shader_parameter/color_57 = Color(0, 1, 0.8, 1)
+shader_parameter/color_58 = Color(0, 0.729412, 0.584314, 1)
+shader_parameter/color_59 = Color(0, 0.631373, 0.505882, 1)
+shader_parameter/color_60 = Color(0, 0.509804, 0.407843, 1)
+shader_parameter/color_61 = Color(0.301961, 1, 0.788235, 1)
+shader_parameter/color_62 = Color(0.470588, 1, 0.894118, 1)
+shader_parameter/color_63 = Color(0.521569, 1, 0.886275, 1)
+shader_parameter/color_64 = Color(0.639216, 1, 0.964706, 1)
+shader_parameter/color_65 = Color(0, 0.368627, 1, 1)
+shader_parameter/color_66 = Color(0, 0.301961, 0.819608, 1)
+shader_parameter/color_67 = Color(0, 0.266667, 0.721569, 1)
+shader_parameter/color_68 = Color(0, 0.231373, 0.631373, 1)
+shader_parameter/color_69 = Color(0, 0.215686, 0.580392, 1)
+shader_parameter/color_70 = Color(0, 0.164706, 0.45098, 1)
+shader_parameter/color_71 = Color(0, 0.121569, 0.329412, 1)
+shader_parameter/color_72 = Color(0.239216, 0.494118, 1, 1)
+shader_parameter/color_73 = Color(0.431373, 0.564706, 1, 1)
+shader_parameter/color_74 = Color(0.568627, 0.686275, 1, 1)
+shader_parameter/color_75 = Color(0.721569, 0.811765, 1, 1)
+shader_parameter/color_76 = Color(0.85098, 0.886275, 1, 1)
+shader_parameter/color_77 = Color(0.466667, 0, 1, 1)
+shader_parameter/color_78 = Color(0.34902, 0, 0.74902, 1)
+shader_parameter/color_79 = Color(0.290196, 0, 0.619608, 1)
+shader_parameter/color_80 = Color(0.243137, 0, 0.521569, 1)
+shader_parameter/color_81 = Color(0.2, 0, 0.431373, 1)
+shader_parameter/color_82 = Color(0.121569, 0, 0.258824, 1)
+shader_parameter/color_83 = Color(0.0666667, 0, 0.141176, 1)
+shader_parameter/color_84 = Color(0.470588, 0, 1, 1)
+shader_parameter/color_85 = Color(0.682353, 0.270588, 1, 1)
+shader_parameter/color_86 = Color(0.784314, 0.501961, 1, 1)
+shader_parameter/color_87 = Color(0.796078, 0.588235, 1, 1)
+shader_parameter/color_88 = Color(0.886275, 0.760784, 1, 1)
+shader_parameter/color_89 = Color(1, 0, 0.901961, 1)
+shader_parameter/color_90 = Color(0.768627, 0, 0.694118, 1)
+shader_parameter/color_91 = Color(0.611765, 0, 0.54902, 1)
+shader_parameter/color_92 = Color(0.521569, 0, 0.470588, 1)
+shader_parameter/color_93 = Color(0.380392, 0, 0.341176, 1)
+shader_parameter/color_94 = Color(1, 0, 0.898039, 1)
+shader_parameter/color_95 = Color(1, 0.388235, 0.898039, 1)
+shader_parameter/color_96 = Color(1, 0.560784, 0.796078, 1)
+shader_parameter/color_97 = Color(1, 0.639216, 0.760784, 1)
+shader_parameter/color_98 = Color(1, 0.709804, 0.87451, 1)
+shader_parameter/color_99 = Color(1, 0, 0.266667, 1)
+shader_parameter/color_100 = Color(0.819608, 0, 0.219608, 1)
+shader_parameter/color_101 = Color(0.741176, 0, 0.196078, 1)
+shader_parameter/color_102 = Color(0.65098, 0, 0.172549, 1)
+shader_parameter/color_103 = Color(0.521569, 0, 0.137255, 1)
+shader_parameter/color_104 = Color(0.45098, 0, 0.121569, 1)
+shader_parameter/color_105 = Color(0.290196, 0, 0.0784314, 1)
+shader_parameter/color_106 = Color(1, 0.278431, 0.494118, 1)
+shader_parameter/color_107 = Color(1, 0.341176, 0.470588, 1)
+shader_parameter/color_108 = Color(1, 0.568627, 0.654902, 1)
+shader_parameter/color_109 = Color(1, 0.290196, 0.384314, 1)
+shader_parameter/color_110 = Color(0.721569, 0.207843, 0.278431, 1)
+shader_parameter/color_111 = Color(0.501961, 0.145098, 0.192157, 1)
+shader_parameter/color_112 = Color(1, 0.698039, 0.34902, 1)
+shader_parameter/color_113 = Color(1, 0.686275, 0.219608, 1)
+shader_parameter/color_114 = Color(0.333333, 1, 0.309804, 1)
+shader_parameter/color_115 = Color(0.290196, 1, 0.619608, 1)
+shader_parameter/color_116 = Color(0, 1, 0.431373, 1)
+shader_parameter/color_117 = Color(0, 0.760784, 0.305882, 1)
+shader_parameter/color_118 = Color(0, 0.580392, 0.211765, 1)
+shader_parameter/color_119 = Color(0.2, 1, 0.678431, 1)
+shader_parameter/color_120 = Color(0.360784, 0.639216, 1, 1)
+shader_parameter/color_121 = Color(0.631373, 0.419608, 1, 1)
+shader_parameter/color_122 = Color(0.211765, 0.211765, 1, 1)
+shader_parameter/color_123 = Color(0.392157, 1, 0.129412, 1)
+shader_parameter/color_124 = Color(1, 0.490196, 0.0980392, 1)
+shader_parameter/color_125 = Color(1, 0.121569, 0.121569, 1)
+shader_parameter/color_126 = Color(0.596078, 0.207843, 0.741176, 1)
+shader_parameter/color_127 = Color(0.0941176, 0.631373, 0.254902, 1)
+shader_parameter/color_128 = Color(0.298039, 0.478431, 0.709804, 1)
+shader_parameter/color_129 = Color(0.352941, 0.6, 0.160784, 1)
+shader_parameter/color_130 = Color(0.196078, 0.729412, 0.462745, 1)
+shader_parameter/color_131 = Color(0.329412, 0.454902, 0.619608, 1)
+shader_parameter/color_132 = Color(0.368627, 0.411765, 1, 1)
+shader_parameter/color_133 = Color(0.129412, 0.45098, 0.247059, 1)
+shader_parameter/color_134 = Color(0.341176, 0.760784, 0.309804, 1)
+shader_parameter/color_135 = Color(0.270588, 0.180392, 0.0784314, 1)
+shader_parameter/color_136 = Color(0.34902, 0.219608, 0.0666667, 1)
+shader_parameter/color_137 = Color(0.490196, 0.286275, 0.0823529, 1)
+shader_parameter/color_138 = Color(0.109804, 0.4, 0.333333, 1)
+shader_parameter/color_139 = Color(0.113725, 0.0666667, 0.4, 1)
+shader_parameter/color_140 = Color(0, 0.329412, 0.309804, 1)
+shader_parameter/color_141 = Color(0.643137, 0.172549, 0.658824, 1)
+shader_parameter/color_142 = Color(0.678431, 0.298039, 0.4, 1)
+shader_parameter/color_143 = Color(0.619608, 0.105882, 0.105882, 1)
+shader_parameter/color_144 = Color(1, 0.14902, 0.176471, 1)
+shader_parameter/color_145 = Color(0.678431, 0.0745098, 0.0745098, 1)
+shader_parameter/color_146 = Color(0.631373, 0.258824, 0.258824, 1)
+shader_parameter/color_147 = Color(1, 0.509804, 0.509804, 1)
+shader_parameter/color_148 = Color(0.709804, 1, 0.737255, 1)
+shader_parameter/color_149 = Color(0.745098, 0.678431, 1, 1)
+shader_parameter/color_150 = Color(0.960784, 0.6, 1, 1)
+shader_parameter/color_151 = Color(0.509804, 0.164706, 0.290196, 1)
+shader_parameter/color_152 = Color(0.466667, 0.580392, 0.156863, 1)
+shader_parameter/color_153 = Color(0.74902, 1, 0.25098, 1)
+shader_parameter/color_154 = Color(1, 0.627451, 0.490196, 1)
+shader_parameter/color_155 = Color(0.470588, 0.6, 0.27451, 1)
+shader_parameter/color_156 = Color(0.12549, 0.494118, 0.631373, 1)
+shader_parameter/color_157 = Color(0.0980392, 0.290196, 0.439216, 1)
+shader_parameter/color_158 = Color(1, 0.756863, 0.0901961, 1)
+shader_parameter/color_159 = Color(0.101961, 0.529412, 0.301961, 1)
+shader_parameter/color_160 = Color(0.588235, 0.211765, 0.211765, 1)
+shader_parameter/color_161 = Color(0.478431, 0.0784314, 0.0784314, 1)
+shader_parameter/color_162 = Color(0.560784, 0.317647, 0.317647, 1)
+shader_parameter/color_163 = Color(0.403922, 0.529412, 0.431373, 1)
+shader_parameter/color_164 = Color(0.54902, 0.352941, 0.203922, 1)
+shader_parameter/color_165 = Color(0.701961, 0.45098, 0.168627, 1)
+shader_parameter/color_166 = Color(0.741176, 0.607843, 0.176471, 1)
+shader_parameter/color_167 = Color(0.188235, 1, 0.513726, 1)
+shader_parameter/color_168 = Color(0.596078, 1, 0.188235, 1)
+shader_parameter/color_169 = Color(0.541176, 1, 0.968627, 1)
+shader_parameter/color_170 = Color(0.709804, 0.623529, 0.47451, 1)
+shader_parameter/color_171 = Color(1, 0.796078, 0.619608, 1)
+shader_parameter/color_172 = Color(1, 0.901961, 0.670588, 1)
+shader_parameter/color_173 = Color(0.701961, 0.52549, 0.407843, 1)
+shader_parameter/color_174 = Color(0.792157, 1, 0.219608, 1)
+shader_parameter/color_175 = Color(0.294118, 0.839216, 0.419608, 1)
+shader_parameter/color_176 = Color(0.380392, 0.54902, 0.721569, 1)
+shader_parameter/color_177 = Color(0.529412, 0.501961, 0.690196, 1)
+shader_parameter/color_178 = Color(0.329412, 1, 0.419608, 1)
+shader_parameter/color_179 = Color(0.713726, 0.286275, 0.8, 1)
+shader_parameter/color_180 = Color(0.54902, 0.0941176, 0.639216, 1)
+shader_parameter/color_181 = Color(0.658824, 0.388235, 0.498039, 1)
+shader_parameter/color_182 = Color(0.478431, 0.466667, 0.631373, 1)
+shader_parameter/color_183 = Color(0.121569, 0.0705882, 0.219608, 1)
+shader_parameter/color_184 = Color(0.0588235, 0, 0, 1)
+shader_parameter/color_185 = Color(0, 0.00392157, 0.0392157, 1)
+shader_parameter/color_186 = Color(0.00392157, 0.0392157, 0, 1)
+shader_parameter/color_187 = Color(0.933333, 1, 0.490196, 1)
+shader_parameter/color_188 = Color(0.223529, 0.141176, 0.309804, 1)
+shader_parameter/color_189 = Color(0.278431, 0.309804, 0, 1)
+shader_parameter/color_190 = Color(0.25098, 0.270588, 0.0627451, 1)
+shader_parameter/color_191 = Color(0.360784, 0.282353, 0.0745098, 1)
+shader_parameter/color_192 = Color(0.192157, 0.294118, 0.380392, 1)
+shader_parameter/color_193 = Color(0.219608, 0.560784, 0.788235, 1)
+shader_parameter/color_194 = Color(0.870588, 0.556863, 0.2, 1)
+shader_parameter/color_195 = Color(0.0705882, 0.780392, 0.117647, 1)
+shader_parameter/color_196 = Color(0.8, 0.207843, 0.145098, 1)
+shader_parameter/color_197 = Color(0.831373, 0.156863, 0.360784, 1)
+shader_parameter/color_198 = Color(0.560784, 0.054902, 0.811765, 1)
+shader_parameter/color_199 = Color(0.101961, 0.470588, 0.839216, 1)
+shader_parameter/color_200 = Color(0.329412, 0.760784, 0.145098, 1)
+shader_parameter/color_201 = Color(0.764706, 0.560784, 0.85098, 1)
+shader_parameter/color_202 = Color(0.168627, 0.811765, 0.701961, 1)
+shader_parameter/color_203 = Color(0.705882, 0.811765, 0.176471, 1)
+shader_parameter/color_204 = Color(0.760784, 0.572549, 0.137255, 1)
+shader_parameter/color_205 = Color(0.333333, 0.666667, 0.811765, 1)
+shader_parameter/color_206 = Color(0.811765, 0.192157, 0.0980392, 1)
+shader_parameter/color_207 = Color(0.721569, 0.196078, 0.247059, 1)
+shader_parameter/color_208 = Color(0.290196, 0.192157, 0.768627, 1)
+shader_parameter/color_209 = Color(0.152941, 0.603922, 0.8, 1)
+shader_parameter/color_210 = Color(0.607843, 0.788235, 0.180392, 1)
+shader_parameter/color_211 = Color(0.8, 0.752941, 0.0941176, 1)
+shader_parameter/color_212 = Color(0.643137, 0.0901961, 0.811765, 1)
+shader_parameter/color_213 = Color(0.8, 0.0627451, 0.431373, 1)
+shader_parameter/color_214 = Color(0.819608, 0.384314, 0, 1)
+shader_parameter/color_215 = Color(0.839216, 0.756863, 0, 1)
+shader_parameter/color_216 = Color(0, 0.85098, 0.368627, 1)
+shader_parameter/color_217 = Color(0, 0.74902, 0.32549, 1)
+shader_parameter/color_218 = Color(0, 0.27451, 0.588235, 1)
+shader_parameter/color_219 = Color(0.623529, 0.780392, 0.313726, 1)
+shader_parameter/color_220 = Color(0.235294, 0.690196, 0.760784, 1)
+shader_parameter/color_221 = Color(0.494118, 0.227451, 0.760784, 1)
+shader_parameter/color_222 = Color(0.443137, 0.509804, 0.172549, 1)
+shader_parameter/color_223 = Color(0.298039, 0.592157, 0.65098, 1)
+shader_parameter/color_224 = Color(0.678431, 0.490196, 0.203922, 1)
+shader_parameter/color_225 = Color(0.129412, 0.682353, 0.721569, 1)
+shader_parameter/color_226 = Color(0.839216, 0.839216, 0.839216, 1)
+shader_parameter/color_227 = Color(0.760784, 0.760784, 0.760784, 1)
+shader_parameter/color_228 = Color(0.670588, 0.670588, 0.670588, 1)
+shader_parameter/color_229 = Color(0.588235, 0.588235, 0.588235, 1)
+shader_parameter/color_230 = Color(0.521569, 0.521569, 0.521569, 1)
+shader_parameter/color_231 = Color(0.501961, 0.501961, 0.501961, 1)
+shader_parameter/color_232 = Color(0.341176, 0.341176, 0.341176, 1)
+shader_parameter/color_233 = Color(0.360784, 0.360784, 0.360784, 1)
+shader_parameter/color_234 = Color(0.258824, 0.258824, 0.258824, 1)
+shader_parameter/color_235 = Color(0.180392, 0.180392, 0.180392, 1)
+shader_parameter/color_236 = Color(0.109804, 0.109804, 0.109804, 1)
+shader_parameter/color_237 = Color(0.0509804, 0.0509804, 0.0509804, 1)
+shader_parameter/color_238 = Color(0.0392157, 0.0392157, 0.0392157, 1)
+shader_parameter/color_239 = Color(0.360784, 0.376471, 0.490196, 1)
+shader_parameter/color_240 = Color(0.266667, 0.262745, 0.34902, 1)
+shader_parameter/color_241 = Color(0.439216, 0.313726, 0.313726, 1)
+shader_parameter/color_242 = Color(0.360784, 0.341176, 0.243137, 1)
+shader_parameter/color_243 = Color(0.321569, 0.4, 0.27451, 1)
+shader_parameter/color_244 = Color(0.329412, 0.439216, 0.403922, 1)
+shader_parameter/color_245 = Color(0.309804, 0.364706, 0.45098, 1)
+shader_parameter/color_246 = Color(0.368627, 0.278431, 0.4, 1)
+shader_parameter/color_247 = Color(0.529412, 0.411765, 0.466667, 1)
+shader_parameter/color_248 = Color(0.458824, 0.309804, 0.309804, 1)
+shader_parameter/color_249 = Color(0.196078, 0.231373, 0.439216, 1)
+shader_parameter/color_250 = Color(0.156863, 0.407843, 0.741176, 1)
+shader_parameter/color_251 = Color(0.376471, 0.631373, 0.152941, 1)
+shader_parameter/color_252 = Color(0.721569, 0.172549, 0.592157, 1)
+shader_parameter/color_253 = Color(1, 0.188235, 0.890196, 1)
+shader_parameter/color_254 = Color(1, 0.180392, 0.537255, 1)
+shader_parameter/color_255 = Color(0.219608, 0.878431, 0.419608, 1)
+
+[sub_resource type="Curve2D" id="Curve2D_f82yq"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 540, 394, 0, 0, 0, 0, 532, 411, 0, 0, 0, 0, 539, 442, 0, 0, 0, 0, 559, 457, 0, 0, 0, 0, 568, 437, 0, 0, 0, 0, 558, 404, 0, 0, 0, 0, 540, 394)
+}
+point_count = 7
+
+[node name="Freak" type="CharacterBody3D" groups=["freak"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 script = ExtResource("1_w8pip")
 
@@ -72,6 +508,10 @@ mesh = SubResource("CapsuleMesh_cd5gn")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("ConvexPolygonShape3D_s18ki")
+
+[node name="name" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 2.43917, 0)
+mesh = SubResource("TextMesh_ua2ti")
 
 [node name="Neck" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.586844, 0)
@@ -86,6 +526,7 @@ mesh = SubResource("BoxMesh_pm0xd")
 skeleton = NodePath("../..")
 
 [node name="SpotLight3D" type="SpotLight3D" parent="Neck/Camera3D/MeshInstance3D2"]
+visible = false
 light_energy = 2.0
 spot_range = 14.0769
 spot_angle = 20.0
@@ -97,9 +538,15 @@ visibility_range_begin_margin = 0.4
 visibility_range_fade_mode = 1
 mesh = SubResource("CapsuleMesh_3mwwd")
 
-[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 2.43917, 0)
-mesh = SubResource("TextMesh_ua2ti")
+[node name="attackbox" type="Area3D" parent="Neck"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.384393, -0.586844, -0.809)
+collision_layer = 2
+monitorable = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Neck/attackbox"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.0401294)
+shape = SubResource("ConvexPolygonShape3D_vyetl")
+disabled = true
 
 [node name="overlay" type="Node2D" parent="."]
 
@@ -115,7 +562,19 @@ max_value = 5.0
 fill_mode = 3
 show_percentage = false
 
-[node name="FrZuit3aYaaYjmS" type="Sprite2D" parent="overlay"]
+[node name="hi" type="Sprite2D" parent="overlay"]
+position = Vector2(68, 368)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_7tjs2")
+
+[node name="car" type="AnimatedSprite2D" parent="overlay/hi"]
+z_index = -1
+position = Vector2(-132.5, 102.5)
+scale = Vector2(3.24219, 2.85156)
+sprite_frames = SubResource("SpriteFrames_gnufj")
+animation = &"yokai"
+
+[node name="gooo" type="Sprite2D" parent="overlay"]
 modulate = Color(0.486275, 0, 0.745098, 1)
 self_modulate = Color(0.786164, 0.628105, 0.603306, 1)
 position = Vector2(56.9233, 46)
@@ -125,17 +584,83 @@ script = ExtResource("3_mnwb5")
 spin = true
 speed = -0.1
 
-[node name="FouQlvwXwAIlpYq" type="Sprite2D" parent="overlay"]
-position = Vector2(16, 408.569)
-scale = Vector2(0.053872, 0.053872)
+[node name="thinker" type="Sprite2D" parent="overlay"]
+position = Vector2(624, 409)
+scale = Vector2(-0.054, 0.054)
 texture = ExtResource("4_jnwca")
 
-[node name="DVpzw7vVwAAlmOr" type="Sprite2D" parent="overlay"]
+[node name="truth" type="Sprite2D" parent="overlay"]
 position = Vector2(584, 38)
 scale = Vector2(0.0923809, 0.092381)
 texture = ExtResource("5_h7umb")
 
-[node name="Thisisnotadrilltransparent" type="Sprite2D" parent="overlay"]
-position = Vector2(534, 399)
-scale = Vector2(0.473824, 0.473824)
-texture = ExtResource("6_p7ra7")
+[node name="thinkhanmer" type="Sprite2D" parent="overlay/truth"]
+position = Vector2(-261.312, 45.4935)
+rotation = -1.83259
+scale = Vector2(0.561978, 0.292074)
+texture = ExtResource("12_lokui")
+
+[node name="winggaster" type="Sprite2D" parent="overlay/truth"]
+position = Vector2(43.2988, -213.789)
+scale = Vector2(1.17377, 0.98663)
+texture = ExtResource("13_18cbi")
+
+[node name="grub" type="Sprite2D" parent="overlay/truth/winggaster"]
+z_index = -1
+position = Vector2(-6.39014, -79.5428)
+scale = Vector2(0.333818, 0.501602)
+texture = ExtResource("16_yvl3f")
+
+[node name="lowemeter" type="Sprite2D" parent="overlay"]
+modulate = Color(0.117647, 0.117647, 1, 1)
+position = Vector2(601, 365)
+scale = Vector2(0.108614, 0.108614)
+texture = ExtResource("7_pw8xr")
+script = ExtResource("3_mnwb5")
+spin = true
+speed = 0.001
+
+[node name="filter" type="Sprite2D" parent="overlay"]
+z_index = 4096
+material = SubResource("ShaderMaterial_2d4bt")
+position = Vector2(136, 214)
+scale = Vector2(0.421614, 0.421614)
+texture = ExtResource("9_3cxlw")
+
+[node name="guest" type="Sprite2D" parent="overlay"]
+position = Vector2(1.90735e-06, 242)
+rotation = 1.0472
+scale = Vector2(0.0372245, 0.0372245)
+texture = ExtResource("14_7fgav")
+
+[node name="Jerm" type="Sprite2D" parent="overlay"]
+position = Vector2(652, 184)
+rotation = -0.209928
+scale = Vector2(0.0323131, 0.17648)
+texture = ExtResource("15_8fdw7")
+
+[node name="spunch" type="Sprite2D" parent="overlay"]
+z_index = -1
+position = Vector2(353, 455.458)
+scale = Vector2(1.90855, 0.067685)
+texture = ExtResource("17_yrqrc")
+
+[node name="Coolgradient" type="Sprite2D" parent="overlay"]
+z_index = -10
+position = Vector2(320, 212)
+texture = ExtResource("18_mn4ws")
+
+[node name="Path2D" type="Path2D" parent="overlay"]
+curve = SubResource("Curve2D_f82yq")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="overlay/Path2D"]
+position = Vector2(540, 394)
+rotation = 2.01064
+
+[node name="knife" type="Sprite2D" parent="overlay/Path2D/PathFollow2D"]
+rotation = -1.5324
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("12_42d7s")
+script = ExtResource("7_7kal5")
+
+[connection signal="body_entered" from="Neck/attackbox" to="." method="_on_attackbox_body_entered"]
