@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c0sw0n5d5e5ek"
+path="res://.godot/imported/[YT2mp3.info] - Amogus - Sound effect (320kbps).mp3-4650c3a02ed1fbc1813f6c004d7bbfe6.mp3str"
+
+[deps]
+
+source_file="res://sounds/[YT2mp3.info] - Amogus - Sound effect (320kbps).mp3"
+dest_files=["res://.godot/imported/[YT2mp3.info] - Amogus - Sound effect (320kbps).mp3-4650c3a02ed1fbc1813f6c004d7bbfe6.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://br0o0m7ewpxgw"
+path="res://.godot/imported/Nuclear Fart.mp3-a1c40e9c1157c79896482f55cb191465.mp3str"
+
+[deps]
+
+source_file="res://sounds/Nuclear Fart.mp3"
+dest_files=["res://.godot/imported/Nuclear Fart.mp3-a1c40e9c1157c79896482f55cb191465.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

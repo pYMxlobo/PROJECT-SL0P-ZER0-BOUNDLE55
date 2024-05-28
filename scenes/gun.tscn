@@ -1,0 +1,112 @@
+[gd_scene load_steps=13 format=3 uid="uid://08tjvp6vdo72"]
+
+[ext_resource type="Texture2D" uid="uid://cvcxi3mmd0wqa" path="res://sprites/gun.png" id="1_lhs7v"]
+[ext_resource type="Script" path="res://scripts/gun.gd" id="2_t0t4o"]
+[ext_resource type="Texture2D" uid="uid://nq3t0bnuprwl" path="res://sprites/nohand.png" id="2_t2t0f"]
+[ext_resource type="Texture2D" uid="uid://desdjhsytxmie" path="res://sprites/kablam.png" id="4_1ribw"]
+[ext_resource type="AudioStream" uid="uid://b2f1nphahqwuu" path="res://sounds/Extremely loud incorrect buzzer.mp3" id="5_0xgmj"]
+[ext_resource type="AudioStream" uid="uid://ctybtjvo0u6pn" path="res://sounds/brain fart slowed.mp3" id="5_lhbef"]
+[ext_resource type="AudioStream" uid="uid://ciueul82tu0to" path="res://sounds/Windows 10 USB disconnect.mp3" id="7_gr5n3"]
+[ext_resource type="AudioStream" uid="uid://6f6arc8oach7" path="res://sounds/SpongeBob Fail.mp3" id="8_5kcic"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_05g0e"]
+transparency = 2
+alpha_scissor_threshold = 0.001
+alpha_antialiasing_mode = 0
+no_depth_test = true
+albedo_color = Color(0.991606, 1, 0.496144, 1)
+albedo_texture = ExtResource("1_lhs7v")
+albedo_texture_msdf = true
+metallic_specular = 1.0
+metallic_texture = ExtResource("1_lhs7v")
+metallic_texture_channel = 4
+normal_enabled = true
+normal_scale = 16.0
+normal_texture = ExtResource("1_lhs7v")
+disable_receive_shadows = true
+msdf_pixel_range = 1.0
+msdf_outline_size = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ht3cb"]
+transparency = 2
+alpha_scissor_threshold = 0.001
+alpha_antialiasing_mode = 0
+no_depth_test = true
+albedo_texture = ExtResource("2_t2t0f")
+albedo_texture_msdf = true
+metallic = 1.0
+metallic_specular = 1.0
+metallic_texture = ExtResource("2_t2t0f")
+metallic_texture_channel = 4
+normal_enabled = true
+normal_scale = 16.0
+normal_texture = ExtResource("2_t2t0f")
+disable_receive_shadows = true
+msdf_pixel_range = 1.0
+msdf_outline_size = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jpivd"]
+transparency = 1
+albedo_color = Color(1, 0, 0, 1)
+metallic = 0.75
+metallic_specular = 1.0
+roughness = 0.0
+emission_enabled = true
+emission = Color(1, 0, 0, 1)
+emission_energy_multiplier = 0.1
+billboard_mode = 2
+
+[sub_resource type="TextMesh" id="TextMesh_f1ckn"]
+material = SubResource("StandardMaterial3D_jpivd")
+text = "12/12"
+font_size = 9
+
+[node name="hands" type="Sprite3D"]
+transform = Transform3D(-0.898465, -0.439046, 0, 0.439046, -0.898465, 0, 0, 0, 1, 0.29, 0.408156, -0.56)
+material_override = SubResource("StandardMaterial3D_05g0e")
+pixel_size = 0.001
+texture = ExtResource("1_lhs7v")
+script = ExtResource("2_t0t4o")
+
+[node name="gun" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.000999987)
+material_override = SubResource("StandardMaterial3D_ht3cb")
+pixel_size = 0.001
+texture = ExtResource("2_t2t0f")
+
+[node name="aimspot" type="Node3D" parent="."]
+transform = Transform3D(1, 5.96046e-08, 0, -5.96046e-08, 1, 0, 0, 0, 1, -0.0118919, 0.357266, 0.000384629)
+
+[node name="shot" type="RayCast3D" parent="aimspot"]
+target_position = Vector3(0.045, 0.075, -6.5)
+hit_from_inside = true
+debug_shape_custom_color = Color(1, 0, 0, 1)
+debug_shape_thickness = 3
+
+[node name="flare" type="Sprite3D" parent="aimspot"]
+visible = false
+pixel_size = 0.0005
+double_sided = false
+texture = ExtResource("4_1ribw")
+
+[node name="fire" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_0xgmj")
+volume_db = -5.0
+max_polyphony = 12
+
+[node name="reload" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_lhbef")
+volume_db = 3.0
+
+[node name="reloadcooldown" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_gr5n3")
+
+[node name="shootfail" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_5kcic")
+
+[node name="ammo" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 5.96046e-08, 0, -5.96046e-08, 1, 0, 0, 0, 1, -0.0208651, 0.058257, 0.0366911)
+mesh = SubResource("TextMesh_f1ckn")
+
+[connection signal="finished" from="reload" to="." method="_on_reload_finished"]
+[connection signal="finished" from="reloadcooldown" to="." method="_on_reloadcooldown_finished"]

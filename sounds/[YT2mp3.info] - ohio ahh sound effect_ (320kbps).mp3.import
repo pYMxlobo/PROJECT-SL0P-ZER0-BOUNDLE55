@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://boq173cadb0ba"
+path="res://.godot/imported/[YT2mp3.info] - ohio ahh sound effect_ (320kbps).mp3-2f7c9f26d8b6b6c2e3996d9fd519acde.mp3str"
+
+[deps]
+
+source_file="res://sounds/[YT2mp3.info] - ohio ahh sound effect_ (320kbps).mp3"
+dest_files=["res://.godot/imported/[YT2mp3.info] - ohio ahh sound effect_ (320kbps).mp3-2f7c9f26d8b6b6c2e3996d9fd519acde.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

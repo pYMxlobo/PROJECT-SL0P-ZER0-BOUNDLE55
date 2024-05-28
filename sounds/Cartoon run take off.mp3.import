@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bonglsta4vhuy"
+path="res://.godot/imported/Cartoon run take off.mp3-49cb06034940d2d7055a7769411f5fb4.mp3str"
+
+[deps]
+
+source_file="res://sounds/Cartoon run take off.mp3"
+dest_files=["res://.godot/imported/Cartoon run take off.mp3-49cb06034940d2d7055a7769411f5fb4.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

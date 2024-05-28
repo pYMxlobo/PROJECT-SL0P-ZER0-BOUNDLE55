@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ckn1p8tbs7qxg"
+path="res://.godot/imported/Delivery - Lethal Company.mp3-ce8d6f7d10408cc91f52671b5c595517.mp3str"
+
+[deps]
+
+source_file="res://sounds/Delivery - Lethal Company.mp3"
+dest_files=["res://.godot/imported/Delivery - Lethal Company.mp3-ce8d6f7d10408cc91f52671b5c595517.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bkw4tvjm8m8ur"
+path="res://.godot/imported/[YT2mp3.info] - What the Dog doing vine Sound Effect (320kbps).mp3-a7267151f2f59aef81de5c617d7fbbc4.mp3str"
+
+[deps]
+
+source_file="res://sounds/[YT2mp3.info] - What the Dog doing vine Sound Effect (320kbps).mp3"
+dest_files=["res://.godot/imported/[YT2mp3.info] - What the Dog doing vine Sound Effect (320kbps).mp3-a7267151f2f59aef81de5c617d7fbbc4.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

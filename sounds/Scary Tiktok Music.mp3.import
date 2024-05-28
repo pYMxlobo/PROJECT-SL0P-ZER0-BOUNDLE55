@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dhss61rve8e7k"
+path="res://.godot/imported/Scary Tiktok Music.mp3-e49a52f5451c5ccf83163a4e04b649e2.mp3str"
+
+[deps]
+
+source_file="res://sounds/Scary Tiktok Music.mp3"
+dest_files=["res://.godot/imported/Scary Tiktok Music.mp3-e49a52f5451c5ccf83163a4e04b649e2.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

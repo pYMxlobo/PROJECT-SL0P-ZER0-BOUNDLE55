@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://0k5r03x60ej1"
+path="res://.godot/imported/Poop sound effect.mp3-91c4ad09673b19451ad5b99bbe83a0d7.mp3str"
+
+[deps]
+
+source_file="res://sounds/Poop sound effect.mp3"
+dest_files=["res://.godot/imported/Poop sound effect.mp3-91c4ad09673b19451ad5b99bbe83a0d7.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

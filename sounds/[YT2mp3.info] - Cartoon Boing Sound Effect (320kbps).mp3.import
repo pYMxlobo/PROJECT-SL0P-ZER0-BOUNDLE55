@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dt208de1iwpn5"
+path="res://.godot/imported/[YT2mp3.info] - Cartoon Boing Sound Effect (320kbps).mp3-10e12787073be5e440d1800622063027.mp3str"
+
+[deps]
+
+source_file="res://sounds/[YT2mp3.info] - Cartoon Boing Sound Effect (320kbps).mp3"
+dest_files=["res://.godot/imported/[YT2mp3.info] - Cartoon Boing Sound Effect (320kbps).mp3-10e12787073be5e440d1800622063027.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dc6d65icato00"
+path="res://.godot/imported/Goofy Ahh Ringtone.mp3-88539be6fb09af17eea322505fd2dac9.mp3str"
+
+[deps]
+
+source_file="res://sounds/Goofy Ahh Ringtone.mp3"
+dest_files=["res://.godot/imported/Goofy Ahh Ringtone.mp3-88539be6fb09af17eea322505fd2dac9.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c1pjclc6uk8bs"
+path="res://.godot/imported/[YT2mp3.info] - Gnome sound effect (320kbps).mp3-60094ea911b6fbd8416363819f088954.mp3str"
+
+[deps]
+
+source_file="res://sounds/[YT2mp3.info] - Gnome sound effect (320kbps).mp3"
+dest_files=["res://.godot/imported/[YT2mp3.info] - Gnome sound effect (320kbps).mp3-60094ea911b6fbd8416363819f088954.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

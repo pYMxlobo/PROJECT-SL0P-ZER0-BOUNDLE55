@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c31k1m4k3lebx"
+path="res://.godot/imported/Iphone 4s Alarm.mp3-8b3494160a37d81e031403bd51fa5e87.mp3str"
+
+[deps]
+
+source_file="res://sounds/Iphone 4s Alarm.mp3"
+dest_files=["res://.godot/imported/Iphone 4s Alarm.mp3-8b3494160a37d81e031403bd51fa5e87.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b1y58y7uqdgod"
+path="res://.godot/imported/[YT2mp3.info] - Bruh Sound Effect #2 (320kbps).mp3-3a4a5ddb305c4f389a6b2aa72dd76493.mp3str"
+
+[deps]
+
+source_file="res://sounds/[YT2mp3.info] - Bruh Sound Effect #2 (320kbps).mp3"
+dest_files=["res://.godot/imported/[YT2mp3.info] - Bruh Sound Effect #2 (320kbps).mp3-3a4a5ddb305c4f389a6b2aa72dd76493.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

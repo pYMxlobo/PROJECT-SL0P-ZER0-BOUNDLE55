@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://0s6tehpdp46p"
+path="res://.godot/imported/[YT2mp3.info] - Number 15_ Burger king foot lettuce Sound Effect (320kbps).mp3-64ca67704985fe100067552ce4cce06d.mp3str"
+
+[deps]
+
+source_file="res://sounds/[YT2mp3.info] - Number 15_ Burger king foot lettuce Sound Effect (320kbps).mp3"
+dest_files=["res://.godot/imported/[YT2mp3.info] - Number 15_ Burger king foot lettuce Sound Effect (320kbps).mp3-64ca67704985fe100067552ce4cce06d.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

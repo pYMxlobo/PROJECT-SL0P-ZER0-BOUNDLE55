@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://mbt2yeg4q36f"
+path="res://.godot/imported/[YT2mp3.info] - Funny laugh sound effect for your vlog (320kbps).mp3-9e77f0ef0d5042f25e42dd6ffa42ac7e.mp3str"
+
+[deps]
+
+source_file="res://sounds/[YT2mp3.info] - Funny laugh sound effect for your vlog (320kbps).mp3"
+dest_files=["res://.godot/imported/[YT2mp3.info] - Funny laugh sound effect for your vlog (320kbps).mp3-9e77f0ef0d5042f25e42dd6ffa42ac7e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

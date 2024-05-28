@@ -35,15 +35,15 @@ func _on_navigation_agent_3d_velocity_computed(safe_velocity):
 
 
 func _on_attack_body_entered(body):
-	print("detect success")
+	#print("detect success")
 	if body.is_in_group("freak"):
 		did_attack.connect(body._hurt)
 		body.hp -= 1	
 		$facepivot/attack/attackbox.disabled = true
 		$attackcooldown.start()
-		print("attack!!!")
+		#print("attack!!!")
 		did_attack.emit()
 
 func _on_attackcooldown_timeout():
 	$facepivot/attack/attackbox.disabled = false
-	print("can attack")
+	#print("can attack")

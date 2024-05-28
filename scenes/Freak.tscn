@@ -1,22 +1,25 @@
-[gd_scene load_steps=59 format=3 uid="uid://bjcdnipkga6a5"]
+[gd_scene load_steps=75 format=3 uid="uid://bjcdnipkga6a5"]
 
 [ext_resource type="Script" path="res://scripts/Freaky.gd" id="1_w8pip"]
 [ext_resource type="Texture2D" uid="uid://wd1n7sf4w1i8" path="res://images/FrZUIT3aYAAYjmS.png" id="2_6bm67"]
 [ext_resource type="Texture2D" uid="uid://bptcbw25r4hxq" path="res://images/catthought.png" id="2_7tjs2"]
 [ext_resource type="Texture2D" uid="uid://b7e8g0phuubng" path="res://sprites/healthunder.png" id="2_jmg24"]
-[ext_resource type="Texture2D" uid="uid://nq3t0bnuprwl" path="res://sprites/nohand.png" id="3_a8h5p"]
 [ext_resource type="Texture2D" uid="uid://k8ujydxoqvnw" path="res://faces/GCr-vo0aQAABLQ2.jpg" id="3_d8bli"]
 [ext_resource type="Script" path="res://scripts/rotate2d.gd" id="3_mnwb5"]
 [ext_resource type="Texture2D" uid="uid://lhqlp5vyx1u8" path="res://sprites/healthover.png" id="3_xg2dl"]
 [ext_resource type="Texture2D" uid="uid://bqseug7xldvb8" path="res://faces/20220915_222940.jpg" id="4_5084n"]
 [ext_resource type="Texture2D" uid="uid://b614grptiuxcr" path="res://images/FouQLVWXwAIlpYQ.png" id="4_jnwca"]
 [ext_resource type="Texture2D" uid="uid://cwk3rtajahgwj" path="res://sprites/healthfill.png" id="4_pqxsr"]
+[ext_resource type="Material" uid="uid://dub2r7nmvhoq4" path="res://greed/jumpoff.tres" id="5_5nbfn"]
 [ext_resource type="Texture2D" uid="uid://623tjjq38wy6" path="res://faces/20220105_002931.jpg" id="5_cyold"]
 [ext_resource type="Texture2D" uid="uid://d3fw65i1u6jvx" path="res://images/DVpzw7VVwAAlmOr.png" id="5_h7umb"]
+[ext_resource type="Material" uid="uid://ky51luip05oj" path="res://greed/1glow.tres" id="5_n35mf"]
+[ext_resource type="Material" uid="uid://cxgd7htwak02j" path="res://greed/2glow.tres" id="6_5csgi"]
+[ext_resource type="Texture2D" uid="uid://b6m0wjr8lgpeg" path="res://sprites/face.png" id="6_hp6wm"]
 [ext_resource type="Texture2D" uid="uid://crebaigobio05" path="res://faces/20221022_015309.jpg" id="6_shttj"]
 [ext_resource type="Script" path="res://scripts/bob.gd" id="7_7kal5"]
 [ext_resource type="Texture2D" uid="uid://127g5nr0spp0" path="res://faces/GCzJeKWWMAElP0j.jpg" id="7_63iqw"]
-[ext_resource type="Texture2D" uid="uid://yio8vek8nf5l" path="res://images/FtD17-OaEAEKCj_.png" id="7_pw8xr"]
+[ext_resource type="Material" uid="uid://dsrjj6s0r2jux" path="res://greed/3glow.tres" id="7_aa2wq"]
 [ext_resource type="Texture2D" uid="uid://dga31uvprr015" path="res://faces/Ftx0lU4XgAEhmiR.png" id="8_ffplp"]
 [ext_resource type="Shader" path="res://shader/256.gdshader" id="8_sxjux"]
 [ext_resource type="Texture2D" uid="uid://cmropiu0mqna3" path="res://images/dogbutfree.png" id="9_3cxlw"]
@@ -39,10 +42,22 @@
 [ext_resource type="Texture2D" uid="uid://dpwlq5x4aspiu" path="res://faces/GCs69tmaYAAxLaJ.jpg" id="18_6fh55"]
 [ext_resource type="Texture2D" uid="uid://bnsaqjphg3q1f" path="res://images/coolgradient.png" id="18_mn4ws"]
 [ext_resource type="Texture2D" uid="uid://1yj3ecvmxs1c" path="res://faces/sigmashogunyan.jpg" id="19_va2ol"]
-[ext_resource type="Texture2D" uid="uid://begha8g50bmpe" path="res://sprites/jumpunder.png" id="36_ef6ws"]
-[ext_resource type="Texture2D" uid="uid://c2ywbp7tpcmwe" path="res://sprites/jumpover.png" id="37_4qdlo"]
-[ext_resource type="Texture2D" uid="uid://dwnbb6jbluj51" path="res://sprites/jumpfill.png" id="38_cmc01"]
-[ext_resource type="Texture2D" uid="uid://cvcxi3mmd0wqa" path="res://sprites/gun.png" id="42_tv2lv"]
+[ext_resource type="Texture2D" uid="uid://bg0wvpfty8efw" path="res://images/20230516_014227.png" id="36_xkk5k"]
+[ext_resource type="PackedScene" uid="uid://08tjvp6vdo72" path="res://scenes/gun.tscn" id="42_amf4t"]
+[ext_resource type="ArrayMesh" uid="uid://faw5rykyfa4r" path="res://mesh/jumpback.res" id="44_cs7ry"]
+[ext_resource type="AudioStream" uid="uid://dltghk8nfcjcl" path="res://sounds/[YT2mp3.info] - Cartoon Boing Sound Effect (320kbps).wav" id="45_2rj5h"]
+[ext_resource type="AudioStream" uid="uid://blgyvw52550j3" path="res://sounds/[YT2mp3.info] - Heart Beat [SOUND EFFECT] (32kbps).mp3" id="46_786kw"]
+[ext_resource type="AudioStream" uid="uid://bd7junyhg3y8w" path="res://sounds/Bongo Feet.mp3" id="47_hid1p"]
+[ext_resource type="AudioStream" uid="uid://csi02ien8j27y" path="res://sounds/Windows 10 Error Sound.mp3" id="48_hbgw1"]
+[ext_resource type="AudioStream" uid="uid://bgi7gp57ms7ne" path="res://sounds/twitter_1635804646240403456_audio.mp3" id="49_vryub"]
+[ext_resource type="AudioStream" uid="uid://bmiw0ljydolub" path="res://sounds/Metal Pipe Falling Sound Effect.mp3" id="50_tc3sj"]
+[ext_resource type="AudioStream" uid="uid://dlkqtou256ec3" path="res://sounds/Dramatic_Vine-Instagram_Boom_-_Sound_Effect_HD.mp3" id="52_2ak5c"]
+[ext_resource type="AudioStream" uid="uid://c52nsl83p07fy" path="res://sounds/Mewing bass boosted.mp3" id="52_m7p0q"]
+[ext_resource type="AudioStream" uid="uid://ikgwupptnjfi" path="res://sounds/Bad to the Bone Riff.mp3" id="54_sex1c"]
+[ext_resource type="AudioStream" uid="uid://bp1tlq4x4ccaj" path="res://sounds/Bone Crack.mp3" id="55_iahir"]
+[ext_resource type="AudioStream" uid="uid://oxxfcvoclqf0" path="res://sounds/Fart Sound Effect (From 21st Century Memes).mp3" id="56_md0t5"]
+[ext_resource type="AudioStream" uid="uid://vi80qa4gt5ro" path="res://sounds/iPhone Screenshot.wav" id="57_npwrt"]
+[ext_resource type="AudioStream" uid="uid://cfvcc0qck8rrp" path="res://sounds/cheatreal.mp3" id="58_ye74p"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_cd5gn"]
 
@@ -60,40 +75,19 @@ dof_blur_far_enabled = true
 dof_blur_far_distance = 20.0
 dof_blur_far_transition = 2.0
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_n1xx2"]
+albedo_texture = ExtResource("6_hp6wm")
+
 [sub_resource type="BoxMesh" id="BoxMesh_pm0xd"]
+material = SubResource("StandardMaterial3D_n1xx2")
 size = Vector3(0.575, 0.55, 0.755)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_05g0e"]
-transparency = 2
-alpha_scissor_threshold = 0.001
-alpha_antialiasing_mode = 0
-no_depth_test = true
-albedo_color = Color(0.991606, 1, 0.496144, 1)
-albedo_texture = ExtResource("42_tv2lv")
-albedo_texture_msdf = true
-metallic_specular = 1.0
-metallic_texture = ExtResource("42_tv2lv")
-metallic_texture_channel = 4
-normal_enabled = true
-normal_scale = 16.0
-normal_texture = ExtResource("42_tv2lv")
-disable_receive_shadows = true
+[sub_resource type="CylinderMesh" id="CylinderMesh_05oby"]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ht3cb"]
-transparency = 2
-alpha_scissor_threshold = 0.001
-alpha_antialiasing_mode = 0
-no_depth_test = true
-albedo_texture = ExtResource("3_a8h5p")
-albedo_texture_msdf = true
-metallic = 1.0
-metallic_specular = 1.0
-metallic_texture = ExtResource("3_a8h5p")
-metallic_texture_channel = 4
-normal_enabled = true
-normal_scale = 16.0
-normal_texture = ExtResource("3_a8h5p")
-disable_receive_shadows = true
+[sub_resource type="PrismMesh" id="PrismMesh_65bbu"]
+left_to_right = 0.7
+
+[sub_resource type="TorusMesh" id="TorusMesh_2qnry"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_3mwwd"]
 radius = 0.05
@@ -538,12 +532,13 @@ _data = {
 }
 point_count = 7
 
-[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_58lej"]
-blend_mode = 4
-
 [node name="Freak" type="CharacterBody3D" groups=["freak"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 script = ExtResource("1_w8pip")
+circleglow = ExtResource("5_n35mf")
+triangleglow = ExtResource("6_5csgi")
+donutglow = ExtResource("7_aa2wq")
+noglow = ExtResource("5_5nbfn")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 visibility_range_fade_mode = 1
@@ -575,16 +570,27 @@ light_energy = 2.0
 spot_range = 14.0769
 spot_angle = 20.0
 
-[node name="hands" type="Sprite3D" parent="Neck/Camera3D"]
-transform = Transform3D(-0.898465, -0.439046, 0, 0.439046, -0.898465, 0, 0, 0, 1, 0.29, 0.408156, -0.56)
-material_override = SubResource("StandardMaterial3D_05g0e")
-pixel_size = 0.001
-texture = ExtResource("42_tv2lv")
+[node name="gun" parent="Neck/Camera3D" instance=ExtResource("42_amf4t")]
 
-[node name="gun" type="Sprite3D" parent="Neck/Camera3D/hands"]
-material_override = SubResource("StandardMaterial3D_ht3cb")
-pixel_size = 0.001
-texture = ExtResource("3_a8h5p")
+[node name="Jumpback" type="MeshInstance3D" parent="Neck/Camera3D"]
+transform = Transform3D(0.385, 0, 0, 0, 0.073, 0, 0, 0, 0.08, -0.634, 0.872, -1.138)
+mesh = ExtResource("44_cs7ry")
+skeleton = NodePath("../../..")
+
+[node name="circle" type="MeshInstance3D" parent="Neck/Camera3D/Jumpback"]
+transform = Transform3D(1, 0, 0, 0, -1.97429e-08, -1, 0, 0.451666, -4.37114e-08, 0.00621414, 1.27127, 0.72618)
+material_override = ExtResource("5_n35mf")
+mesh = SubResource("CylinderMesh_05oby")
+
+[node name="triangle" type="MeshInstance3D" parent="Neck/Camera3D/Jumpback"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.005, -0.019, 0.765)
+material_override = ExtResource("6_5csgi")
+mesh = SubResource("PrismMesh_65bbu")
+
+[node name="donut" type="MeshInstance3D" parent="Neck/Camera3D/Jumpback"]
+transform = Transform3D(0.5, 0, 0, 0, -2.18557e-08, -0.5, 0, 0.5, -2.18557e-08, 0.085, -1.332, 1.06)
+material_override = ExtResource("7_aa2wq")
+mesh = SubResource("TorusMesh_2qnry")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Neck"]
 transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0, -0.607177, 0)
@@ -643,7 +649,7 @@ z_index = -1
 position = Vector2(-132.5, 102.5)
 scale = Vector2(3.24219, 2.85156)
 sprite_frames = SubResource("SpriteFrames_gnufj")
-animation = &"yokai"
+animation = &"man"
 
 [node name="gooo" type="Sprite2D" parent="overlay"]
 modulate = Color(0.486275, 0, 0.745098, 1)
@@ -684,9 +690,10 @@ texture = ExtResource("16_yvl3f")
 
 [node name="lowemeter" type="Sprite2D" parent="overlay"]
 modulate = Color(0.117647, 0.117647, 1, 1)
-position = Vector2(601, 365)
-scale = Vector2(0.108614, 0.108614)
-texture = ExtResource("7_pw8xr")
+texture_filter = 2
+position = Vector2(594, 355)
+scale = Vector2(0.0764875, 0.0988746)
+texture = ExtResource("36_xkk5k")
 script = ExtResource("3_mnwb5")
 spin = true
 speed = 0.001
@@ -734,18 +741,51 @@ scale = Vector2(0.5, 0.5)
 texture = ExtResource("12_42d7s")
 script = ExtResource("7_7kal5")
 
-[node name="jumpbar" type="TextureProgressBar" parent="overlay"]
-material = SubResource("CanvasItemMaterial_58lej")
-offset_left = 108.0
-offset_top = 6.0
-offset_right = 269.0
-offset_bottom = 59.0
-max_value = 3.0
-value = 3.0
-fill_mode = 3
-nine_patch_stretch = true
-texture_under = ExtResource("36_ef6ws")
-texture_over = ExtResource("37_4qdlo")
-texture_progress = ExtResource("38_cmc01")
+[node name="jump" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("45_2rj5h")
+volume_db = -1.0
+max_polyphony = 4
+
+[node name="walk" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("46_786kw")
+
+[node name="fast" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("47_hid1p")
+
+[node name="tab" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("48_hbgw1")
+max_polyphony = 10
+
+[node name="death" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("49_vryub")
+
+[node name="stab" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("50_tc3sj")
+max_polyphony = 10
+
+[node name="ouch" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("52_2ak5c")
+max_polyphony = 3
+
+[node name="win" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("52_m7p0q")
+
+[node name="gslam" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("54_sex1c")
+
+[node name="slide" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("55_iahir")
+volume_db = 5.0
+
+[node name="slideboost" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("56_md0t5")
+
+[node name="flashtoggle" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("57_npwrt")
+volume_db = 10.0
+
+[node name="bgm" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("58_ye74p")
+autoplay = true
 
 [connection signal="body_entered" from="Neck/attackbox" to="." method="_on_attackbox_body_entered"]

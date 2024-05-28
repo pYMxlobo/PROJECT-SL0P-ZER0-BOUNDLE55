@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://wknugvqnn681"
+path="res://.godot/imported/[YT2mp3.info] - Taco Bell Bong - Sound Effect (HD) (320kbps).mp3-ba6547dd58129428e28ff4be8d12ae34.mp3str"
+
+[deps]
+
+source_file="res://sounds/[YT2mp3.info] - Taco Bell Bong - Sound Effect (HD) (320kbps).mp3"
+dest_files=["res://.godot/imported/[YT2mp3.info] - Taco Bell Bong - Sound Effect (HD) (320kbps).mp3-ba6547dd58129428e28ff4be8d12ae34.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

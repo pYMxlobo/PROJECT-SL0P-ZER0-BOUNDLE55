@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dvjvtwfqu8ugf"
+path="res://.godot/imported/[YT2mp3.info] - Ceritified Hood Classic Sound Effect (320kbps).mp3-12d347a9dee5c28356fd2207cf9d0936.mp3str"
+
+[deps]
+
+source_file="res://sounds/[YT2mp3.info] - Ceritified Hood Classic Sound Effect (320kbps).mp3"
+dest_files=["res://.godot/imported/[YT2mp3.info] - Ceritified Hood Classic Sound Effect (320kbps).mp3-12d347a9dee5c28356fd2207cf9d0936.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

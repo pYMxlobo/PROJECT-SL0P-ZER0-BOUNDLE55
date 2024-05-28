@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://7r26mv30e1oe"
+path="res://.godot/imported/Iphone Ringtone.mp3-b139fdb7cd8a27aa4d69ea241fe44f80.mp3str"
+
+[deps]
+
+source_file="res://sounds/Iphone Ringtone.mp3"
+dest_files=["res://.godot/imported/Iphone Ringtone.mp3-b139fdb7cd8a27aa4d69ea241fe44f80.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

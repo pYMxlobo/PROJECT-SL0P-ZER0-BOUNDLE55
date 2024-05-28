@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://coesu7t0y5we3"
+path="res://.godot/imported/[YT2mp3.info] - Boo-womp sound effect that they play on Spongebob when something sad happens (320kbps).mp3-ffe3223b387a00a87c9e7b8131a241c2.mp3str"
+
+[deps]
+
+source_file="res://sounds/[YT2mp3.info] - Boo-womp sound effect that they play on Spongebob when something sad happens (320kbps).mp3"
+dest_files=["res://.godot/imported/[YT2mp3.info] - Boo-womp sound effect that they play on Spongebob when something sad happens (320kbps).mp3-ffe3223b387a00a87c9e7b8131a241c2.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

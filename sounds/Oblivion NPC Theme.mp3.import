@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://yv63k3k5mi3j"
+path="res://.godot/imported/Oblivion NPC Theme.mp3-2a04075b840cf8d60c5fca0d8775e432.mp3str"
+
+[deps]
+
+source_file="res://sounds/Oblivion NPC Theme.mp3"
+dest_files=["res://.godot/imported/Oblivion NPC Theme.mp3-2a04075b840cf8d60c5fca0d8775e432.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

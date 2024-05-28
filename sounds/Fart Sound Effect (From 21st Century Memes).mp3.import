@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://oxxfcvoclqf0"
+path="res://.godot/imported/Fart Sound Effect (From 21st Century Memes).mp3-267326512b4a7a51837d536d9816da89.mp3str"
+
+[deps]
+
+source_file="res://sounds/Fart Sound Effect (From 21st Century Memes).mp3"
+dest_files=["res://.godot/imported/Fart Sound Effect (From 21st Century Memes).mp3-267326512b4a7a51837d536d9816da89.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

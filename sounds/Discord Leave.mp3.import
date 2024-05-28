@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://wtr0i45uedhy"
+path="res://.godot/imported/Discord Leave.mp3-b9861fe7ea4fa63e97d6caa71a993701.mp3str"
+
+[deps]
+
+source_file="res://sounds/Discord Leave.mp3"
+dest_files=["res://.godot/imported/Discord Leave.mp3-b9861fe7ea4fa63e97d6caa71a993701.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://caqmdhrpuluti"
+path="res://.godot/imported/[YT2mp3.info] - Hell_'s Kitchen Dramatic Sound (Waterphone) - Sound Effect (HD) (320kbps).mp3-38390198bed0b5517ed5ff2fce9e6aef.mp3str"
+
+[deps]
+
+source_file="res://sounds/[YT2mp3.info] - Hell_'s Kitchen Dramatic Sound (Waterphone) - Sound Effect (HD) (320kbps).mp3"
+dest_files=["res://.godot/imported/[YT2mp3.info] - Hell_'s Kitchen Dramatic Sound (Waterphone) - Sound Effect (HD) (320kbps).mp3-38390198bed0b5517ed5ff2fce9e6aef.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

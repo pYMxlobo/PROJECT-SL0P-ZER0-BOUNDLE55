@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://takwv854fgs1"
+path="res://.godot/imported/Apple Pay.mp3-d03fe09268c2a3db86c52af955fbef30.mp3str"
+
+[deps]
+
+source_file="res://sounds/Apple Pay.mp3"
+dest_files=["res://.godot/imported/Apple Pay.mp3-d03fe09268c2a3db86c52af955fbef30.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

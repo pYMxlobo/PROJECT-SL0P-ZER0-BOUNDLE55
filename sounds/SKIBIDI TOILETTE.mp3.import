@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ddrhb860in1wd"
+path="res://.godot/imported/SKIBIDI TOILETTE.mp3-1ea25600ead2ee835c82758d118f4f7b.mp3str"
+
+[deps]
+
+source_file="res://sounds/SKIBIDI TOILETTE.mp3"
+dest_files=["res://.godot/imported/SKIBIDI TOILETTE.mp3-1ea25600ead2ee835c82758d118f4f7b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

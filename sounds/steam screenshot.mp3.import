@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://efre7xyprhcw"
+path="res://.godot/imported/steam screenshot.mp3-86795586dd6042e0e8192a51e19b3a4a.mp3str"
+
+[deps]
+
+source_file="res://sounds/steam screenshot.mp3"
+dest_files=["res://.godot/imported/steam screenshot.mp3-86795586dd6042e0e8192a51e19b3a4a.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

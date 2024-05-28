@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c52nsl83p07fy"
+path="res://.godot/imported/Mewing bass boosted.mp3-26daacf4aa585978f1eb1d5765dbd3ee.mp3str"
+
+[deps]
+
+source_file="res://sounds/Mewing bass boosted.mp3"
+dest_files=["res://.godot/imported/Mewing bass boosted.mp3-26daacf4aa585978f1eb1d5765dbd3ee.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

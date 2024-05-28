@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dsaavhc5ptduu"
+path="res://.godot/imported/Bass Boost meme.mp3-0ebd88b4b18d2a90c4ff954ccd13be28.mp3str"
+
+[deps]
+
+source_file="res://sounds/Bass Boost meme.mp3"
+dest_files=["res://.godot/imported/Bass Boost meme.mp3-0ebd88b4b18d2a90c4ff954ccd13be28.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

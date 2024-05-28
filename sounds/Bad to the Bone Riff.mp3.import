@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ikgwupptnjfi"
+path="res://.godot/imported/Bad to the Bone Riff.mp3-309903007bf94412dbfe651e3d2451c6.mp3str"
+
+[deps]
+
+source_file="res://sounds/Bad to the Bone Riff.mp3"
+dest_files=["res://.godot/imported/Bad to the Bone Riff.mp3-309903007bf94412dbfe651e3d2451c6.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
