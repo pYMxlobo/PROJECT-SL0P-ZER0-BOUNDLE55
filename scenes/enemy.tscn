@@ -1,7 +1,23 @@
-[gd_scene load_steps=10 format=3 uid="uid://b1fc1md21erqe"]
+[gd_scene load_steps=26 format=3 uid="uid://b1fc1md21erqe"]
 
 [ext_resource type="Script" path="res://scripts/songformyenemies.gd" id="1_dpook"]
-[ext_resource type="Texture2D" uid="uid://bcct0ig5nfu4h" path="res://images/20230319_153325.jpg" id="2_wm7k5"]
+[ext_resource type="Texture2D" uid="uid://0q2u4oin11ux" path="res://faces/20230418_014133.jpg" id="2_6ysvy"]
+[ext_resource type="Texture2D" uid="uid://127g5nr0spp0" path="res://faces/GCzJeKWWMAElP0j.jpg" id="2_dwhee"]
+[ext_resource type="Texture2D" uid="uid://623tjjq38wy6" path="res://faces/20220105_002931.jpg" id="2_msh0j"]
+[ext_resource type="Texture2D" uid="uid://bqseug7xldvb8" path="res://faces/20220915_222940.jpg" id="3_skhqg"]
+[ext_resource type="Texture2D" uid="uid://crebaigobio05" path="res://faces/20221022_015309.jpg" id="4_g7iui"]
+[ext_resource type="Texture2D" uid="uid://cuuo8cnp2n8lk" path="res://faces/20221217_024246.jpg" id="5_vfs3n"]
+[ext_resource type="Texture2D" uid="uid://bhl3o20t8x55h" path="res://faces/20230115_021141.jpg" id="6_jxw2d"]
+[ext_resource type="Texture2D" uid="uid://bcisrlej7vplc" path="res://faces/20230119_003540.jpg" id="7_qtler"]
+[ext_resource type="Texture2D" uid="uid://clw7fv03a2iop" path="res://faces/20230214_132402.jpg" id="8_8w4d3"]
+[ext_resource type="Texture2D" uid="uid://bvnl18ehrgfef" path="res://faces/20230320_230716.jpg" id="9_wfnuo"]
+[ext_resource type="Texture2D" uid="uid://fcdkf27qwxaa" path="res://faces/20230327_012103.jpg" id="10_1uj5w"]
+[ext_resource type="Texture2D" uid="uid://dhdbvq48wb6h3" path="res://faces/20230402_235518.jpg" id="11_x1kij"]
+[ext_resource type="Texture2D" uid="uid://dga31uvprr015" path="res://faces/Ftx0lU4XgAEhmiR.png" id="13_173tv"]
+[ext_resource type="Texture2D" uid="uid://k8ujydxoqvnw" path="res://faces/GCr-vo0aQAABLQ2.jpg" id="14_e22rj"]
+[ext_resource type="Texture2D" uid="uid://dpwlq5x4aspiu" path="res://faces/GCs69tmaYAAxLaJ.jpg" id="15_dl0cg"]
+[ext_resource type="Texture2D" uid="uid://1yj3ecvmxs1c" path="res://faces/sigmashogunyan.jpg" id="17_ay2kc"]
+[ext_resource type="Texture2D" uid="uid://c30f142h4bs56" path="res://faces/sureyoucouldbuddy.png" id="18_mexop"]
 
 [sub_resource type="Gradient" id="Gradient_n3gmj"]
 interpolation_mode = 2
@@ -55,6 +71,7 @@ size = Vector3(1, 1, 0.388184)
 [node name="Enemy" type="CharacterBody3D" groups=["enemies"]]
 script = ExtResource("1_dpook")
 SPEED = 10.0
+textures = Array[Texture]([ExtResource("2_msh0j"), ExtResource("3_skhqg"), ExtResource("4_g7iui"), ExtResource("5_vfs3n"), ExtResource("6_jxw2d"), ExtResource("7_qtler"), ExtResource("8_8w4d3"), ExtResource("9_wfnuo"), ExtResource("10_1uj5w"), ExtResource("11_x1kij"), ExtResource("2_6ysvy"), ExtResource("13_173tv"), ExtResource("14_e22rj"), ExtResource("15_dl0cg"), ExtResource("2_dwhee"), ExtResource("17_ay2kc"), ExtResource("18_mexop")])
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.05, 0)
@@ -73,8 +90,8 @@ avoidance_enabled = true
 
 [node name="Sprite3D" type="Sprite3D" parent="facepivot"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.302, -0.583163)
-pixel_size = 0.001
-texture = ExtResource("2_wm7k5")
+pixel_size = 0.006
+texture = ExtResource("2_dwhee")
 
 [node name="attack" type="Area3D" parent="facepivot"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.34608, -0.676228)

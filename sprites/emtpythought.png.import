@@ -2,27 +2,26 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bhl3o20t8x55h"
-path.s3tc="res://.godot/imported/20230115_021141.jpg-d35315228f2262abec9ae1fbef1e6b54.s3tc.ctex"
+uid="uid://boccjncmq4okw"
+path="res://.godot/imported/emtpythought.png-06ec3d40e555a91fe08e7ba3e4228d3e.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
+"vram_texture": false
 }
 
 [deps]
 
-source_file="res://faces/20230115_021141.jpg"
-dest_files=["res://.godot/imported/20230115_021141.jpg-d35315228f2262abec9ae1fbef1e6b54.s3tc.ctex"]
+source_file="res://sprites/emtpythought.png"
+dest_files=["res://.godot/imported/emtpythought.png-06ec3d40e555a91fe08e7ba3e4228d3e.ctex"]
 
 [params]
 
-compress/mode=2
+compress/mode=0
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
 compress/normal_map=0
 compress/channel_pack=0
-mipmaps/generate=true
+mipmaps/generate=false
 mipmaps/limit=-1
 roughness/mode=0
 roughness/src_normal=""
@@ -32,4 +31,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=0
+detect_3d/compress_to=1

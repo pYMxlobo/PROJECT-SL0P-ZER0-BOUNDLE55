@@ -1,8 +1,7 @@
-[gd_scene load_steps=76 format=3 uid="uid://bjcdnipkga6a5"]
+[gd_scene load_steps=78 format=3 uid="uid://bjcdnipkga6a5"]
 
 [ext_resource type="Script" path="res://scripts/Freaky.gd" id="1_w8pip"]
 [ext_resource type="Texture2D" uid="uid://wd1n7sf4w1i8" path="res://images/FrZUIT3aYAAYjmS.png" id="2_6bm67"]
-[ext_resource type="Texture2D" uid="uid://bptcbw25r4hxq" path="res://images/catthought.png" id="2_7tjs2"]
 [ext_resource type="Texture2D" uid="uid://b7e8g0phuubng" path="res://sprites/healthunder.png" id="2_jmg24"]
 [ext_resource type="Texture2D" uid="uid://k8ujydxoqvnw" path="res://faces/GCr-vo0aQAABLQ2.jpg" id="3_d8bli"]
 [ext_resource type="Script" path="res://scripts/rotate2d.gd" id="3_mnwb5"]
@@ -28,6 +27,7 @@
 [ext_resource type="Texture2D" uid="uid://0q2u4oin11ux" path="res://faces/20230418_014133.jpg" id="11_d4ww6"]
 [ext_resource type="Texture2D" uid="uid://c87s787o4uvlg" path="res://images/knife-with-transparent-background-19.png" id="12_42d7s"]
 [ext_resource type="Texture2D" uid="uid://clw7fv03a2iop" path="res://faces/20230214_132402.jpg" id="12_dkdmh"]
+[ext_resource type="Texture2D" uid="uid://boccjncmq4okw" path="res://sprites/emtpythought.png" id="12_e2rcs"]
 [ext_resource type="Texture2D" uid="uid://hwh5cgbe8dlh" path="res://images/20230717_222734.jpg" id="12_lokui"]
 [ext_resource type="Texture2D" uid="uid://cos88n54dgg8a" path="res://images/F_5xzoHW0AADCKP.png" id="13_18cbi"]
 [ext_resource type="Texture2D" uid="uid://c30f142h4bs56" path="res://faces/sureyoucouldbuddy.png" id="13_bdhw2"]
@@ -90,6 +90,29 @@ size = Vector3(0.575, 0.55, 0.755)
 left_to_right = 0.7
 
 [sub_resource type="TorusMesh" id="TorusMesh_2qnry"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8cq0u"]
+shading_mode = 2
+diffuse_mode = 3
+specular_mode = 1
+disable_fog = true
+albedo_texture = ExtResource("6_hp6wm")
+rim_enabled = true
+rim = 0.02
+rim_tint = 1.0
+rim_texture = ExtResource("6_hp6wm")
+detail_enabled = true
+detail_mask = ExtResource("6_hp6wm")
+detail_albedo = ExtResource("6_hp6wm")
+detail_normal = ExtResource("6_hp6wm")
+texture_filter = 1
+disable_receive_shadows = true
+billboard_mode = 2
+
+[sub_resource type="BoxMesh" id="BoxMesh_0fjm4"]
+material = SubResource("StandardMaterial3D_8cq0u")
+flip_faces = true
+size = Vector3(0.35, 0.35, 0.35)
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_3mwwd"]
 radius = 0.05
@@ -538,6 +561,7 @@ point_count = 7
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 wall_min_slide_angle = 0.523599
 script = ExtResource("1_w8pip")
+phrases = Array[String](["hi videogame...", "can have fun with great friends", "we slop. skibidi. ohio.", "you need to looksmaxxing buddy", "this is seriously retro!", "like whatsapp danger?", "do you remember carmen winstead?", "pibby, bluey, ohio!", "this game is like, seriously retro!", "meow! :3", "i love slop!", "skibidi dop dop dop yes yes!", "you smell!", "get a job!", "ahahahah rizz me up babe y ;)", "Rainbow rain in night time gleemy sleep time go bed time or the sky descends", "fill grimmy with flap slap flap grim up to the pink sword magic", "rargrahrgahrghargahrhgar", "add rtx makes any game a 10/10", "young man... kill yourself!!!", "we rizz. gyatt. ohio!", "\"I am literally Batman\"", "I bet I could take a bear in a fight", "man or bear", "Ain't nothing gonna break my stride Ain't nothing gonna break my stride Ain't nothing gonna break my stride", "ermmm... this is akward...", "i didn't think my actions would have real world bearing..", "bo bo be bo bo ba bo", "erm... what the scallop?", "I LOVE LOOKSMAXXING!!!", "i can flash goon for 8 seconds", "You are not immune to propaganda", "én éhes vagyok", "Stop reading my thoughts please, that's very rude", "オハイオ！", "私は今文字通りとても素晴らしいです", "I am literally amazing right now.", "o tseba seo o leng sona?", "du burde skamme dig.", "*intsini* intloko yebhokisi esileyo", "δεν υπάρχουν θεοί εδώ", "Ma aragtaa dhammaan midabada quruxda badan?", "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "i am feeling quite 𝓯𝓻𝓮𝓪𝓴𝔂 right now", "who up edging they 𝓯𝓻𝓮𝓪𝓴𝔂", "𝓯𝓻𝓮𝓪𝓴𝔂 ohio", "𝒖𝒓 𝒘𝒆𝒍𝒄𝒐𝒎𝒆 𝒗𝒓𝒐", "ɗѻ ץѻપ िﻉﻉɭ ٱՇ ٱก ץѻપɼ รᛕٱก? ץѻપɼ ๒ɭѻѻɗ? ץѻપ รɦѻપɭɗ܁ ٱՇร คɭɭ ՇɦคՇ ๓คՇՇﻉɼร กѻฝ܁", "you should lower the rainbow bar to win!", "dont press right click!", "how do i craft this again?", "ሃዐሁ ነዘዐሁረዕ ክዐፕ ጌቿ ዘቿዪቿ ልክሃጠዐዪቿ. ፕዘጎነ የረልርቿ ዕዐቿነ ክዐፕ ሠቿረርዐጠቿ ሃዐሁ ልክዕ ክቿጎፕዘቿዪ ዕዐ ጎ.", "whats all this junk on the screen?", "hahahahahahaha", "if you press shift you gain height", "im very smart :)", "🤯🤯🤯🤯", "😪😪😪", "nuh uh", "gurple!", "if you see this you smell", "you cant see it but im laughing at you", "why cant you see whats truly there?", "its so simple. all you have to do is", "it says \"Freaky\" above you", "i dont think those glowing symbols mean anything", "this game sucks go play ror2", "Totally Not Cruelty Squad!™", "you smell really bad dude like seriously", "bye videogames...", "my 𝓯𝓻𝓮𝓪𝓴𝓲𝓷𝓮𝓼𝓼, its 📉", "RIZZ GOON EDGE MEW MOG SKIBIDI SIGMA PHANUM", "feed me lint!", "your bones grow weak, ancient one", "wah ima huh??i guess im no longer with the times", "are you rizz or are you just another chud", "youtube.com/looksmaxxing", "i have cancer", "imagine fallout boy \"we didnt start the fire\" but its based and sigma", "is it ugly on purpose?", "we might have won...", "we might have lost...", "its joever", "we're barrack", "lock tf in bro", "im going to touch you (sick and twisted)", "yikes! #akward 😬", "i almost laughed", "haters gonna hate hate hate hate hate", "im not hating actually", "brain aneurysm", "joe biden please lower the price of glycerine", "IM PICKLE RIZZ!!!", "can you not?", "please stop doing that", "ew", "i hate you", "🚘", "you look like you come from ohio ngl", "ohio final boss vs the cameraman", "remember that guy tdo you feel dizzy yet?", "you should consider not doing that", "Let's play 8 Ball!", "this does not mama the mia", "i have so much land in the metaverse", "is this the metaverse?", "you should buy land all across the globe", "BANBAN! IM HOWLING AT THE MOON!", "THATS MY OOMFIE!!!!", "to the forest with you", "when she banbaning zaza style on your pizza tower but u a rizz god", "lober", "i love the third dimension!", "the limited 3d is so charming", "hello 2013!", "vrooooom", "drinking and driving", "this would be better if it was in unreal...", "JELP ME!!", "GOONERS UNITE!", "EPSTEIN SQUAD, ASSEMBLE!", "you cant read the top right >:D", "you have too much obsidian", "COAL! COAL! COAL!", "gem...?", "yeah ok liberal", "erm... what the nutsack", "erm... what the flippity squip?", "i was gonna say something but i am not allowed because of woke", "you are cereal when no milk", "garten of banban is so much better than this", "im turning your body cam off", "please become funny", "you should fight that guy", "gegadiyegidagigieyo", "WE GOON!!!", "edging rn hold on", "anything you dont understand doesnt matter", "you broke moron go get some lint", "have i told you how much i hate you?"])
 circleglow = ExtResource("5_n35mf")
 triangleglow = ExtResource("6_5csgi")
 donutglow = ExtResource("7_aa2wq")
@@ -582,7 +606,7 @@ spot_angle = 20.0
 [node name="gun" parent="Neck/Camera3D" instance=ExtResource("42_amf4t")]
 
 [node name="Jumpback" type="MeshInstance3D" parent="Neck/Camera3D"]
-transform = Transform3D(0.385, 0, 0, 0, 0.073, 0, 0, 0, 0.08, -0.634, 0.872, -1.138)
+transform = Transform3D(0.385, 0, 0, 0, 0.073, 0, 0, 0, 0.08, -0.524, 0.872, -1.138)
 mesh = ExtResource("44_cs7ry")
 skeleton = NodePath("../../..")
 
@@ -600,6 +624,11 @@ mesh = SubResource("PrismMesh_65bbu")
 transform = Transform3D(0.5, 0, 0, 0, -2.18557e-08, -0.5, 0, 0.5, -2.18557e-08, 0.085, -1.332, 1.06)
 material_override = ExtResource("7_aa2wq")
 mesh = SubResource("TorusMesh_2qnry")
+
+[node name="funny" type="MeshInstance3D" parent="Neck/Camera3D"]
+transform = Transform3D(-1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, -1.495, 0.604, -1.332)
+mesh = SubResource("BoxMesh_0fjm4")
+skeleton = NodePath("../../../..")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Neck"]
 transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0, -0.607177, 0)
@@ -651,19 +680,19 @@ show_percentage = false
 [node name="hi" type="Sprite2D" parent="overlay"]
 position = Vector2(68, 368)
 scale = Vector2(0.2, 0.2)
-texture = ExtResource("2_7tjs2")
+texture = ExtResource("12_e2rcs")
 
 [node name="car" type="AnimatedSprite2D" parent="overlay/hi"]
 z_index = -1
-position = Vector2(-132.5, 102.5)
-scale = Vector2(3.24219, 2.85156)
+position = Vector2(-160, 102.5)
+scale = Vector2(2.8125, 2.85156)
 sprite_frames = SubResource("SpriteFrames_gnufj")
 animation = &"man"
 
 [node name="gooo" type="Sprite2D" parent="overlay"]
 modulate = Color(0.486275, 0, 0.745098, 1)
 self_modulate = Color(0.786164, 0.628105, 0.603306, 1)
-position = Vector2(56.9233, 46)
+position = Vector2(-22, 150)
 scale = Vector2(0.103245, 0.103245)
 texture = ExtResource("2_6bm67")
 script = ExtResource("3_mnwb5")
@@ -749,6 +778,20 @@ rotation = -1.5324
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("12_42d7s")
 script = ExtResource("7_7kal5")
+
+[node name="thought" type="Label" parent="overlay"]
+offset_left = 78.0
+offset_top = 327.0
+offset_right = 396.0
+offset_bottom = 433.0
+scale = Vector2(0.148, 0.32)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 26
+text = "hi videogame..."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 1
 
 [node name="jump" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("45_2rj5h")

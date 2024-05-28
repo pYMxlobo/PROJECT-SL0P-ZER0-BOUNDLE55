@@ -1,5 +1,6 @@
 extends CharacterBody3D
 
+@export var phrases : Array[String]
 @export var maxdj = 3
 var dj = 0
 const SPEED = 8
@@ -23,7 +24,7 @@ var gravity = ProjectSettings.get_setting("physics/3d/default_gravity") #its 6.3
 @onready var healthbar := $overlay/healthbar
 @export var max_hp : int = 10
 
-
+@onready var thought := $overlay/thought
 
 @onready var jumpsound := $jump
 @onready var walksound := $walk
@@ -104,7 +105,7 @@ func _input(event):
 			slamsound.play()
 	if event.is_action_released("slide") and slide == true:
 		neck.position.y = 0.6
-		#momentum /= 2
+		#momentum /= 2	
 		maxspeed /= 2
 		zbonus = -100
 		sboostsound.play()
@@ -116,8 +117,16 @@ func _input(event):
 		face.play("malt")
 	if event.is_action_pressed("reload"):
 		face.play("john")
-
+	if event.is_action_pressed("think"):
+		thought.text = phrases.pick_random()
+	if event.is_action("tiltleft"):
+		neck.rotation.z = clamp(neck.rotation.z + 0.01, -0.5, 0.5)
 		
+	if event.is_action("tiltright"):
+		neck.rotation.z = clamp(neck.rotation.z - 0.01, -0.5, 0.5)
+			
+	if event.is_action_pressed("resettilt"):
+		neck.rotation.z = 0
 func _process(delta):
 	#jumpbar.value = dj
 	healthbar.max_value = max_hp
@@ -144,13 +153,6 @@ func movesound():
 		walksound.play()
 	elif momentum > maxspeed / 2:
 		runsound.play()
-
-
-
-
-
-
-
 
 
 

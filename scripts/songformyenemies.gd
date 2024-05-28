@@ -6,10 +6,12 @@ signal did_attack
 @export var health = 10
 @export var SPEED = 3.0
 @export var weight = .5
+@export var textures : Array[Texture]
 var freaker
 
 func _ready():
 	await get_parent().ready
+	$facepivot/Sprite3D.texture = textures.pick_random()
 
 func _physics_process(delta):
 	var current_loc = global_transform.origin

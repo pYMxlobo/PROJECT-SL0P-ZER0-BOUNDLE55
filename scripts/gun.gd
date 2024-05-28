@@ -21,7 +21,7 @@ func _input(event):
 			if ray.get_collider() != null:
 				if ray.get_collider().is_in_group("enemies"):
 					ray.get_collider().health -= 1
-					print(ray.get_collider())
+					#print(ray.get_collider())
 		else:
 			shootfail.play()
 	if event.is_action_released("shoot"):
