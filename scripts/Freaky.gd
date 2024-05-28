@@ -17,6 +17,9 @@ var gravity = ProjectSettings.get_setting("physics/3d/default_gravity") #its 6.3
 @onready var hambox := $Neck/attackbox/CollisionShape3D
 @onready var face := $overlay/hi/car
 
+@onready var normalcol := $normal
+@onready var shortcol := $short
+
 @onready var healthbar := $overlay/healthbar
 @export var max_hp : int = 10
 
@@ -94,6 +97,8 @@ func _input(event):
 			neck.position.y = 0
 			slide = true
 			slidesound.play()
+			normalcol.disabled = true
+			shortcol.disabled = false
 		else:
 			ybonus = 50
 			slamsound.play()
@@ -105,6 +110,8 @@ func _input(event):
 		sboostsound.play()
 		#print(str(maxspeed) + " = maxspeed")
 		slide = false
+		normalcol.disabled = false
+		shortcol.disabled = true
 	if event.is_action_pressed("shoot"):
 		face.play("malt")
 	if event.is_action_pressed("reload"):
@@ -187,19 +194,19 @@ func _hurt():
 	face.play("beastmode")
 	momentum -= 1
 	hurtsound.play()
-		
+
 
 
 func jumpmeter():
 	if dj > 0:
-		circle.material_override = circleglow
+		donut.material_override = donutglow
 	else:
-		circle.material_override = noglow
+		donut.material_override = noglow
 	if dj > 1:
 		triangle.material_override = triangleglow
 	else:
 		triangle.material_override = noglow
 	if dj > 2:
-		donut.material_override = donutglow
+		circle.material_override = circleglow
 	else:
-		donut.material_override = noglow
+		circle.material_override = noglow
