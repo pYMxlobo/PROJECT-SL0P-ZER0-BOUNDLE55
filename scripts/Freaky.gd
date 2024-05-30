@@ -46,6 +46,8 @@ var gravity = ProjectSettings.get_setting("physics/3d/default_gravity") #its 6.3
 @onready var dashsound := $dash
 @onready var pausemusic := $pausemusic
 
+@onready var slop := $overlay/guh
+
 @onready var circle := $Neck/Camera3D/Jumpback/circle
 @onready var triangle := $Neck/Camera3D/Jumpback/triangle
 @onready var donut := $Neck/Camera3D/Jumpback/donut
@@ -108,13 +110,15 @@ func _input(event):
 		hambox.disabled = true
 	
 	if event.is_action_pressed("slide"):
-		if is_on_floor():
+		if is_on_floor() or is_on_wall_only():
+			face.play("bad")
 			maxspeed *= 2
 			neck.position.y = 0
 			slide = true
 			slidesound.play()
 			normalcol.disabled = true
 			shortcol.disabled = false
+			ybonus = 10
 		else:
 			ybonus = 50
 			slamsound.play()
@@ -123,6 +127,7 @@ func _input(event):
 		neck.position.y = 0.6
 		#momentum /= 2	
 		maxspeed /= 2
+		face.play("stink")
 		zbonus += 1.5 * (clamp((momentum / 2), 1, 3))
 		xbonus += 1.5 * (clamp((momentum / 2), 1, 3))
 		sboostsound.play()
@@ -157,8 +162,16 @@ func _input(event):
 		dj -= 1
 		momentum *= 1.1
 		jumpmeter()
+	if event.is_action_pressed("content"):
+		slop.visible = not slop.visible
+		if slop.is_playing() == false:
+			slop.play()
+			face.play("retro")
+		else:
+			slop.stop()
+			face.play("wung")
 
-
+			
 
 
 func _process(delta):

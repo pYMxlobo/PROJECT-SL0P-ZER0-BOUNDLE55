@@ -78,7 +78,7 @@ texture = ExtResource("2_t2t0f")
 transform = Transform3D(1, 5.96046e-08, 0, -5.96046e-08, 1, 0, 0, 0, 1, -0.0118919, 0.357266, 0.000384629)
 
 [node name="shot" type="RayCast3D" parent="aimspot"]
-target_position = Vector3(0.045, 0.075, -13)
+target_position = Vector3(0.045, 0.075, -52)
 hit_from_inside = true
 debug_shape_custom_color = Color(1, 0, 0, 1)
 debug_shape_thickness = 3
