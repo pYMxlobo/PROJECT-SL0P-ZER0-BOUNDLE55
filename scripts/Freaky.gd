@@ -1,5 +1,9 @@
 extends CharacterBody3D
 
+#hello dataminers!!!!! >:3c i dont know what half of this does either :D
+
+signal pause
+
 @export var phrases : Array[String]
 @export var maxdj = 3
 var dj = 0
@@ -23,7 +27,7 @@ var gravity = ProjectSettings.get_setting("physics/3d/default_gravity") #its 6.3
 
 @onready var healthbar := $overlay/healthbar
 @export var max_hp : int = 10
-
+@export var void_level : int = -500
 @onready var thought := $overlay/thought
 
 @onready var jumpsound := $jump
@@ -38,6 +42,8 @@ var gravity = ProjectSettings.get_setting("physics/3d/default_gravity") #its 6.3
 @onready var slamsound := $gslam
 @onready var sboostsound := $slideboost
 @onready var flashsound := $flashtoggle
+@onready var thinksound := $think
+@onready var dashsound := $dash
 
 @onready var circle := $Neck/Camera3D/Jumpback/circle
 @onready var triangle := $Neck/Camera3D/Jumpback/triangle
@@ -47,11 +53,19 @@ var gravity = ProjectSettings.get_setting("physics/3d/default_gravity") #its 6.3
 @export var donutglow : Material
 @export var noglow : Material
 
+@export var normalface : Material
+@export var owface : Material
+@onready var realface := $Neck/Camera3D/funny
+
+@onready var interactimage := $overlay/press
+
+var interactavail : bool = false
 
 var hp : float = 1
 
-var zbonus : float = 0
+var zbonus : float = 1
 var ybonus : float = 0
+var xbonus : float = 1
 
 var slide : bool = false
 
@@ -74,7 +88,7 @@ func _unhandled_input(event: InputEvent) -> void:
 			camera.rotation.x =  clampf(camera.rotation.x, deg_to_rad(-60), deg_to_rad(75))
 
 func _input(event):
-	var temp_maxspeed : int
+	#var temp_maxspeed : int
 	if Input.get_vector("left", "right", "up", "down") != Vector2.ZERO and is_on_floor():
 		momentum = clamp(momentum + 0.05, 0, maxspeed)
 		face.play("he")
@@ -103,11 +117,13 @@ func _input(event):
 		else:
 			ybonus = 50
 			slamsound.play()
+			face.play("scheme")
 	if event.is_action_released("slide") and slide == true:
 		neck.position.y = 0.6
 		#momentum /= 2	
 		maxspeed /= 2
-		zbonus = -100
+		zbonus += 1.5 * (clamp((momentum / 2), 1, 3))
+		xbonus += 1.5 * (clamp((momentum / 2), 1, 3))
 		sboostsound.play()
 		#print(str(maxspeed) + " = maxspeed")
 		slide = false
@@ -119,14 +135,31 @@ func _input(event):
 		face.play("john")
 	if event.is_action_pressed("think"):
 		thought.text = phrases.pick_random()
+		thinksound.play()
 	if event.is_action("tiltleft"):
 		neck.rotation.z = clamp(neck.rotation.z + 0.01, -0.5, 0.5)
-		
+		face.play("scheme")
 	if event.is_action("tiltright"):
 		neck.rotation.z = clamp(neck.rotation.z - 0.01, -0.5, 0.5)
-			
+		face.play("scheme")
 	if event.is_action_pressed("resettilt"):
 		neck.rotation.z = 0
+		face.play("overdose")
+	if event.is_action_pressed("grapple"):
+		face.play("wimd")
+		#grapplesound.play()
+	if event.is_action_pressed("dash") and not is_on_floor_only() and dj > 0:
+		zbonus += 3 * momentum
+		xbonus += 3 * momentum
+		dashsound.play()
+		face.play("joy")
+		dj -= 1
+		momentum *= 1.1
+		jumpmeter()
+
+
+
+
 func _process(delta):
 	#jumpbar.value = dj
 	healthbar.max_value = max_hp
@@ -139,14 +172,27 @@ func _process(delta):
 		jumpmeter()
 	if momentum > 0 and Input.get_vector("left", "right", "up", "down") != Vector2.ZERO:
 		hammer.bob(0.05)
-		movesound()
+		#movesound()
 	else:
 		hammer.get_parent().progress_ratio = 0
 	if hp <= 0:
 		diesound.play()
 		get_tree().quit()
-		
+	if velocity.x != 0 and velocity.z != 0:
+		if !walksound.playing:
+			walksound.play()
+	elif walksound.playing:
+		walksound.stop()
 	
+	if global_position.y < void_level:
+		hp -= 1
+		face.play("horror")
+		
+	interactimage.visible = interactavail
+	
+	if randi_range(0, 4000) == 4:
+		hp = clamp(hp + 1, 0, max_hp)
+		print("random hp gain")
 
 func movesound():
 	if momentum > 0 and momentum < maxspeed / 2:
@@ -176,24 +222,29 @@ func _physics_process(delta):
 	var input_dir = Input.get_vector("left", "right", "up", "down")
 	var direction = (neck.transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
 	if direction:
-		velocity.x = direction.x * (SPEED * momentum)
-		velocity.z = direction.z * (SPEED * momentum) + zbonus
+		velocity.x = direction.x * (SPEED * momentum) * xbonus
+		velocity.z = direction.z * (SPEED * momentum) * zbonus
 	else:
+		@warning_ignore("integer_division")
 		velocity.x = move_toward(velocity.x, 0, SPEED / 5)
+		@warning_ignore("integer_division")
 		velocity.z = move_toward(velocity.z, 0, SPEED / 5)
 
+	xbonus = 1
 	ybonus = 0
-	zbonus = 0
+	zbonus = 1
 	move_and_slide()
 
 
 func _on_attackbox_body_entered(body):
 	if body.is_in_group("enemies"):
 		body.health -= damage
+		body.hurtsound.play()
 		face.play("rage")
 
 func _hurt():
 	face.play("beastmode")
+	realface.mesh.material = owface
 	momentum -= 1
 	hurtsound.play()
 
@@ -212,3 +263,16 @@ func jumpmeter():
 		circle.material_override = circleglow
 	else:
 		circle.material_override = noglow
+
+
+func _on_ouch_finished():
+	realface.mesh.material = normalface
+
+
+func _on_pause():
+	#Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+	get_tree().paused = not get_tree().paused
+
+
+func _on_button_pressed():
+	pause.emit()

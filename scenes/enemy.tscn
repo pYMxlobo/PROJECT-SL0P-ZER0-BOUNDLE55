@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=3 uid="uid://b1fc1md21erqe"]
+[gd_scene load_steps=50 format=3 uid="uid://b1fc1md21erqe"]
 
 [ext_resource type="Script" path="res://scripts/songformyenemies.gd" id="1_dpook"]
 [ext_resource type="Texture2D" uid="uid://0q2u4oin11ux" path="res://faces/20230418_014133.jpg" id="2_6ysvy"]
@@ -13,11 +13,33 @@
 [ext_resource type="Texture2D" uid="uid://bvnl18ehrgfef" path="res://faces/20230320_230716.jpg" id="9_wfnuo"]
 [ext_resource type="Texture2D" uid="uid://fcdkf27qwxaa" path="res://faces/20230327_012103.jpg" id="10_1uj5w"]
 [ext_resource type="Texture2D" uid="uid://dhdbvq48wb6h3" path="res://faces/20230402_235518.jpg" id="11_x1kij"]
+[ext_resource type="Texture2D" uid="uid://dy1uwn6irtejh" path="res://faces/F1vcndBX0AAKP5u.jpg" id="13_4e1fa"]
 [ext_resource type="Texture2D" uid="uid://dga31uvprr015" path="res://faces/Ftx0lU4XgAEhmiR.png" id="13_173tv"]
 [ext_resource type="Texture2D" uid="uid://k8ujydxoqvnw" path="res://faces/GCr-vo0aQAABLQ2.jpg" id="14_e22rj"]
+[ext_resource type="Texture2D" uid="uid://dj6ndc6crufu4" path="res://faces/F2DSM-SacAcY16_.jpg" id="14_x54ec"]
+[ext_resource type="Texture2D" uid="uid://cer7g2qk7v6k5" path="res://faces/F8pJgU1bgAAyFAy.jpg" id="15_d1oxi"]
 [ext_resource type="Texture2D" uid="uid://dpwlq5x4aspiu" path="res://faces/GCs69tmaYAAxLaJ.jpg" id="15_dl0cg"]
+[ext_resource type="Texture2D" uid="uid://bt26kt5rubrqj" path="res://faces/FfXUTsQXwAAbsTP.jpg" id="16_8brdo"]
 [ext_resource type="Texture2D" uid="uid://1yj3ecvmxs1c" path="res://faces/sigmashogunyan.jpg" id="17_ay2kc"]
+[ext_resource type="Texture2D" uid="uid://coknufrq56kj6" path="res://faces/FpmxwxXXoAABpiX.png" id="17_h11rf"]
+[ext_resource type="Texture2D" uid="uid://8aexttaco310" path="res://faces/Fpmyk0tXwAMcgUb.jpg" id="18_koyci"]
 [ext_resource type="Texture2D" uid="uid://c30f142h4bs56" path="res://faces/sureyoucouldbuddy.png" id="18_mexop"]
+[ext_resource type="Texture2D" uid="uid://sjr1b2ntq8a2" path="res://faces/FpnAdDaXEAAPVg_.jpg" id="19_qfc5l"]
+[ext_resource type="Texture2D" uid="uid://dt3hc1ydo2yni" path="res://faces/FqN4insaMAUAXVQ.jpg" id="20_c4t5x"]
+[ext_resource type="Texture2D" uid="uid://dq5byffyt73vs" path="res://faces/FqORw3qaAAYOKvv.jpg" id="21_b2qdc"]
+[ext_resource type="Texture2D" uid="uid://db5g765sm6m51" path="res://faces/Fr3hO9makAA10Eh.jpg" id="22_x5ymh"]
+[ext_resource type="Texture2D" uid="uid://d231ij0wr6upr" path="res://faces/FsG8uVWWcAMejGi.jpg" id="23_5yeqv"]
+[ext_resource type="Texture2D" uid="uid://bdvcxnumx8ron" path="res://faces/FsHJ_FjX0AEhg96.jpg" id="24_bq077"]
+[ext_resource type="Texture2D" uid="uid://bpe8jp2cnuq8l" path="res://faces/Fub5L6rWwAEabmR.jpg" id="26_bt1ms"]
+[ext_resource type="Texture2D" uid="uid://cr86i86k6wgka" path="res://faces/FuvQCqUWIAgG7VW.png" id="27_u5bxr"]
+[ext_resource type="Texture2D" uid="uid://cmmmg0o3iw6to" path="res://faces/Fvv3fZYXwAEEwbo.jpg" id="28_eiddo"]
+[ext_resource type="Texture2D" uid="uid://bcg6nluqcxfkd" path="res://faces/Fw5Z-SuXsAQU3PV.jpg" id="29_qkwov"]
+[ext_resource type="Texture2D" uid="uid://c11eiyu1wqekl" path="res://faces/F_BbRcjXQAA8-id.jpg" id="30_nprb8"]
+[ext_resource type="Texture2D" uid="uid://c6vad3mfis7ru" path="res://faces/GAwA7NWbUAAW6Hm.jpg" id="31_1sc3x"]
+[ext_resource type="Texture2D" uid="uid://dgwae8svvhb37" path="res://faces/GBFsBsZWsAAD5ND.jpg" id="32_ppld4"]
+[ext_resource type="Texture2D" uid="uid://dlh1anaugg3mn" path="res://faces/GBKNJHQXAAAMHmP.jpg" id="33_gvcwk"]
+[ext_resource type="Texture2D" uid="uid://cq52yyxn75dx8" path="res://faces/GFVtpRNa4AAqLdo.jpg" id="37_mqt33"]
+[ext_resource type="AudioStream" uid="uid://bsb3nrx6cjiab" path="res://sounds/Wololo.mp3" id="40_tq5is"]
 
 [sub_resource type="Gradient" id="Gradient_n3gmj"]
 interpolation_mode = 2
@@ -62,16 +84,37 @@ material = SubResource("StandardMaterial3D_lnf7i")
 radius = 0.48
 height = 2.1
 
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_xk8r6"]
-points = PackedVector3Array(0.470286, 0.622507, 0.0655876, -0.463778, -0.653931, -0.090034, -0.466367, -0.657555, 0.0659538, -0.405452, 0.817693, -0.0595638, 0.127089, -0.587725, -0.460794, 0.127528, -0.714115, 0.438014, -0.182273, 0.64966, 0.436414, -0.090034, 0.653931, -0.463778, 0.379357, -0.845963, -0.0906265, 0.346531, 0.748969, -0.277457, 0.222389, 0.813837, 0.34759, -0.124584, -1.02344, -0.092558, -0.302789, -0.642896, -0.364014, -0.212806, -0.710317, 0.404773, 0.402194, -0.644425, 0.248814, 0.131595, 1.02619, -0.0607974, -0.426032, 0.582599, 0.217971, 0.430849, -0.549669, -0.21038, -0.426155, 0.613518, -0.211366, -0.186511, 0.949168, 0.224772, 0.248814, 0.644425, 0.402194, 0.130848, -0.988257, 0.194605, 0.217967, 0.582589, -0.426024, -0.0601134, 0.951644, -0.28213, 0.129045, -0.879968, -0.342327, -0.362761, -0.610121, 0.308412, -0.218171, -0.949447, 0.193234, -0.0590367, 0.623663, 0.471154, 0.470285, -0.622505, 0.0655875, -0.090034, -0.653931, -0.463778, -0.302791, 0.642899, -0.364015, -0.466366, 0.657555, 0.0659538)
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_v66rr"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_aaykp"]
 size = Vector3(1, 1, 0.388184)
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cs27w"]
+shading_mode = 2
+diffuse_mode = 3
+specular_mode = 1
+disable_fog = true
+albedo_color = Color(0, 0.50003, 0.50003, 1)
+metallic = 1.0
+metallic_specular = 0.86
+metallic_texture = SubResource("NoiseTexture2D_7gwl7")
+roughness = 0.06
+billboard_mode = 2
+billboard_keep_scale = true
+proximity_fade_distance = 0.0
+distance_fade_mode = 3
+distance_fade_min_distance = 300.0
+distance_fade_max_distance = 0.0
+
+[sub_resource type="PrismMesh" id="PrismMesh_gl7wh"]
+material = SubResource("StandardMaterial3D_cs27w")
+flip_faces = true
+left_to_right = 1.0
+size = Vector3(0.55, 0.67, 0.265)
+
 [node name="Enemy" type="CharacterBody3D" groups=["enemies"]]
 script = ExtResource("1_dpook")
-SPEED = 10.0
-textures = Array[Texture]([ExtResource("2_msh0j"), ExtResource("3_skhqg"), ExtResource("4_g7iui"), ExtResource("5_vfs3n"), ExtResource("6_jxw2d"), ExtResource("7_qtler"), ExtResource("8_8w4d3"), ExtResource("9_wfnuo"), ExtResource("10_1uj5w"), ExtResource("11_x1kij"), ExtResource("2_6ysvy"), ExtResource("13_173tv"), ExtResource("14_e22rj"), ExtResource("15_dl0cg"), ExtResource("2_dwhee"), ExtResource("17_ay2kc"), ExtResource("18_mexop")])
+textures = Array[Texture]([ExtResource("2_msh0j"), ExtResource("3_skhqg"), ExtResource("4_g7iui"), ExtResource("5_vfs3n"), ExtResource("6_jxw2d"), ExtResource("7_qtler"), ExtResource("8_8w4d3"), ExtResource("9_wfnuo"), ExtResource("10_1uj5w"), ExtResource("11_x1kij"), ExtResource("2_6ysvy"), ExtResource("13_4e1fa"), ExtResource("14_x54ec"), ExtResource("15_d1oxi"), ExtResource("16_8brdo"), ExtResource("17_h11rf"), ExtResource("18_koyci"), ExtResource("19_qfc5l"), ExtResource("20_c4t5x"), ExtResource("21_b2qdc"), ExtResource("22_x5ymh"), ExtResource("23_5yeqv"), ExtResource("24_bq077"), ExtResource("13_173tv"), ExtResource("26_bt1ms"), ExtResource("27_u5bxr"), ExtResource("28_eiddo"), ExtResource("29_qkwov"), ExtResource("30_nprb8"), ExtResource("31_1sc3x"), ExtResource("32_ppld4"), ExtResource("33_gvcwk"), ExtResource("14_e22rj"), ExtResource("15_dl0cg"), ExtResource("2_dwhee"), ExtResource("37_mqt33"), ExtResource("17_ay2kc"), ExtResource("18_mexop")])
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.05, 0)
@@ -79,17 +122,17 @@ mesh = SubResource("CapsuleMesh_r0scx")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.05, 0)
-shape = SubResource("ConvexPolygonShape3D_xk8r6")
+shape = SubResource("CapsuleShape3D_v66rr")
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
-target_desired_distance = 3.0
+target_desired_distance = 5.0
 path_max_distance = 10.01
 avoidance_enabled = true
 
 [node name="facepivot" type="Node3D" parent="."]
 
 [node name="Sprite3D" type="Sprite3D" parent="facepivot"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.302, -0.583163)
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 1.302, -0.583163)
 pixel_size = 0.006
 texture = ExtResource("2_dwhee")
 
@@ -102,8 +145,16 @@ monitorable = false
 shape = SubResource("BoxShape3D_aaykp")
 
 [node name="attackcooldown" type="Timer" parent="."]
-wait_time = 2.0
+wait_time = 3.0
 one_shot = true
+
+[node name="cool" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+mesh = SubResource("PrismMesh_gl7wh")
+
+[node name="owie" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("40_tq5is")
+max_polyphony = 2
 
 [connection signal="velocity_computed" from="NavigationAgent3D" to="." method="_on_navigation_agent_3d_velocity_computed"]
 [connection signal="body_entered" from="facepivot/attack" to="." method="_on_attack_body_entered"]

@@ -78,7 +78,7 @@ texture = ExtResource("2_t2t0f")
 transform = Transform3D(1, 5.96046e-08, 0, -5.96046e-08, 1, 0, 0, 0, 1, -0.0118919, 0.357266, 0.000384629)
 
 [node name="shot" type="RayCast3D" parent="aimspot"]
-target_position = Vector3(0.045, 0.075, -6.5)
+target_position = Vector3(0.045, 0.075, -13)
 hit_from_inside = true
 debug_shape_custom_color = Color(1, 0, 0, 1)
 debug_shape_thickness = 3
@@ -89,20 +89,23 @@ pixel_size = 0.0005
 double_sided = false
 texture = ExtResource("4_1ribw")
 
+[node name="Hook Source" type="Marker3D" parent="aimspot"]
+
 [node name="fire" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("5_0xgmj")
-volume_db = -5.0
+volume_db = -15.0
 max_polyphony = 12
 
 [node name="reload" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("5_lhbef")
-volume_db = 3.0
 
 [node name="reloadcooldown" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("7_gr5n3")
+volume_db = 3.0
 
 [node name="shootfail" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("8_5kcic")
+volume_db = -10.0
 
 [node name="ammo" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 5.96046e-08, 0, -5.96046e-08, 1, 0, 0, 0, 1, -0.0208651, 0.058257, 0.0366911)

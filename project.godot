@@ -10,11 +10,18 @@ config_version=5
 
 [application]
 
-config/name="SlopGaming"
-run/main_scene="res://scenes/testing.tscn"
+config/name="PROJECT: SL0P ZER0 BOUNDLE55"
+config/version="0.1"
+run/main_scene="res://scenes/alphalevel.tscn"
+config/use_custom_user_dir=true
+config/custom_user_dir_name="pYMxolbo_games/project_slop"
 config/features=PackedStringArray("4.2", "Forward Plus")
 run/max_fps=45
-config/icon="res://images/F_v29XNXYAAJ2VJ.png"
+config/icon="res://images/FwLdQHuWAAAOBQY.png"
+
+[autoload]
+
+Cash="*res://scripts/cash.gd"
 
 [display]
 
@@ -23,6 +30,10 @@ window/size/viewport_height=426
 window/size/window_width_override=1280
 window/size/window_height_override=852
 window/stretch/mode="canvas_items"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/grappling_hook_3d/plugin.cfg", "res://addons/path2dslider/plugin.cfg")
 
 [input]
 
@@ -99,6 +110,26 @@ tiltright={
 resettilt={
 "deadzone": 0.5,
 "events": [Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"button_mask":4,"position":Vector2(68, 18),"global_position":Vector2(72, 59),"factor":1.0,"button_index":3,"canceled":false,"pressed":true,"double_click":false,"script":null)
+]
+}
+grapple={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":84,"key_label":0,"unicode":116,"echo":false,"script":null)
+]
+}
+ungrapple={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":84,"key_label":0,"unicode":116,"echo":false,"script":null)
+]
+}
+dash={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":90,"key_label":0,"unicode":122,"echo":false,"script":null)
+]
+}
+interact={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":69,"key_label":0,"unicode":101,"echo":false,"script":null)
 ]
 }
 

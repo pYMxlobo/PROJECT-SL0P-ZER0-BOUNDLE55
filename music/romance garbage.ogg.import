@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c30r2bg6yhl7r"
+path="res://.godot/imported/romance garbage.ogg-5fb706dbdb1f277521865662e3cf6d3d.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/romance garbage.ogg"
+dest_files=["res://.godot/imported/romance garbage.ogg-5fb706dbdb1f277521865662e3cf6d3d.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

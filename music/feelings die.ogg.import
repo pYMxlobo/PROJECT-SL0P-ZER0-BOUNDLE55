@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://mivlvxys5dyc"
+path="res://.godot/imported/feelings die.ogg-6954ff8a1f968c2d64920636c1d8ba1c.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/feelings die.ogg"
+dest_files=["res://.godot/imported/feelings die.ogg-6954ff8a1f968c2d64920636c1d8ba1c.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

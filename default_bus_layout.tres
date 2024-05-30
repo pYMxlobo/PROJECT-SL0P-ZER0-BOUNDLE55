@@ -1,4 +1,15 @@
-[gd_resource type="AudioBusLayout" format=3 uid="uid://lr8d6ct57g66"]
+[gd_resource type="AudioBusLayout" load_steps=2 format=3 uid="uid://lr8d6ct57g66"]
+
+[sub_resource type="AudioEffectCompressor" id="AudioEffectCompressor_pvgc2"]
+resource_name = "Compressor"
+threshold = -47.3
+ratio = 30.7
+attack_us = 400.0
+release_ms = 490.0
+mix = 0.58
+sidechain = &"Master"
 
 [resource]
-bus/0/volume_db = -80.0
+bus/0/volume_db = 0.0672607
+bus/0/effect/0/effect = SubResource("AudioEffectCompressor_pvgc2")
+bus/0/effect/0/enabled = true

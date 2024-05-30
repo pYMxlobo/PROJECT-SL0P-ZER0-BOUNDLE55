@@ -1,0 +1,62 @@
+[gd_scene load_steps=6 format=3 uid="uid://dlqm10204rcaq"]
+
+[ext_resource type="Script" path="res://addons/grappling_hook_3d/src/hook_model.gd" id="1_axmsb"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_2uiuu"]
+top_radius = 0.05
+bottom_radius = 0.05
+height = 1.0
+radial_segments = 4
+cap_top = false
+cap_bottom = false
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8746b"]
+diffuse_mode = 3
+specular_mode = 1
+albedo_color = Color(0.866981, 0, 0.138013, 1)
+metallic = 0.39
+metallic_specular = 1.0
+roughness = 0.12
+emission_enabled = true
+emission = Color(0.623529, 0, 0, 1)
+emission_energy_multiplier = 6.93
+
+[sub_resource type="BoxMesh" id="BoxMesh_usc5b"]
+size = Vector3(0.1, 0.1, 0.25)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0nx8y"]
+diffuse_mode = 3
+specular_mode = 1
+albedo_color = Color(0.61146, 0.760998, 0.593371, 1)
+metallic = 0.7
+metallic_specular = 1.0
+roughness = 0.15
+emission_enabled = true
+emission = Color(0.330595, 0.497782, 0.229779, 1)
+emission_energy_multiplier = 0.1
+rim_enabled = true
+rim_tint = 0.0
+clearcoat_roughness = 1.0
+
+[node name="Hook" type="Node3D"]
+script = ExtResource("1_axmsb")
+
+[node name="Rope" type="Node3D" parent="."]
+
+[node name="Rope Mesh" type="MeshInstance3D" parent="Rope"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, -0.5)
+mesh = SubResource("CylinderMesh_2uiuu")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_8746b")
+
+[node name="Hook End" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1)
+
+[node name="Model" type="MeshInstance3D" parent="Hook End"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.125)
+mesh = SubResource("BoxMesh_usc5b")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_0nx8y")
+
+[node name="Rope Visual Target" type="Marker3D" parent="Hook End"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.25)

@@ -1,4 +1,4 @@
-[gd_scene load_steps=78 format=3 uid="uid://bjcdnipkga6a5"]
+[gd_scene load_steps=109 format=3 uid="uid://bjcdnipkga6a5"]
 
 [ext_resource type="Script" path="res://scripts/Freaky.gd" id="1_w8pip"]
 [ext_resource type="Texture2D" uid="uid://wd1n7sf4w1i8" path="res://images/FrZUIT3aYAAYjmS.png" id="2_6bm67"]
@@ -23,6 +23,9 @@
 [ext_resource type="Shader" path="res://shader/256.gdshader" id="8_sxjux"]
 [ext_resource type="Texture2D" uid="uid://cmropiu0mqna3" path="res://images/dogbutfree.png" id="9_3cxlw"]
 [ext_resource type="Texture2D" uid="uid://fcdkf27qwxaa" path="res://faces/20230327_012103.jpg" id="9_hljx8"]
+[ext_resource type="Material" uid="uid://i2xn44xeun7r" path="res://greed/Freakfacenormal.tres" id="9_o1gw7"]
+[ext_resource type="Script" path="res://scripts/rotate.gd" id="9_rjrxj"]
+[ext_resource type="Material" uid="uid://etfa1kwc3pc0" path="res://greed/Freakfaceow.tres" id="9_x5gve"]
 [ext_resource type="Texture2D" uid="uid://dhdbvq48wb6h3" path="res://faces/20230402_235518.jpg" id="10_yocpa"]
 [ext_resource type="Texture2D" uid="uid://0q2u4oin11ux" path="res://faces/20230418_014133.jpg" id="11_d4ww6"]
 [ext_resource type="Texture2D" uid="uid://c87s787o4uvlg" path="res://images/knife-with-transparent-background-19.png" id="12_42d7s"]
@@ -41,31 +44,58 @@
 [ext_resource type="Texture2D" uid="uid://dlojle6g25b78" path="res://images/GCqFcmRWsAAZ5ia.jpg" id="17_yrqrc"]
 [ext_resource type="Texture2D" uid="uid://dpwlq5x4aspiu" path="res://faces/GCs69tmaYAAxLaJ.jpg" id="18_6fh55"]
 [ext_resource type="Texture2D" uid="uid://bnsaqjphg3q1f" path="res://images/coolgradient.png" id="18_mn4ws"]
+[ext_resource type="Texture2D" uid="uid://c6vad3mfis7ru" path="res://faces/GAwA7NWbUAAW6Hm.jpg" id="18_vjk8b"]
 [ext_resource type="Texture2D" uid="uid://1yj3ecvmxs1c" path="res://faces/sigmashogunyan.jpg" id="19_va2ol"]
+[ext_resource type="Texture2D" uid="uid://dt3hc1ydo2yni" path="res://faces/FqN4insaMAUAXVQ.jpg" id="20_knhu4"]
+[ext_resource type="Texture2D" uid="uid://db5g765sm6m51" path="res://faces/Fr3hO9makAA10Eh.jpg" id="23_ttbs8"]
+[ext_resource type="Texture2D" uid="uid://cr86i86k6wgka" path="res://faces/FuvQCqUWIAgG7VW.png" id="26_iq1ej"]
+[ext_resource type="Texture2D" uid="uid://coknufrq56kj6" path="res://faces/FpmxwxXXoAABpiX.png" id="27_mycsw"]
+[ext_resource type="Texture2D" uid="uid://d231ij0wr6upr" path="res://faces/FsG8uVWWcAMejGi.jpg" id="29_lmi52"]
+[ext_resource type="Texture2D" uid="uid://bcg6nluqcxfkd" path="res://faces/Fw5Z-SuXsAQU3PV.jpg" id="33_vld6j"]
+[ext_resource type="Texture2D" uid="uid://cq52yyxn75dx8" path="res://faces/GFVtpRNa4AAqLdo.jpg" id="34_ulo81"]
+[ext_resource type="Texture2D" uid="uid://sjr1b2ntq8a2" path="res://faces/FpnAdDaXEAAPVg_.jpg" id="35_nsixd"]
+[ext_resource type="Texture2D" uid="uid://bpe8jp2cnuq8l" path="res://faces/Fub5L6rWwAEabmR.jpg" id="36_jspde"]
 [ext_resource type="Texture2D" uid="uid://bg0wvpfty8efw" path="res://images/20230516_014227.png" id="36_xkk5k"]
+[ext_resource type="Texture2D" uid="uid://dlh1anaugg3mn" path="res://faces/GBKNJHQXAAAMHmP.jpg" id="37_s7tih"]
+[ext_resource type="Texture2D" uid="uid://cmmmg0o3iw6to" path="res://faces/Fvv3fZYXwAEEwbo.jpg" id="39_2o4jo"]
+[ext_resource type="Texture2D" uid="uid://c11eiyu1wqekl" path="res://faces/F_BbRcjXQAA8-id.jpg" id="40_ycl3x"]
+[ext_resource type="Texture2D" uid="uid://bdvcxnumx8ron" path="res://faces/FsHJ_FjX0AEhg96.jpg" id="41_xllxa"]
 [ext_resource type="PackedScene" uid="uid://08tjvp6vdo72" path="res://scenes/gun.tscn" id="42_amf4t"]
 [ext_resource type="ArrayMesh" uid="uid://faw5rykyfa4r" path="res://mesh/jumpback.res" id="44_cs7ry"]
 [ext_resource type="AudioStream" uid="uid://dltghk8nfcjcl" path="res://sounds/[YT2mp3.info] - Cartoon Boing Sound Effect (320kbps).wav" id="45_2rj5h"]
 [ext_resource type="AudioStream" uid="uid://blgyvw52550j3" path="res://sounds/[YT2mp3.info] - Heart Beat [SOUND EFFECT] (32kbps).mp3" id="46_786kw"]
+[ext_resource type="Texture2D" uid="uid://dj6ndc6crufu4" path="res://faces/F2DSM-SacAcY16_.jpg" id="46_fk3rn"]
 [ext_resource type="AudioStream" uid="uid://bd7junyhg3y8w" path="res://sounds/Bongo Feet.mp3" id="47_hid1p"]
+[ext_resource type="Texture2D" uid="uid://bt26kt5rubrqj" path="res://faces/FfXUTsQXwAAbsTP.jpg" id="47_nb0p8"]
 [ext_resource type="AudioStream" uid="uid://csi02ien8j27y" path="res://sounds/Windows 10 Error Sound.mp3" id="48_hbgw1"]
+[ext_resource type="Texture2D" uid="uid://dq5byffyt73vs" path="res://faces/FqORw3qaAAYOKvv.jpg" id="48_quqqt"]
 [ext_resource type="AudioStream" uid="uid://bgi7gp57ms7ne" path="res://sounds/twitter_1635804646240403456_audio.mp3" id="49_vryub"]
+[ext_resource type="Texture2D" uid="uid://dy1uwn6irtejh" path="res://faces/F1vcndBX0AAKP5u.jpg" id="50_bth2e"]
 [ext_resource type="AudioStream" uid="uid://bmiw0ljydolub" path="res://sounds/Metal Pipe Falling Sound Effect.mp3" id="50_tc3sj"]
+[ext_resource type="Texture2D" uid="uid://dgwae8svvhb37" path="res://faces/GBFsBsZWsAAD5ND.jpg" id="51_gim5n"]
 [ext_resource type="AudioStream" uid="uid://dlkqtou256ec3" path="res://sounds/Dramatic_Vine-Instagram_Boom_-_Sound_Effect_HD.mp3" id="52_2ak5c"]
+[ext_resource type="Texture2D" uid="uid://8aexttaco310" path="res://faces/Fpmyk0tXwAMcgUb.jpg" id="52_748yo"]
 [ext_resource type="AudioStream" uid="uid://c52nsl83p07fy" path="res://sounds/Mewing bass boosted.mp3" id="52_m7p0q"]
+[ext_resource type="Texture2D" uid="uid://cer7g2qk7v6k5" path="res://faces/F8pJgU1bgAAyFAy.jpg" id="53_rn4fi"]
 [ext_resource type="AudioStream" uid="uid://ikgwupptnjfi" path="res://sounds/Bad to the Bone Riff.mp3" id="54_sex1c"]
 [ext_resource type="AudioStream" uid="uid://bp1tlq4x4ccaj" path="res://sounds/Bone Crack.mp3" id="55_iahir"]
 [ext_resource type="AudioStream" uid="uid://oxxfcvoclqf0" path="res://sounds/Fart Sound Effect (From 21st Century Memes).mp3" id="56_md0t5"]
 [ext_resource type="AudioStream" uid="uid://vi80qa4gt5ro" path="res://sounds/iPhone Screenshot.wav" id="57_npwrt"]
-[ext_resource type="AudioStream" uid="uid://cfvcc0qck8rrp" path="res://sounds/cheatreal.mp3" id="58_ye74p"]
+[ext_resource type="AudioStream" uid="uid://d33xvn7q0n00x" path="res://sounds/Minecraft Train Whistle.mp3" id="62_6ch8w"]
+[ext_resource type="Script" path="res://addons/grappling_hook_3d/src/hook_controller.gd" id="63_7x5gr"]
+[ext_resource type="Script" path="res://addons/path2dslider/path2dslider.gd" id="71_hfim8"]
+[ext_resource type="Texture2D" uid="uid://5j5q2uqdb0ad" path="res://images/F-aHZYlbYAEmA3j.png" id="72_ej7ua"]
+[ext_resource type="Texture2D" uid="uid://dlhd2a4qttp0k" path="res://sprites/presshumor.png" id="73_7nm0h"]
+[ext_resource type="AudioStream" uid="uid://c4kebw5ngb7jt" path="res://sounds/grapple.wav" id="85_rmfns"]
+[ext_resource type="AudioStream" uid="uid://dfak8qg0rn2gt" path="res://sounds/ungrapple.wav" id="86_wf8t6"]
+[ext_resource type="AudioStream" uid="uid://cx7074bbau3c3" path="res://sounds/Terraria Boss Spawn Sound.wav" id="87_pem1v"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_cd5gn"]
 
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_s18ki"]
-points = PackedVector3Array(-0.125207, -0.532801, -0.480507, 0.0227831, 0.47607, 0.498884, 0.169713, 0.559144, 0.464172, 0.231051, -0.803591, 0.320455, 0.40741, 0.651043, -0.243523, -0.482789, 0.594843, 0.0822132, -0.362868, -0.682312, 0.289697, 0.469044, -0.654529, -0.0662713, -0.127444, 0.842701, -0.338103, -0.393435, -0.683942, -0.244717, 0.438255, 0.623309, 0.200849, 0.0841477, 0.977454, 0.114795, -0.0682023, -0.976458, -0.12927, 0.20055, -0.563129, -0.451454, -0.185527, 0.595453, -0.453475, -0.273363, 0.592268, 0.407754, -0.00693649, -0.476823, 0.49966, 0.375821, -0.588614, 0.316955, 0.111579, 0.563059, -0.481177, -0.41725, 0.527866, -0.270497, -0.484546, -0.596972, -0.0665097, -0.279747, 0.908561, 0.0533361, -0.250197, -0.880712, 0.205319, 0.263647, -0.902771, -0.127394, 0.293368, 0.871526, -0.157196, 0.373412, -0.526319, -0.328246, 0.499663, 0.476641, -0.00688856, 0.0531056, 0.875001, 0.324703, -0.154543, -0.590854, 0.465879, -0.0972799, -0.782358, -0.398188, -0.387649, -0.498171, 0.31565, -0.30068, -0.587995, -0.388901)
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_bgkok"]
 
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_38lts"]
-points = PackedVector3Array(-0.0914724, -0.488235, -0.0456884, 0.0915631, 0.488209, 0.045686, 0.121867, 0.472197, 0.106597, -0.426076, 0.0912406, 0.243499, -0.182322, 0.0911136, -0.455854, 0.471177, -0.106272, 0.121508, 0.0305735, -0.0917206, 0.48956, 0.303704, -0.0151281, -0.394854, -0.455852, 0.0911132, -0.182322, -0.347666, -0.317455, 0.166209, -0.196227, -0.31699, -0.332026, 0.257776, -0.424622, -0.0454172, 0.301529, 0.316643, -0.241261, -0.226526, 0.422868, -0.135878, 0.0606914, 0.318868, 0.379559, 0.121067, -0.378275, 0.30262, 0.394081, 0.166653, 0.257624, -0.2719, 0.377613, 0.181235, 0.0758621, -0.273123, -0.409636, 0.0606915, 0.318868, -0.37956, -0.228345, 0.0304269, 0.441524, 0.489895, -0.0152493, -0.0917834, -0.426119, -0.243524, -0.09125, 0.273668, -0.0760137, 0.410455, -0.166209, -0.317455, 0.347667, 0.362742, -0.256883, -0.226678, 0.394764, 0.303541, 0.0151247, -0.348882, -0.0758398, -0.348882, -0.0305735, -0.0917206, -0.48956, 0.347667, -0.317455, 0.166209, -0.473268, 0.152655, 0.0305118, 0.0912904, -0.425863, -0.243378)
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_7b6b2"]
+height = 1.0
 
 [sub_resource type="TextMesh" id="TextMesh_ua2ti"]
 text = "Freaky"
@@ -91,27 +121,8 @@ left_to_right = 0.7
 
 [sub_resource type="TorusMesh" id="TorusMesh_2qnry"]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8cq0u"]
-shading_mode = 2
-diffuse_mode = 3
-specular_mode = 1
-disable_fog = true
-albedo_texture = ExtResource("6_hp6wm")
-rim_enabled = true
-rim = 0.02
-rim_tint = 1.0
-rim_texture = ExtResource("6_hp6wm")
-detail_enabled = true
-detail_mask = ExtResource("6_hp6wm")
-detail_albedo = ExtResource("6_hp6wm")
-detail_normal = ExtResource("6_hp6wm")
-texture_filter = 1
-disable_receive_shadows = true
-billboard_mode = 2
-
 [sub_resource type="BoxMesh" id="BoxMesh_0fjm4"]
-material = SubResource("StandardMaterial3D_8cq0u")
-flip_faces = true
+material = ExtResource("9_o1gw7")
 size = Vector3(0.35, 0.35, 0.35)
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_3mwwd"]
@@ -165,10 +176,26 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": ExtResource("18_vjk8b")
+}],
+"loop": false,
+"name": &"bad",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": ExtResource("4_5084n")
 }],
 "loop": false,
 "name": &"beastmode",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("20_knhu4")
+}],
+"loop": false,
+"name": &"ben",
 "speed": 5.0
 }, {
 "frames": [{
@@ -189,6 +216,14 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": ExtResource("23_ttbs8")
+}],
+"loop": false,
+"name": &"fnaf",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": ExtResource("7_63iqw")
 }],
 "loop": false,
@@ -205,10 +240,34 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": ExtResource("26_iq1ej")
+}],
+"loop": false,
+"name": &"horror",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("27_mycsw")
+}],
+"loop": false,
+"name": &"humer",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": ExtResource("9_hljx8")
 }],
 "loop": false,
 "name": &"john",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("29_lmi52")
+}],
+"loop": false,
+"name": &"joy",
 "speed": 5.0
 }, {
 "frames": [{
@@ -237,10 +296,74 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": ExtResource("33_vld6j")
+}],
+"loop": false,
+"name": &"nerd",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("34_ulo81")
+}],
+"loop": false,
+"name": &"notsigma",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("35_nsixd")
+}],
+"loop": false,
+"name": &"overdose",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("36_jspde")
+}],
+"loop": false,
+"name": &"pepsi",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("37_s7tih")
+}],
+"loop": false,
+"name": &"poke",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": ExtResource("13_bdhw2")
 }],
 "loop": false,
 "name": &"rage",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("39_2o4jo")
+}],
+"loop": false,
+"name": &"retro",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("40_ycl3x")
+}],
+"loop": false,
+"name": &"rizz",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("41_xllxa")
+}],
+"loop": false,
+"name": &"scheme",
 "speed": 5.0
 }, {
 "frames": [{
@@ -277,10 +400,66 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": ExtResource("46_fk3rn")
+}],
+"loop": false,
+"name": &"think",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("47_nb0p8")
+}],
+"loop": false,
+"name": &"true",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("48_quqqt")
+}],
+"loop": false,
+"name": &"uncanny",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": ExtResource("18_6fh55")
 }],
 "loop": false,
 "name": &"whimsy",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("50_bth2e")
+}],
+"loop": false,
+"name": &"wimd",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("51_gim5n")
+}],
+"loop": false,
+"name": &"wompwomp",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("52_748yo")
+}],
+"loop": false,
+"name": &"wung",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("53_rn4fi")
+}],
+"loop": false,
+"name": &"xbox",
 "speed": 5.0
 }, {
 "frames": [{
@@ -557,6 +736,12 @@ _data = {
 }
 point_count = 7
 
+[sub_resource type="Curve2D" id="Curve2D_ckrkl"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 30, 211, 0, 0, 0, 0, 71, 211, 0, 0, 0, 0, 112, 217, 0, 0, 0, 0, 149, 238, 0, 0, 0, 0, 170, 255, 0, 0, 0, 0, 185, 274, 0, 0, 0, 0, 196, 296, 0, 0, 0, 0, 205, 319, 0, 0, 0, 0, 209, 352, 0, 0, 0, 0, 208, 397, 0, 0, 0, 0, 207, 425)
+}
+point_count = 11
+
 [node name="Freak" type="CharacterBody3D" groups=["freak"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 wall_min_slide_angle = 0.523599
@@ -566,22 +751,33 @@ circleglow = ExtResource("5_n35mf")
 triangleglow = ExtResource("6_5csgi")
 donutglow = ExtResource("7_aa2wq")
 noglow = ExtResource("5_5nbfn")
+normalface = ExtResource("9_o1gw7")
+owface = ExtResource("9_x5gve")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 visibility_range_fade_mode = 1
 mesh = SubResource("CapsuleMesh_cd5gn")
 
 [node name="normal" type="CollisionShape3D" parent="."]
-shape = SubResource("ConvexPolygonShape3D_s18ki")
+shape = SubResource("CapsuleShape3D_bgkok")
 
 [node name="short" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
-shape = SubResource("ConvexPolygonShape3D_38lts")
+shape = SubResource("CapsuleShape3D_7b6b2")
 disabled = true
 
 [node name="title" type="MeshInstance3D" parent="."]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 2.43917, 0)
 mesh = SubResource("TextMesh_ua2ti")
+
+[node name="HookController" type="Node" parent="." node_paths=PackedStringArray("hook_raycast", "player_body", "hook_source")]
+script = ExtResource("63_7x5gr")
+hook_raycast = NodePath("../Neck/Camera3D/gapray")
+player_body = NodePath("..")
+launch_action_name = "grapple"
+retract_action_name = "ungrapple"
+pull_speed = 0.3
+hook_source = NodePath("../Neck/Camera3D/gapfart")
 
 [node name="Neck" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6, 0)
@@ -602,8 +798,6 @@ visible = false
 light_energy = 2.0
 spot_range = 14.0769
 spot_angle = 20.0
-
-[node name="gun" parent="Neck/Camera3D" instance=ExtResource("42_amf4t")]
 
 [node name="Jumpback" type="MeshInstance3D" parent="Neck/Camera3D"]
 transform = Transform3D(0.385, 0, 0, 0, 0.073, 0, 0, 0, 0.08, -0.524, 0.872, -1.138)
@@ -629,6 +823,21 @@ mesh = SubResource("TorusMesh_2qnry")
 transform = Transform3D(-1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, -1.495, 0.604, -1.332)
 mesh = SubResource("BoxMesh_0fjm4")
 skeleton = NodePath("../../../..")
+script = ExtResource("9_rjrxj")
+spin = 6
+speed = 0.05
+
+[node name="gun" parent="Neck/Camera3D" instance=ExtResource("42_amf4t")]
+
+[node name="gapray" type="RayCast3D" parent="Neck/Camera3D"]
+transform = Transform3D(-0.898465, -0.439046, 0, 0.439046, -0.898465, 0, 0, 0, 1, 0.143832, 0.0819151, -0.56)
+visible = false
+target_position = Vector3(0.045, 0.075, -300)
+debug_shape_custom_color = Color(0.171318, 0.557967, 0.853155, 1)
+debug_shape_thickness = 3
+
+[node name="gapfart" type="Node3D" parent="Neck/Camera3D"]
+transform = Transform3D(-0.898465, -0.439046, 0, 0.439046, -0.898465, 0, 0, 0, 1, 0.143828, 0.0819439, -0.559615)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Neck"]
 transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0, -0.607177, 0)
@@ -687,7 +896,7 @@ z_index = -1
 position = Vector2(-160, 102.5)
 scale = Vector2(2.8125, 2.85156)
 sprite_frames = SubResource("SpriteFrames_gnufj")
-animation = &"man"
+animation = &"pepsi"
 
 [node name="gooo" type="Sprite2D" parent="overlay"]
 modulate = Color(0.486275, 0, 0.745098, 1)
@@ -793,9 +1002,64 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 1
 
+[node name="HSlider" type="HSlider" parent="overlay"]
+offset_left = 2.0
+offset_top = 340.0
+offset_right = 115.0
+offset_bottom = 356.0
+rotation = -0.602199
+focus_mode = 0
+step = 0.1
+value = 100.0
+scrollable = false
+
+[node name="Path2DSlider" type="Control" parent="overlay"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("71_hfim8")
+
+[node name="Path2D2" type="Path2D" parent="overlay/Path2DSlider"]
+curve = SubResource("Curve2D_ckrkl")
+
+[node name="TextureRect" type="TextureRect" parent="overlay/Path2DSlider"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 10.0
+offset_top = 191.0
+offset_right = 511.0
+offset_bottom = 616.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 1.5708
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("72_ej7ua")
+
+[node name="pause" type="Button" parent="overlay"]
+process_mode = 3
+offset_left = 21.0
+offset_top = 6.0
+offset_right = 80.0
+offset_bottom = 37.0
+rotation = 0.248447
+focus_mode = 0
+text = "PUASE"
+flat = true
+
+[node name="press" type="Sprite2D" parent="overlay"]
+visible = false
+position = Vector2(323, 361)
+scale = Vector2(0.265, 0.265)
+texture = ExtResource("73_7nm0h")
+
 [node name="jump" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("45_2rj5h")
-volume_db = -1.0
+volume_db = -3.0
 max_polyphony = 4
 
 [node name="walk" type="AudioStreamPlayer" parent="."]
@@ -813,10 +1077,13 @@ stream = ExtResource("49_vryub")
 
 [node name="stab" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("50_tc3sj")
+volume_db = -10.0
+pitch_scale = 2.5
 max_polyphony = 10
 
 [node name="ouch" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("52_2ak5c")
+volume_db = -10.0
 max_polyphony = 3
 
 [node name="win" type="AudioStreamPlayer" parent="."]
@@ -824,6 +1091,8 @@ stream = ExtResource("52_m7p0q")
 
 [node name="gslam" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("54_sex1c")
+volume_db = -5.0
+pitch_scale = 2.0
 
 [node name="slide" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("55_iahir")
@@ -834,10 +1103,24 @@ stream = ExtResource("56_md0t5")
 
 [node name="flashtoggle" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("57_npwrt")
-volume_db = 10.0
+volume_db = 5.0
 
-[node name="bgm" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("58_ye74p")
-autoplay = true
+[node name="think" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("62_6ch8w")
+pitch_scale = 2.0
+max_polyphony = 4
 
+[node name="grapple" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("85_rmfns")
+
+[node name="ungrapple" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("86_wf8t6")
+
+[node name="dash" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("87_pem1v")
+volume_db = -5.0
+
+[connection signal="pause" from="." to="." method="_on_pause"]
 [connection signal="body_entered" from="Neck/attackbox" to="." method="_on_attackbox_body_entered"]
+[connection signal="pressed" from="overlay/pause" to="." method="_on_button_pressed"]
+[connection signal="finished" from="ouch" to="." method="_on_ouch_finished"]
