@@ -44,6 +44,7 @@ var gravity = ProjectSettings.get_setting("physics/3d/default_gravity") #its 6.3
 @onready var flashsound := $flashtoggle
 @onready var thinksound := $think
 @onready var dashsound := $dash
+@onready var pausemusic := $pausemusic
 
 @onready var circle := $Neck/Camera3D/Jumpback/circle
 @onready var triangle := $Neck/Camera3D/Jumpback/triangle
@@ -272,6 +273,7 @@ func _on_ouch_finished():
 func _on_pause():
 	#Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	get_tree().paused = not get_tree().paused
+	pausemusic.playing = not pausemusic.playing
 
 
 func _on_button_pressed():

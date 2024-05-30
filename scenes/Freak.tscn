@@ -1,4 +1,4 @@
-[gd_scene load_steps=109 format=3 uid="uid://bjcdnipkga6a5"]
+[gd_scene load_steps=110 format=3 uid="uid://bjcdnipkga6a5"]
 
 [ext_resource type="Script" path="res://scripts/Freaky.gd" id="1_w8pip"]
 [ext_resource type="Texture2D" uid="uid://wd1n7sf4w1i8" path="res://images/FrZUIT3aYAAYjmS.png" id="2_6bm67"]
@@ -89,6 +89,7 @@
 [ext_resource type="AudioStream" uid="uid://c4kebw5ngb7jt" path="res://sounds/grapple.wav" id="85_rmfns"]
 [ext_resource type="AudioStream" uid="uid://dfak8qg0rn2gt" path="res://sounds/ungrapple.wav" id="86_wf8t6"]
 [ext_resource type="AudioStream" uid="uid://cx7074bbau3c3" path="res://sounds/Terraria Boss Spawn Sound.wav" id="87_pem1v"]
+[ext_resource type="AudioStream" uid="uid://0uqbck5jo57j" path="res://music/wavez.ogg" id="90_n6pbh"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_cd5gn"]
 
@@ -1119,6 +1120,10 @@ stream = ExtResource("86_wf8t6")
 [node name="dash" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("87_pem1v")
 volume_db = -5.0
+
+[node name="pausemusic" type="AudioStreamPlayer" parent="."]
+process_mode = 3
+stream = ExtResource("90_n6pbh")
 
 [connection signal="pause" from="." to="." method="_on_pause"]
 [connection signal="body_entered" from="Neck/attackbox" to="." method="_on_attackbox_body_entered"]
