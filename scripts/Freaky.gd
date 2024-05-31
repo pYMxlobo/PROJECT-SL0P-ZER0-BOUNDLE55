@@ -4,6 +4,7 @@ extends CharacterBody3D
 
 signal pause
 
+
 @export var phrases : Array[String]
 @export var maxdj = 3
 var dj = 0
@@ -73,7 +74,7 @@ var ybonus : float = 0
 var xbonus : float = 1
 
 var slide : bool = false
-
+	
 func _ready():
 	hp = max_hp
 	healthbar.max_value = max_hp
