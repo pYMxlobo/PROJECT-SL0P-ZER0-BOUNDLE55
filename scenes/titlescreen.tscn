@@ -122,10 +122,15 @@ adjustment_contrast = 2.01
 adjustment_saturation = 0.41
 adjustment_color_correction = SubResource("NoiseTexture2D_cqxsk")
 
-[node name="Node3D" type="Node3D"]
+[node name="Node3D" type="Node3D" node_paths=PackedStringArray("secret_menu", "small", "big", "galss", "hyper")]
 script = ExtResource("2_8ds7t")
 level_1_FPath = "res://scenes/alphalevel.tscn"
 credits_path = "res://scenes/credits.tscn"
+secret_menu = NodePath("secrets")
+small = NodePath("secrets/small")
+big = NodePath("secrets/big")
+galss = NodePath("secrets/glass")
+hyper = NodePath("secrets/hyper")
 
 [node name="backround" type="MeshInstance3D" parent="."]
 mesh = SubResource("BoxMesh_mo1vg")
@@ -214,6 +219,53 @@ text = "ALPHA 1.0"
 stream = ExtResource("3_fyb7d")
 autoplay = true
 
+[node name="secrets" type="Control" parent="."]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_left = 399.0
+offset_top = 91.0
+offset_right = 640.0
+offset_bottom = 215.0
+
+[node name="Label" type="Label" parent="secrets"]
+layout_mode = 0
+offset_top = -23.0
+offset_right = 241.0
+text = "Secret Menu 🤯🤯🤯"
+horizontal_alignment = 1
+
+[node name="small" type="CheckButton" parent="secrets"]
+layout_mode = 0
+offset_right = 241.0
+offset_bottom = 31.0
+text = "small:"
+
+[node name="big" type="CheckButton" parent="secrets"]
+layout_mode = 0
+offset_top = 31.0
+offset_right = 241.0
+offset_bottom = 62.0
+text = "big:"
+
+[node name="glass" type="CheckButton" parent="secrets"]
+layout_mode = 0
+offset_top = 62.0
+offset_right = 241.0
+offset_bottom = 93.0
+text = "glass:"
+
+[node name="hyper" type="CheckButton" parent="secrets"]
+layout_mode = 0
+offset_top = 93.0
+offset_right = 241.0
+offset_bottom = 124.0
+text = "hyper:"
+
 [connection signal="pressed" from="start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="credits" to="." method="_on_credits_pressed"]
 [connection signal="pressed" from="exit" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="secrets/small" to="." method="_on_small_pressed"]
+[connection signal="pressed" from="secrets/big" to="." method="_on_big_pressed"]
+[connection signal="pressed" from="secrets/glass" to="." method="_on_glass_pressed"]
+[connection signal="pressed" from="secrets/hyper" to="." method="_on_hyper_pressed"]

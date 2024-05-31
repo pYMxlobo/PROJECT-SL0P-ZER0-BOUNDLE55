@@ -22,6 +22,7 @@ config/icon="res://images/FwLdQHuWAAAOBQY.png"
 [autoload]
 
 Cash="*res://scripts/cash.gd"
+GameMode="*res://scripts/gamemodetoggles.gd"
 
 [display]
 

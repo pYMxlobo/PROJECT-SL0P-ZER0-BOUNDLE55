@@ -73,11 +73,22 @@ var zbonus : float = 1
 var ybonus : float = 0
 var xbonus : float = 1
 
+var random_heal_max : int = 3000
+
 var slide : bool = false
 	
 func _ready():
+	if GameMode.small == true:
+		scale = Vector3(0.1, 0.1, 0.1)
+	if GameMode.big == true:
+		scale = Vector3(2, 2, 2)
+	if GameMode.glass == true:
+		max_hp = 1
+	if GameMode.hyper == true:
+		maxspeed *= 5
 	hp = max_hp
 	healthbar.max_value = max_hp
+	
 
 func _unhandled_input(event: InputEvent) -> void:	
 	if event is InputEventMouseButton or event.is_action_released("tab"):
@@ -215,7 +226,7 @@ func _process(delta):
 		
 	interactimage.visible = interactavail
 	
-	if randi_range(0, 4000) == 4:
+	if randi_range(0, random_heal_max) == 4:
 		hp = clamp(hp + 1, 0, max_hp)
 		print("random hp gain")
 
