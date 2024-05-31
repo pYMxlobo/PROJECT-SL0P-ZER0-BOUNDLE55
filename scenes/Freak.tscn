@@ -1,4 +1,4 @@
-[gd_scene load_steps=112 format=3 uid="uid://bjcdnipkga6a5"]
+[gd_scene load_steps=113 format=3 uid="uid://bjcdnipkga6a5"]
 
 [ext_resource type="Script" path="res://scripts/Freaky.gd" id="1_w8pip"]
 [ext_resource type="Texture2D" uid="uid://wd1n7sf4w1i8" path="res://images/FrZUIT3aYAAYjmS.png" id="2_6bm67"]
@@ -86,6 +86,7 @@
 [ext_resource type="Script" path="res://addons/path2dslider/path2dslider.gd" id="71_hfim8"]
 [ext_resource type="Texture2D" uid="uid://5j5q2uqdb0ad" path="res://images/F-aHZYlbYAEmA3j.png" id="72_ej7ua"]
 [ext_resource type="Texture2D" uid="uid://dlhd2a4qttp0k" path="res://sprites/presshumor.png" id="73_7nm0h"]
+[ext_resource type="Texture2D" uid="uid://u0picyeidxo6" path="res://sprites/scope.png" id="74_f0vod"]
 [ext_resource type="Texture2D" uid="uid://bsgt4ovywwj3d" path="res://sprites/ipad.png" id="75_dvvyi"]
 [ext_resource type="AudioStream" uid="uid://c4kebw5ngb7jt" path="res://sounds/grapple.wav" id="85_rmfns"]
 [ext_resource type="AudioStream" uid="uid://dfak8qg0rn2gt" path="res://sounds/ungrapple.wav" id="86_wf8t6"]
@@ -839,7 +840,7 @@ transform = Transform3D(-0.898465, -0.439046, 0, 0.439046, -0.898465, 0, 0, 0, 1
 visible = false
 target_position = Vector3(0.045, 0.075, -300)
 debug_shape_custom_color = Color(0.171318, 0.557967, 0.853155, 1)
-debug_shape_thickness = 3
+debug_shape_thickness = 1
 
 [node name="gapfart" type="Node3D" parent="Neck/Camera3D"]
 transform = Transform3D(-0.898465, -0.439046, 0, 0.439046, -0.898465, 0, 0, 0, 1, 0.143828, 0.0819439, -0.559615)
@@ -1080,6 +1081,12 @@ position = Vector2(-10.5273, -26)
 scale = Vector2(0.40731, 0.655263)
 texture = ExtResource("75_dvvyi")
 centered = false
+
+[node name="Scope" type="Sprite2D" parent="overlay"]
+visible = false
+position = Vector2(322, 212)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("74_f0vod")
 
 [node name="jump" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("45_2rj5h")

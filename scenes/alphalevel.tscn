@@ -117,12 +117,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.94965, 0, -0.619507)
 script = ExtResource("8_dtnvv")
 
 [node name="thingie" type="MeshInstance3D" parent="Path3D/PathFollow3D/AnimatableBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 mesh = SubResource("BoxMesh_37tk0")
 skeleton = NodePath("../../../..")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Path3D/PathFollow3D/AnimatableBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_boq1e")
 
 [node name="NavigationRegion3D" type="NavigationRegion3D" parent="."]

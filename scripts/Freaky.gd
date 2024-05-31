@@ -62,6 +62,8 @@ var gravity = ProjectSettings.get_setting("physics/3d/default_gravity") #its 6.3
 
 @onready var interactimage := $overlay/press
 
+@onready var scope := $overlay/Scope
+
 var interactavail : bool = false
 
 var hp : float = 1
@@ -99,8 +101,10 @@ func _input(event):
 		light.visible = not light.visible
 		face.play("sog")
 		flashsound.play()
+		scope.hide()
 	if event.is_action_pressed("attack"):
 		face.play("man")
+		scope.hide()
 		hammer.position = Vector2(-50, 50)
 		hambox.disabled = false
 		stabsound.play()
@@ -112,6 +116,7 @@ func _input(event):
 	if event.is_action_pressed("slide"):
 		if is_on_floor() or is_on_wall_only():
 			face.play("bad")
+			scope.hide()
 			maxspeed *= 2
 			neck.position.y = 0
 			slide = true
@@ -123,6 +128,7 @@ func _input(event):
 			ybonus = 50
 			slamsound.play()
 			face.play("scheme")
+			scope.hide()
 	if event.is_action_released("slide") and slide == true:
 		neck.position.y = 0.6
 		#momentum /= 2	
@@ -137,8 +143,10 @@ func _input(event):
 		shortcol.disabled = true
 	if event.is_action_pressed("shoot"):
 		face.play("malt")
+		scope.show()
 	if event.is_action_pressed("reload"):
 		face.play("john")
+		scope.hide()
 	if event.is_action_pressed("think"):
 		thought.text = phrases.pick_random()
 		thinksound.play()
@@ -146,17 +154,19 @@ func _input(event):
 		neck.rotation.z = clamp(neck.rotation.z + 0.01, -0.5, 0.5)
 		face.play("scheme")
 	if event.is_action("tiltright"):
-		neck.rotation.z = clamp(neck.rotation.z - 0.01, -0.5, 0.5)
+		neck.rotation.z = clamp(neck.rotation.z - 0.01, -0.5, 0.5)	
 		face.play("scheme")
 	if event.is_action_pressed("resettilt"):
 		neck.rotation.z = 0
 		face.play("overdose")
 	if event.is_action_pressed("grapple"):
 		face.play("wimd")
+		scope.hide()
 		#grapplesound.play()
 	if event.is_action_pressed("dash") and not is_on_floor_only() and dj > 0:
 		zbonus += 3 * momentum
 		xbonus += 3 * momentum
+		scope.hide()
 		dashsound.play()
 		face.play("joy")
 		dj -= 1
