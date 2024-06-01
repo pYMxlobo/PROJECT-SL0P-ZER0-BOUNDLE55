@@ -18,7 +18,7 @@ func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _process(_delta):
 	if Input.is_action_pressed("grapple"):
 		if Input.is_action_pressed("content"):
 			if Input.is_action_pressed("interact"):
