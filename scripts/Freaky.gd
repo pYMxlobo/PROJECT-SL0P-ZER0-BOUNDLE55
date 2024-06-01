@@ -49,6 +49,8 @@ var gravity = ProjectSettings.get_setting("physics/3d/default_gravity") #its 6.3
 @onready var yaysound := $yay
 
 
+@onready var lintcount := $overlay/lintcounter
+
 @onready var slop := $overlay/guh
 
 @onready var circle := $Neck/Camera3D/Jumpback/circle
@@ -234,6 +236,8 @@ func _process(delta):
 		hp = clamp(hp + 1, 0, max_hp)
 		yaysound.play()
 		#print("random hp gain")
+	lintcount.text = "       : " + str(Cash.lint)
+
 
 func movesound():
 	if momentum > 0 and momentum < maxspeed / 2:
@@ -322,11 +326,13 @@ func _on_button_pressed():
 
 func _on_gamble_pressed():
 	var coin = randi_range(0, 1)
-	if coin == 0:
-		coinflip.play("head")
-		hp += 0.5
-		coinflip.speed += 0.005
-	elif coin == 1:
-		coinflip.play("tail")
-		hp -= 0.5
-		coinflip.speed = 0
+	if Cash.lint > 0:
+		if coin == 0:
+			coinflip.play("head")
+			hp += 0.5
+			coinflip.speed += 0.005
+		elif coin == 1:
+			coinflip.play("tail")
+			hp -= 0.5
+			coinflip.speed = 0
+			Cash.lint -= 1

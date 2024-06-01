@@ -124,7 +124,7 @@ adjustment_color_correction = SubResource("NoiseTexture2D_cqxsk")
 
 [node name="Node3D" type="Node3D" node_paths=PackedStringArray("secret_menu", "small", "big", "galss", "hyper")]
 script = ExtResource("2_8ds7t")
-level_1_FPath = "res://scenes/alphalevel.tscn"
+level_1_FPath = "res://scenes/level1map1.tscn"
 credits_path = "res://scenes/credits.tscn"
 secret_menu = NodePath("secrets")
 small = NodePath("secrets/small")

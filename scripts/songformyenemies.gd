@@ -7,8 +7,8 @@ signal did_attack
 @export var health = 10
 @export var SPEED = 20
 @export var weight = .5
-@export var seeing = 100
-@export var damage = 1
+@export var seeing = 50
+@export var damage : float = 1
 @export var textures : Array[Texture]
 var freaker
 
@@ -34,6 +34,7 @@ func update_rizzler_loc(targ_loc):
 
 func _process(_delta):
 	if health <= 0:
+		Cash.lint += randi_range(1, 5)
 		queue_free()
 
 

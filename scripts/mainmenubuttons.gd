@@ -3,7 +3,7 @@ extends Node
 @export var level_1_FPath : String
 @export var credits_path : String
 
-@export var fullscreenguy : CheckBox
+#@export var fullscreenguy : CheckBox
 
 @export var secret_menu : Control
 

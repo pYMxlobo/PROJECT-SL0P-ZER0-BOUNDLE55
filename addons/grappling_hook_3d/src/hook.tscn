@@ -3,8 +3,8 @@
 [ext_resource type="Script" path="res://addons/grappling_hook_3d/src/hook_model.gd" id="1_axmsb"]
 
 [sub_resource type="CylinderMesh" id="CylinderMesh_2uiuu"]
-top_radius = 0.05
-bottom_radius = 0.05
+top_radius = 0.02
+bottom_radius = 0.03
 height = 1.0
 radial_segments = 4
 cap_top = false

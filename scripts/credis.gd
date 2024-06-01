@@ -53,13 +53,13 @@ Big Insparations: Cruelty Squad, Ipad Baby, Juice Galaxy, Ultrakill
 
 Music That It Said Was Free So I Used:
 
-https://www.youtube.com/watch?v=GRTvDLOC1_w chosen
+https://www.youtube.com/watch?v=GRTvDLOC1_w chosen (level 1 map 2)
 https://www.youtube.com/watch?v=G98TIREqIvA apologize
 https://www.youtube.com/watch?v=JWlVkPYciQM path
 https://www.youtube.com/watch?v=BAx1iAYKexI not you too
 https://www.youtube.com/watch?v=zEaM7rrhyjQ red
 https://www.youtube.com/watch?v=L7lbXIkUfoM shotta
-https://www.youtube.com/watch?v=L4bq-U14xWg feelings die (alpha level)
+https://www.youtube.com/watch?v=L4bq-U14xWg feelings die (alpha level, level 1 map 1)
 https://www.youtube.com/watch?v=UqqS7axJg4E waybackwhen
 https://www.youtube.com/watch?v=FEs79iwkeCc bright
 https://www.youtube.com/watch?v=kVwZ8yz-Csc reborn

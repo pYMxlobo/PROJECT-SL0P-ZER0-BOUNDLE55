@@ -1,4 +1,4 @@
-[gd_scene load_steps=117 format=3 uid="uid://bjcdnipkga6a5"]
+[gd_scene load_steps=118 format=3 uid="uid://bjcdnipkga6a5"]
 
 [ext_resource type="Script" path="res://scripts/Freaky.gd" id="1_w8pip"]
 [ext_resource type="Texture2D" uid="uid://wd1n7sf4w1i8" path="res://images/FrZUIT3aYAAYjmS.png" id="2_6bm67"]
@@ -96,6 +96,7 @@
 [ext_resource type="AudioStream" uid="uid://0uqbck5jo57j" path="res://music/wavez.ogg" id="90_n6pbh"]
 [ext_resource type="VideoStream" path="res://videos/rot.ogv" id="91_ysuag"]
 [ext_resource type="AudioStream" uid="uid://bg6qq2vl4xhm" path="res://sounds/compressedyay.mp3" id="96_uh08t"]
+[ext_resource type="Texture2D" uid="uid://bmy274muujchv" path="res://sprites/lint.png" id="97_er8v5"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_cd5gn"]
 
@@ -866,7 +867,6 @@ cast_shadow = 0
 
 [node name="gapray" type="RayCast3D" parent="Neck/Camera3D"]
 transform = Transform3D(-0.898465, -0.439046, 0, 0.439046, -0.898465, 0, 0, 0, 1, 0.143832, 0.0819151, -0.56)
-visible = false
 target_position = Vector3(0.045, 0.075, -300)
 debug_shape_custom_color = Color(0.171318, 0.557967, 0.853155, 1)
 debug_shape_thickness = 1
@@ -932,7 +932,7 @@ z_index = -1
 position = Vector2(-160, 102.5)
 scale = Vector2(2.8125, 2.85156)
 sprite_frames = SubResource("SpriteFrames_gnufj")
-animation = &"stink"
+animation = &"pepsi"
 
 [node name="gooo" type="Sprite2D" parent="overlay"]
 modulate = Color(0.486275, 0, 0.745098, 1)
@@ -1137,6 +1137,19 @@ offset_bottom = 204.0
 tooltip_text = "I LOVE GAMBLING!!!!!"
 focus_mode = 0
 flat = true
+
+[node name="lintcounter" type="Label" parent="overlay"]
+offset_left = 511.561
+offset_top = 5.8125
+offset_right = 632.561
+offset_bottom = 80.8125
+text = "       :  9999999999999999999999999999999999"
+autowrap_mode = 1
+
+[node name="Lint" type="Sprite2D" parent="overlay"]
+position = Vector2(520.561, 16.8125)
+scale = Vector2(0.10916, 0.10916)
+texture = ExtResource("97_er8v5")
 
 [node name="jump" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("45_2rj5h")
