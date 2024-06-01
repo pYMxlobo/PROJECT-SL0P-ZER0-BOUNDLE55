@@ -58,7 +58,7 @@ billboard_mode = 2
 
 [sub_resource type="TextMesh" id="TextMesh_f1ckn"]
 material = SubResource("StandardMaterial3D_jpivd")
-text = "12/12"
+text = "12 / 12"
 font_size = 9
 
 [node name="hands" type="Sprite3D"]
@@ -109,6 +109,7 @@ volume_db = -10.0
 
 [node name="ammo" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 5.96046e-08, 0, -5.96046e-08, 1, 0, 0, 0, 1, -0.0208651, 0.058257, 0.0366911)
+cast_shadow = 0
 mesh = SubResource("TextMesh_f1ckn")
 
 [connection signal="finished" from="reload" to="." method="_on_reload_finished"]

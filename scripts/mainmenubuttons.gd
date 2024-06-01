@@ -3,6 +3,8 @@ extends Node
 @export var level_1_FPath : String
 @export var credits_path : String
 
+@export var fullscreenguy : CheckBox
+
 @export var secret_menu : Control
 
 @export var small : CheckButton
@@ -11,8 +13,7 @@ extends Node
 @export var hyper : CheckButton
 
 # Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
+
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -53,3 +54,10 @@ func _on_glass_pressed():
 
 func _on_hyper_pressed():
 	GameMode.hyper = not GameMode.hyper
+
+
+func _on_check_box_toggled(toggled_on):
+	if toggled_on == true:
+		DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_FULLSCREEN)
+	else:
+		DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_WINDOWED)

@@ -164,21 +164,27 @@ offset_left = 8.0
 offset_top = 290.0
 offset_right = 65.0
 offset_bottom = 321.0
+focus_mode = 0
 text = "BEGIN"
+flat = true
 
 [node name="credits" type="Button" parent="."]
 offset_left = 8.0
 offset_top = 333.0
 offset_right = 80.0
 offset_bottom = 364.0
+focus_mode = 0
 text = "CREDITS"
+flat = true
 
 [node name="exit" type="Button" parent="."]
 offset_left = 8.0
 offset_top = 376.0
 offset_right = 65.0
 offset_bottom = 407.0
+focus_mode = 0
 text = "EXIT"
+flat = true
 
 [node name="ReferenceRect" type="ReferenceRect" parent="."]
 visible = false
@@ -207,6 +213,14 @@ offset_left = 9.0
 offset_top = 364.0
 offset_right = 65.0
 offset_bottom = 376.0
+
+[node name="CheckBox" type="CheckBox" parent="."]
+offset_left = 509.0
+offset_top = 4.0
+offset_right = 635.0
+offset_bottom = 35.0
+focus_mode = 0
+text = "FULLSCREEN"
 
 [node name="version" type="Label" parent="."]
 offset_left = 554.0
@@ -265,6 +279,7 @@ text = "hyper:"
 [connection signal="pressed" from="start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="credits" to="." method="_on_credits_pressed"]
 [connection signal="pressed" from="exit" to="." method="_on_exit_pressed"]
+[connection signal="toggled" from="CheckBox" to="." method="_on_check_box_toggled"]
 [connection signal="pressed" from="secrets/small" to="." method="_on_small_pressed"]
 [connection signal="pressed" from="secrets/big" to="." method="_on_big_pressed"]
 [connection signal="pressed" from="secrets/glass" to="." method="_on_glass_pressed"]

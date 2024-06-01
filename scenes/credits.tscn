@@ -1,35 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://dn7716gpak3gi"]
+[gd_scene load_steps=3 format=3 uid="uid://dn7716gpak3gi"]
 
 [ext_resource type="AudioStream" uid="uid://c30r2bg6yhl7r" path="res://music/romance garbage.ogg" id="1_q67bt"]
 [ext_resource type="Script" path="res://scripts/credis.gd" id="2_dngmd"]
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_ej6kp"]
-animations = [{
-"frames": [],
-"loop": true,
-"name": &"HIWHJIWAJ",
-"speed": 5.0
-}, {
-"frames": [],
-"loop": true,
-"name": &"birck",
-"speed": 5.0
-}, {
-"frames": [],
-"loop": true,
-"name": &"mewing",
-"speed": 5.0
-}, {
-"frames": [],
-"loop": true,
-"name": &"orang",
-"speed": 5.0
-}, {
-"frames": [],
-"loop": true,
-"name": &"worldcorp",
-"speed": 5.0
-}]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -42,19 +14,14 @@ grow_vertical = 2
 [node name="Camera2D" type="Camera2D" parent="." node_paths=PackedStringArray("label")]
 anchor_mode = 0
 script = ExtResource("2_dngmd")
-credit_end = 1500
+credit_end = 1550
 speed = 0.5
 label = NodePath("../Label")
-credis = "res://credits.txt"
 
 [node name="ColorRect" type="ColorRect" parent="Camera2D"]
 offset_right = 640.0
 offset_bottom = 426.0
 color = Color(0, 0, 0, 1)
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Camera2D"]
-sprite_frames = SubResource("SpriteFrames_ej6kp")
-animation = &"HIWHJIWAJ"
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0

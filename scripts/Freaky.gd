@@ -46,6 +46,8 @@ var gravity = ProjectSettings.get_setting("physics/3d/default_gravity") #its 6.3
 @onready var thinksound := $think
 @onready var dashsound := $dash
 @onready var pausemusic := $pausemusic
+@onready var yaysound := $yay
+
 
 @onready var slop := $overlay/guh
 
@@ -64,6 +66,8 @@ var gravity = ProjectSettings.get_setting("physics/3d/default_gravity") #its 6.3
 @onready var interactimage := $overlay/press
 
 @onready var scope := $overlay/Scope
+
+@onready var coinflip := $overlay/coin
 
 var interactavail : bool = false
 
@@ -228,7 +232,8 @@ func _process(delta):
 	
 	if randi_range(0, random_heal_max) == 4:
 		hp = clamp(hp + 1, 0, max_hp)
-		print("random hp gain")
+		yaysound.play()
+		#print("random hp gain")
 
 func movesound():
 	if momentum > 0 and momentum < maxspeed / 2:
@@ -313,3 +318,15 @@ func _on_pause():
 
 func _on_button_pressed():
 	pause.emit()
+
+
+func _on_gamble_pressed():
+	var coin = randi_range(0, 1)
+	if coin == 0:
+		coinflip.play("head")
+		hp += 0.5
+		coinflip.speed += 0.005
+	elif coin == 1:
+		coinflip.play("tail")
+		hp -= 0.5
+		coinflip.speed = 0

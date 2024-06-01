@@ -217,11 +217,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -433.918, 7.22286, 235.174)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -881.803, 18.1631, -48.1817)
 
 [node name="Enemy9" parent="." instance=ExtResource("5_wi52k")]
-transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -663.876, 126.127, -248.355)
+transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, -663.876, 126.127, -248.355)
 health = 35
-SPEED = 15
-weight = 1.0
-seeing = 50
+SPEED = 30
+weight = 0.65
+seeing = 75
 damage = 2
 
 [node name="Enemy10" parent="." instance=ExtResource("5_wi52k")]

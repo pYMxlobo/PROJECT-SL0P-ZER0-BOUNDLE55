@@ -1,4 +1,4 @@
-[gd_scene load_steps=113 format=3 uid="uid://bjcdnipkga6a5"]
+[gd_scene load_steps=117 format=3 uid="uid://bjcdnipkga6a5"]
 
 [ext_resource type="Script" path="res://scripts/Freaky.gd" id="1_w8pip"]
 [ext_resource type="Texture2D" uid="uid://wd1n7sf4w1i8" path="res://images/FrZUIT3aYAAYjmS.png" id="2_6bm67"]
@@ -88,11 +88,14 @@
 [ext_resource type="Texture2D" uid="uid://dlhd2a4qttp0k" path="res://sprites/presshumor.png" id="73_7nm0h"]
 [ext_resource type="Texture2D" uid="uid://u0picyeidxo6" path="res://sprites/scope.png" id="74_f0vod"]
 [ext_resource type="Texture2D" uid="uid://bsgt4ovywwj3d" path="res://sprites/ipad.png" id="75_dvvyi"]
+[ext_resource type="Texture2D" uid="uid://bp7is6t3suan5" path="res://sprites/coinhead.png" id="77_wddjr"]
+[ext_resource type="Texture2D" uid="uid://yse3hfkntjno" path="res://sprites/cointail.png" id="78_s82mt"]
 [ext_resource type="AudioStream" uid="uid://c4kebw5ngb7jt" path="res://sounds/grapple.wav" id="85_rmfns"]
 [ext_resource type="AudioStream" uid="uid://dfak8qg0rn2gt" path="res://sounds/ungrapple.wav" id="86_wf8t6"]
 [ext_resource type="AudioStream" uid="uid://cx7074bbau3c3" path="res://sounds/Terraria Boss Spawn Sound.wav" id="87_pem1v"]
 [ext_resource type="AudioStream" uid="uid://0uqbck5jo57j" path="res://music/wavez.ogg" id="90_n6pbh"]
 [ext_resource type="VideoStream" path="res://videos/rot.ogv" id="91_ysuag"]
+[ext_resource type="AudioStream" uid="uid://bg6qq2vl4xhm" path="res://sounds/compressedyay.mp3" id="96_uh08t"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_cd5gn"]
 
@@ -746,6 +749,25 @@ _data = {
 }
 point_count = 11
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_u8rvr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("77_wddjr")
+}],
+"loop": false,
+"name": &"head",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("78_s82mt")
+}],
+"loop": false,
+"name": &"tail",
+"speed": 1.0
+}]
+
 [node name="Freak" type="CharacterBody3D" groups=["freak"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 wall_min_slide_angle = 0.523599
@@ -807,26 +829,32 @@ spot_angle = 20.0
 
 [node name="Jumpback" type="MeshInstance3D" parent="Neck/Camera3D"]
 transform = Transform3D(0.385, 0, 0, 0, 0.073, 0, 0, 0, 0.08, -0.524, 0.872, -1.138)
+cast_shadow = 0
 mesh = ExtResource("44_cs7ry")
 skeleton = NodePath("../../..")
 
 [node name="circle" type="MeshInstance3D" parent="Neck/Camera3D/Jumpback"]
 transform = Transform3D(1, 0, 0, 0, -1.97429e-08, -1, 0, 0.451666, -4.37114e-08, 0.00621414, 1.27127, 0.72618)
 material_override = ExtResource("5_n35mf")
+cast_shadow = 0
 mesh = SubResource("CylinderMesh_05oby")
 
 [node name="triangle" type="MeshInstance3D" parent="Neck/Camera3D/Jumpback"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.005, -0.019, 0.765)
 material_override = ExtResource("6_5csgi")
+cast_shadow = 0
 mesh = SubResource("PrismMesh_65bbu")
 
 [node name="donut" type="MeshInstance3D" parent="Neck/Camera3D/Jumpback"]
 transform = Transform3D(0.5, 0, 0, 0, -2.18557e-08, -0.5, 0, 0.5, -2.18557e-08, 0.085, -1.332, 1.06)
 material_override = ExtResource("7_aa2wq")
+cast_shadow = 0
 mesh = SubResource("TorusMesh_2qnry")
 
 [node name="funny" type="MeshInstance3D" parent="Neck/Camera3D"]
 transform = Transform3D(-1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, -1.495, 0.604, -1.332)
+transparency = 0.05
+cast_shadow = 0
 mesh = SubResource("BoxMesh_0fjm4")
 skeleton = NodePath("../../../..")
 script = ExtResource("9_rjrxj")
@@ -834,6 +862,7 @@ spin = 6
 speed = 0.05
 
 [node name="gun" parent="Neck/Camera3D" instance=ExtResource("42_amf4t")]
+cast_shadow = 0
 
 [node name="gapray" type="RayCast3D" parent="Neck/Camera3D"]
 transform = Transform3D(-0.898465, -0.439046, 0, 0.439046, -0.898465, 0, 0, 0, 1, 0.143832, 0.0819151, -0.56)
@@ -869,6 +898,7 @@ offset_left = -6.0
 offset_top = 219.0
 offset_right = 209.0
 offset_bottom = 439.0
+tooltip_text = "guh"
 max_value = 10.0
 step = 0.1
 value = 10.0
@@ -1014,6 +1044,7 @@ offset_top = 340.0
 offset_right = 115.0
 offset_bottom = 356.0
 rotation = -0.602199
+tooltip_text = "mysterie slider o.o"
 focus_mode = 0
 step = 0.1
 value = 100.0
@@ -1053,6 +1084,7 @@ offset_top = 6.0
 offset_right = 80.0
 offset_bottom = 37.0
 rotation = 0.248447
+tooltip_text = "THE PASUE BUTOTN!1!!1"
 focus_mode = 0
 text = "PUASE"
 flat = true
@@ -1071,6 +1103,7 @@ offset_top = 199.0
 offset_right = 263.0
 offset_bottom = 395.0
 rotation = 0.0354725
+tooltip_text = "iphon"
 stream = ExtResource("91_ysuag")
 expand = true
 loop = true
@@ -1087,6 +1120,23 @@ visible = false
 position = Vector2(322, 212)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("74_f0vod")
+
+[node name="coin" type="AnimatedSprite2D" parent="overlay"]
+position = Vector2(536, 180)
+scale = Vector2(0.120935, 0.120935)
+sprite_frames = SubResource("SpriteFrames_u8rvr")
+animation = &"head"
+script = ExtResource("3_mnwb5")
+spin = true
+
+[node name="gamble" type="Button" parent="overlay"]
+offset_left = 513.0
+offset_top = 156.0
+offset_right = 559.0
+offset_bottom = 204.0
+tooltip_text = "I LOVE GAMBLING!!!!!"
+focus_mode = 0
+flat = true
 
 [node name="jump" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("45_2rj5h")
@@ -1155,7 +1205,12 @@ volume_db = -5.0
 process_mode = 3
 stream = ExtResource("90_n6pbh")
 
+[node name="yay" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("96_uh08t")
+pitch_scale = 1.5
+
 [connection signal="pause" from="." to="." method="_on_pause"]
 [connection signal="body_entered" from="Neck/attackbox" to="." method="_on_attackbox_body_entered"]
 [connection signal="pressed" from="overlay/pause" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="overlay/gamble" to="." method="_on_gamble_pressed"]
 [connection signal="finished" from="ouch" to="." method="_on_ouch_finished"]

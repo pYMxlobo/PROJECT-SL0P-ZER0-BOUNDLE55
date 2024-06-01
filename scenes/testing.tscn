@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=3 uid="uid://co31ljd0vd5d1"]
+[gd_scene load_steps=32 format=3 uid="uid://co31ljd0vd5d1"]
 
 [ext_resource type="Script" path="res://scripts/map.gd" id="1_6metc"]
 [ext_resource type="Texture2D" uid="uid://cack1ool64l55" path="res://icon.svg" id="1_yjl06"]
@@ -10,6 +10,7 @@
 [ext_resource type="ArrayMesh" uid="uid://cl54g7e03sari" path="res://mesh/pitmesh.res" id="6_gfpd5"]
 [ext_resource type="PackedScene" uid="uid://b1fc1md21erqe" path="res://scenes/enemy.tscn" id="7_i33qt"]
 [ext_resource type="AudioStream" uid="uid://0uqbck5jo57j" path="res://music/wavez.ogg" id="10_tnsdg"]
+[ext_resource type="Script" path="res://scripts/sceneswitch.gd" id="11_tufto"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_w8tpe"]
 flip_faces = true
@@ -115,6 +116,9 @@ billboard_mode = 2
 material = SubResource("StandardMaterial3D_jw4s0")
 text = "WIN!!!!!"
 font_size = 127
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bre1j"]
+size = Vector3(100, 100, 100)
 
 [node name="Node3D" type="Node3D"]
 script = ExtResource("1_6metc")
@@ -248,3 +252,14 @@ autoplay = true
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7.28428, 0)
 mesh = SubResource("TextMesh_s2220")
+
+[node name="Area3D" type="Area3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.5365, 72.6534, 141.361)
+script = ExtResource("11_tufto")
+scene_name = "titlescreen"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+shape = SubResource("BoxShape3D_bre1j")
+
+[connection signal="body_entered" from="Area3D" to="Area3D" method="_on_body_entered"]
+[connection signal="body_exited" from="Area3D" to="Area3D" method="_on_body_exited"]
