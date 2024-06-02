@@ -1,4 +1,4 @@
-[gd_scene load_steps=118 format=3 uid="uid://bjcdnipkga6a5"]
+[gd_scene load_steps=119 format=3 uid="uid://bjcdnipkga6a5"]
 
 [ext_resource type="Script" path="res://scripts/Freaky.gd" id="1_w8pip"]
 [ext_resource type="Texture2D" uid="uid://wd1n7sf4w1i8" path="res://images/FrZUIT3aYAAYjmS.png" id="2_6bm67"]
@@ -90,6 +90,7 @@
 [ext_resource type="Texture2D" uid="uid://bsgt4ovywwj3d" path="res://sprites/ipad.png" id="75_dvvyi"]
 [ext_resource type="Texture2D" uid="uid://bp7is6t3suan5" path="res://sprites/coinhead.png" id="77_wddjr"]
 [ext_resource type="Texture2D" uid="uid://yse3hfkntjno" path="res://sprites/cointail.png" id="78_s82mt"]
+[ext_resource type="Texture2D" uid="uid://df4qlejd7kjbp" path="res://images/7az33i.jpg" id="80_xi2vl"]
 [ext_resource type="AudioStream" uid="uid://c4kebw5ngb7jt" path="res://sounds/grapple.wav" id="85_rmfns"]
 [ext_resource type="AudioStream" uid="uid://dfak8qg0rn2gt" path="res://sounds/ungrapple.wav" id="86_wf8t6"]
 [ext_resource type="AudioStream" uid="uid://cx7074bbau3c3" path="res://sounds/Terraria Boss Spawn Sound.wav" id="87_pem1v"]
@@ -775,7 +776,7 @@ wall_min_slide_angle = 0.523599
 floor_stop_on_slope = false
 platform_on_leave = 1
 script = ExtResource("1_w8pip")
-phrases = Array[String](["hi videogame...", "can have fun with great friends", "we slop. skibidi. ohio.", "you need to looksmaxxing buddy", "this is seriously retro!", "like whatsapp danger?", "do you remember carmen winstead?", "pibby, bluey, ohio!", "this game is like, seriously retro!", "meow! :3", "i love slop!", "skibidi dop dop dop yes yes!", "you smell!", "get a job!", "ahahahah rizz me up babe y ;)", "Rainbow rain in night time gleemy sleep time go bed time or the sky descends", "fill grimmy with flap slap flap grim up to the pink sword magic", "rargrahrgahrghargahrhgar", "add rtx makes any game a 10/10", "young man... kill yourself!!!", "we rizz. gyatt. ohio!", "\"I am literally Batman\"", "I bet I could take a bear in a fight", "man or bear", "Ain't nothing gonna break my stride Ain't nothing gonna break my stride Ain't nothing gonna break my stride", "ermmm... this is akward...", "i didn't think my actions would have real world bearing..", "bo bo be bo bo ba bo", "erm... what the scallop?", "I LOVE LOOKSMAXXING!!!", "i can flash goon for 8 seconds", "You are not immune to propaganda", "én éhes vagyok", "Stop reading my thoughts please, that's very rude", "オハイオ！", "私は今文字通りとても素晴らしいです", "I am literally amazing right now.", "o tseba seo o leng sona?", "du burde skamme dig.", "*intsini* intloko yebhokisi esileyo", "δεν υπάρχουν θεοί εδώ", "Ma aragtaa dhammaan midabada quruxda badan?", "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "i am feeling quite 𝓯𝓻𝓮𝓪𝓴𝔂 right now", "who up edging they 𝓯𝓻𝓮𝓪𝓴𝔂", "𝓯𝓻𝓮𝓪𝓴𝔂 ohio", "𝒖𝒓 𝒘𝒆𝒍𝒄𝒐𝒎𝒆 𝒗𝒓𝒐", "ɗѻ ץѻપ िﻉﻉɭ ٱՇ ٱก ץѻપɼ รᛕٱก? ץѻપɼ ๒ɭѻѻɗ? ץѻપ รɦѻપɭɗ܁ ٱՇร คɭɭ ՇɦคՇ ๓คՇՇﻉɼร กѻฝ܁", "you should lower the rainbow bar to win!", "dont press right click!", "how do i craft this again?", "ሃዐሁ ነዘዐሁረዕ ክዐፕ ጌቿ ዘቿዪቿ ልክሃጠዐዪቿ. ፕዘጎነ የረልርቿ ዕዐቿነ ክዐፕ ሠቿረርዐጠቿ ሃዐሁ ልክዕ ክቿጎፕዘቿዪ ዕዐ ጎ.", "whats all this junk on the screen?", "hahahahahahaha", "if you press shift you gain height", "im very smart :)", "🤯🤯🤯🤯", "😪😪😪", "nuh uh", "gurple!", "if you see this you smell", "you cant see it but im laughing at you", "why cant you see whats truly there?", "its so simple. all you have to do is", "it says \"Freaky\" above you", "i dont think those glowing symbols mean anything", "this game sucks go play ror2", "Totally Not Cruelty Squad!™", "you smell really bad dude like seriously", "bye videogames...", "my 𝓯𝓻𝓮𝓪𝓴𝓲𝓷𝓮𝓼𝓼, its 📉", "RIZZ GOON EDGE MEW MOG SKIBIDI SIGMA PHANUM", "feed me lint!", "your bones grow weak, ancient one", "wah ima huh??i guess im no longer with the times", "are you rizz or are you just another chud", "youtube.com/looksmaxxing", "i have cancer", "imagine fallout boy \"we didnt start the fire\" but its based and sigma", "is it ugly on purpose?", "we might have won...", "we might have lost...", "its joever", "we're barrack", "lock tf in bro", "im going to touch you (sick and twisted)", "yikes! #akward 😬", "i almost laughed", "haters gonna hate hate hate hate hate", "im not hating actually", "brain aneurysm", "joe biden please lower the price of glycerine", "IM PICKLE RIZZ!!!", "can you not?", "please stop doing that", "ew", "i hate you", "🚘", "you look like you come from ohio ngl", "ohio final boss vs the cameraman", "remember that guy tdo you feel dizzy yet?", "you should consider not doing that", "Let's play 8 Ball!", "this does not mama the mia", "i have so much land in the metaverse", "is this the metaverse?", "you should buy land all across the globe", "BANBAN! IM HOWLING AT THE MOON!", "THATS MY OOMFIE!!!!", "to the forest with you", "when she banbaning zaza style on your pizza tower but u a rizz god", "lober", "i love the third dimension!", "the limited 3d is so charming", "hello 2013!", "vrooooom", "drinking and driving", "this would be better if it was in unreal...", "JELP ME!!", "GOONERS UNITE!", "EPSTEIN SQUAD, ASSEMBLE!", "you cant read the top right >:D", "you have too much obsidian", "COAL! COAL! COAL!", "gem...?", "yeah ok liberal", "erm... what the nutsack", "erm... what the flippity squip?", "i was gonna say something but i am not allowed because of woke", "you are cereal when no milk", "garten of banban is so much better than this", "im turning your body cam off", "please become funny", "you should fight that guy", "gegadiyegidagigieyo", "WE GOON!!!", "edging rn hold on", "anything you dont understand doesnt matter", "you broke moron go get some lint", "have i told you how much i hate you?"])
+phrases = Array[String](["hi videogame...", "can have fun with great friends", "we slop. skibidi. ohio.", "you need to looksmaxxing buddy", "this is seriously retro!", "like whatsapp danger?", "do you remember carmen winstead?", "pibby, bluey, ohio!", "this game is like, seriously retro!", "meow! :3", "i love slop!", "skibidi dop dop dop yes yes!", "you smell!", "get a job!", "ahahahah rizz me up babe y ;)", "Rainbow rain in night time gleemy sleep time go bed time or the sky descends", "fill grimmy with flap slap flap grim up to the pink sword magic", "rargrahrgahrghargahrhgar", "add rtx makes any game a 10/10", "young man... kill yourself!!!", "we rizz. gyatt. ohio!", "\"I am literally Batman\"", "I bet I could take a bear in a fight", "man or bear", "Ain't nothing gonna break my stride Ain't nothing gonna break my stride Ain't nothing gonna break my stride", "ermmm... this is akward...", "i didn't think my actions would have real world bearing..", "bo bo be bo bo ba bo", "erm... what the scallop?", "I LOVE LOOKSMAXXING!!!", "i can flash goon for 8 seconds", "You are not immune to propaganda", "én éhes vagyok", "Stop reading my thoughts please, that's very rude", "オハイオ！", "私は今文字通りとても素晴らしいです", "I am literally amazing right now.", "o tseba seo o leng sona?", "du burde skamme dig.", "*intsini* intloko yebhokisi esileyo", "δεν υπάρχουν θεοί εδώ", "Ma aragtaa dhammaan midabada quruxda badan?", "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "i am feeling quite 𝓯𝓻𝓮𝓪𝓴𝔂 right now", "who up edging they 𝓯𝓻𝓮𝓪𝓴𝔂", "𝓯𝓻𝓮𝓪𝓴𝔂 ohio", "𝒖𝒓 𝒘𝒆𝒍𝒄𝒐𝒎𝒆 𝒗𝒓𝒐", "ɗѻ ץѻપ िﻉﻉɭ ٱՇ ٱก ץѻપɼ รᛕٱก? ץѻપɼ ๒ɭѻѻɗ? ץѻપ รɦѻપɭɗ܁ ٱՇร คɭɭ ՇɦคՇ ๓คՇՇﻉɼร กѻฝ܁", "you should lower the rainbow bar to win!", "dont press right click!", "how do i craft this again?", "ሃዐሁ ነዘዐሁረዕ ክዐፕ ጌቿ ዘቿዪቿ ልክሃጠዐዪቿ. ፕዘጎነ የረልርቿ ዕዐቿነ ክዐፕ ሠቿረርዐጠቿ ሃዐሁ ልክዕ ክቿጎፕዘቿዪ ዕዐ ጎ.", "whats all this junk on the screen?", "hahahahahahaha", "if you press shift you gain height", "im very smart :)", "🤯🤯🤯🤯", "😪😪😪", "nuh uh", "gurple!", "if you see this you smell", "you cant see it but im laughing at you", "why cant you see whats truly there?", "its so simple. all you have to do is", "it says \"Freaky\" above you", "i dont think those glowing symbols mean anything", "this game sucks go play ror2", "Totally Not Cruelty Squad!™", "you smell really bad dude like seriously", "bye videogames...", "my 𝓯𝓻𝓮𝓪𝓴𝓲𝓷𝓮𝓼𝓼, its 📉", "RIZZ GOON EDGE MEW MOG SKIBIDI SIGMA PHANUM", "feed me lint!", "your bones grow weak, ancient one", "wah ima huh??i guess im no longer with the times", "are you rizz or are you just another chud", "youtube.com/looksmaxxing", "i have cancer", "imagine fallout boy \"we didnt start the fire\" but its based and sigma", "is it ugly on purpose?", "we might have won...", "we might have lost...", "its joever", "we're barrack", "lock tf in bro", "im going to touch you (sick and twisted)", "yikes! #akward 😬", "i almost laughed", "haters gonna hate hate hate hate hate", "im not hating actually", "brain aneurysm", "joe biden please lower the price of glycerine", "IM PICKLE RIZZ!!!", "can you not?", "please stop doing that", "ew", "i hate you", "🚘", "you look like you come from ohio ngl", "ohio final boss vs the cameraman", "remember that guy tdo you feel dizzy yet?", "you should consider not doing that", "Let's play 8 Ball!", "this does not mama the mia", "i have so much land in the metaverse", "is this the metaverse?", "you should buy land all across the globe", "BANBAN! IM HOWLING AT THE MOON!", "THATS MY OOMFIE!!!!", "to the forest with you", "when she banbaning zaza style on your pizza tower but u a rizz god", "lober", "i love the third dimension!", "the limited 3d is so charming", "hello 2013!", "vrooooom", "drinking and driving", "this would be better if it was in unreal...", "JELP ME!!", "GOONERS UNITE!", "EPSTEIN SQUAD, ASSEMBLE!", "you cant read the top right >:D", "you have too much obsidian", "COAL! COAL! COAL!", "gem...?", "yeah ok liberal", "erm... what the nutsack", "erm... what the flippity squip?", "i was gonna say something but i am not allowed because of woke", "you are cereal when no milk", "garten of banban is so much better than this", "im turning your body cam off", "please become funny", "you should fight that guy", "gegadiyegidagigieyo", "WE GOON!!!", "edging rn hold on", "anything you dont understand doesnt matter", "you broke moron go get some lint", "have i told you how much i hate you?", "straight up \"jorking\" it rn and by it lets just say....", "wow! colors!", "you should shave dude im not even saying this to be mean you need to shave", "I LOVE GAMBLING!!!!!!", "i feel queasy....", "🤢🤢🤮🤮🤮🤮", "this place sucks", "these colors hurt my eyes", "edging my coin rn", "i bet you dont even pay your phanum taxes", "if you press \"alt\" and \"f4\" you get FREE LINT!!!", "gooning, edging, rearranging web uis", "why are these guys trying to stop you anyways", "cant believe you dont know how to mew", "im feeling 𝓯𝓻𝓮𝓪𝓴𝔂 rn", "so i was looking through your phone and do you have a foot fetish? theres a lot of feet photos 😓", "why do you talk like that", "whipe that drool of your face dude thats so gross", "THE SWAG", "where does all your ammo come from?", "gambling's so pricey these days...", "do better.", "BOOOOO!!!! YOU SUCK!!!!!", "👎👎👎👎", "slop slop slop slop slop slop slop slop slop", "stop glazing the 10 masters so hard goddamn", "you are NOT cooking lil bro", "GET OUT THE KITCHEN YOU CANT COOK!!!!", "do you even know where you are", "", "mathmatical!", "LOCK IN LOCK IN LOCK IN LOCK IN", "🕸️", "AHAHAHAHAHAHAHAHAH!!!!", "FUNNY HAHA!!!! HAHAHAHA!!!!!", "stop pressing that already dude", "i love taking unprescribed medicine!", "bobux", "only in ohio!!!!", "this place is NOT kino epic 69", "9 HOUR WORK DAY"])
 circleglow = ExtResource("5_n35mf")
 triangleglow = ExtResource("6_5csgi")
 donutglow = ExtResource("7_aa2wq")
@@ -1150,6 +1151,62 @@ autowrap_mode = 1
 position = Vector2(520.561, 16.8125)
 scale = Vector2(0.10916, 0.10916)
 texture = ExtResource("97_er8v5")
+
+[node name="textbox" type="ColorRect" parent="overlay"]
+visible = false
+offset_left = 16.0
+offset_top = 66.0
+offset_right = 148.0
+offset_bottom = 193.0
+color = Color(0, 0, 0, 1)
+
+[node name="Text" type="Label" parent="overlay/textbox"]
+layout_mode = 0
+offset_top = 25.0
+offset_right = 132.0
+offset_bottom = 127.0
+theme_override_font_sizes/font_size = 7
+text = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+autowrap_mode = 1
+clip_text = true
+
+[node name="ColorRect" type="ColorRect" parent="overlay/textbox"]
+layout_mode = 0
+offset_left = 132.0
+offset_right = 190.0
+offset_bottom = 55.0
+color = Color(0, 1, 0, 1)
+
+[node name="TextureRect" type="TextureRect" parent="overlay/textbox"]
+layout_mode = 0
+offset_left = 133.0
+offset_top = 1.0
+offset_right = 189.0
+offset_bottom = 54.0
+texture = ExtResource("80_xi2vl")
+expand_mode = 1
+
+[node name="ColorRect2" type="ColorRect" parent="overlay/textbox"]
+layout_mode = 0
+offset_right = 132.0
+offset_bottom = 24.0
+color = Color(0, 1, 0, 1)
+
+[node name="ColorRect3" type="ColorRect" parent="overlay/textbox"]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 1.0
+offset_right = 132.0
+offset_bottom = 23.0
+color = Color(0, 0, 0, 1)
+
+[node name="Name" type="Label" parent="overlay/textbox"]
+layout_mode = 0
+offset_left = 1.0
+offset_right = 132.0
+offset_bottom = 23.0
+text = "Wabadabadooba"
+clip_text = true
 
 [node name="jump" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("45_2rj5h")

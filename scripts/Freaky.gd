@@ -71,6 +71,12 @@ var gravity = ProjectSettings.get_setting("physics/3d/default_gravity") #its 6.3
 
 @onready var coinflip := $overlay/coin
 
+@onready var textbox := $overlay/textbox
+@onready var texttext := $overlay/textbox/Text
+@onready var textname := $overlay/textbox/Name
+@onready var textface := $overlay/textbox/TextureRect
+
+
 var interactavail : bool = false
 
 var hp : float = 1
@@ -256,6 +262,9 @@ func _physics_process(delta):
 	
 	if Input.is_action_just_pressed("space") and dj > 0:
 		velocity.y = clamp((JUMP_VELOCITY * momentum), 0, maxspeed * 1.5)
+		if is_on_wall_only():
+			xbonus = -1.5
+			zbonus = -1.5
 		dj -= 1
 		momentum -= momentum / 10
 		jumpmeter()
