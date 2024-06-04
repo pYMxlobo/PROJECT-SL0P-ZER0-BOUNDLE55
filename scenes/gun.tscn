@@ -58,7 +58,7 @@ billboard_mode = 2
 
 [sub_resource type="TextMesh" id="TextMesh_f1ckn"]
 material = SubResource("StandardMaterial3D_jpivd")
-text = "12 / 12"
+text = "17 / 17"
 font_size = 9
 
 [node name="hands" type="Sprite3D"]

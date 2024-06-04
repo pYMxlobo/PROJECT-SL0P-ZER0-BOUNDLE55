@@ -225,7 +225,8 @@ func _process(delta):
 		hammer.get_parent().progress_ratio = 0
 	if hp <= 0:
 		diesound.play()
-		get_tree().quit()
+		Cash.lint = 0
+		get_tree().change_scene_to_file("res://scenes/titlescreen.tscn")
 	if velocity.x != 0 and velocity.z != 0:
 		if !walksound.playing:
 			walksound.play()

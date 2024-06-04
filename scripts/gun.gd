@@ -1,7 +1,7 @@
 extends Sprite3D
 
-var ammo : int = 12
-var maxammo : int = 12
+var ammo : int = 17
+var maxammo : int = 17
 @onready var ray := $aimspot/shot
 @onready var flare := $aimspot/flare
 @onready var shot := $fire

@@ -169,7 +169,7 @@ autoplay = true
 [node name="winzone" type="Area3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.64241, 181.301)
 script = ExtResource("4_v1tf3")
-scene_name = "credits"
+scene_name = "level1map4"
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="winzone"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.25627, -0.376984, 2.14679)

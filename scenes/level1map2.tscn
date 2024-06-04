@@ -167,6 +167,7 @@ environment = SubResource("Environment_omsnk")
 
 [node name="bgm" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_vleni")
+volume_db = -2.0
 autoplay = true
 
 [node name="winzone" type="Area3D" parent="."]

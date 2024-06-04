@@ -82,6 +82,7 @@ End Of Credits
 
 
 func _ready():
+	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	label.text = credis_text
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
