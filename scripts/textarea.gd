@@ -19,6 +19,5 @@ func _on_body_entered(body):
 			else:
 				if disableorigin.activated == true:
 					body.textbox.hide()
-			monitorable = false
-			monitoring = false
-			
+					activated = true
+

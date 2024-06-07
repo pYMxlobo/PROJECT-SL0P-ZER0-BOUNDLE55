@@ -87,6 +87,7 @@
 [ext_resource type="Texture2D" uid="uid://5j5q2uqdb0ad" path="res://images/F-aHZYlbYAEmA3j.png" id="72_ej7ua"]
 [ext_resource type="Texture2D" uid="uid://dlhd2a4qttp0k" path="res://sprites/presshumor.png" id="73_7nm0h"]
 [ext_resource type="Texture2D" uid="uid://u0picyeidxo6" path="res://sprites/scope.png" id="74_f0vod"]
+[ext_resource type="VideoStream" path="res://videos/rotshort.ogv" id="74_w7a81"]
 [ext_resource type="Texture2D" uid="uid://bsgt4ovywwj3d" path="res://sprites/ipad.png" id="75_dvvyi"]
 [ext_resource type="Texture2D" uid="uid://bp7is6t3suan5" path="res://sprites/coinhead.png" id="77_wddjr"]
 [ext_resource type="Texture2D" uid="uid://yse3hfkntjno" path="res://sprites/cointail.png" id="78_s82mt"]
@@ -95,7 +96,6 @@
 [ext_resource type="AudioStream" uid="uid://dfak8qg0rn2gt" path="res://sounds/ungrapple.wav" id="86_wf8t6"]
 [ext_resource type="AudioStream" uid="uid://cx7074bbau3c3" path="res://sounds/Terraria Boss Spawn Sound.wav" id="87_pem1v"]
 [ext_resource type="AudioStream" uid="uid://0uqbck5jo57j" path="res://music/wavez.ogg" id="90_n6pbh"]
-[ext_resource type="VideoStream" path="res://videos/rot.ogv" id="91_ysuag"]
 [ext_resource type="AudioStream" uid="uid://bg6qq2vl4xhm" path="res://sounds/compressedyay.mp3" id="96_uh08t"]
 [ext_resource type="Texture2D" uid="uid://bmy274muujchv" path="res://sprites/lint.png" id="97_er8v5"]
 
@@ -1105,7 +1105,7 @@ offset_right = 263.0
 offset_bottom = 395.0
 rotation = 0.0354725
 tooltip_text = "iphon"
-stream = ExtResource("91_ysuag")
+stream = ExtResource("74_w7a81")
 expand = true
 loop = true
 
