@@ -12,17 +12,23 @@ extends Node
 @export var galss : CheckButton
 @export var hyper : CheckButton
 
+
+@export var version : Label
 # Called when the node enters the scene tree for the first time.
 
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+	small.button_pressed = GameMode.small
+	big.button_pressed = GameMode.big
+	galss.button_pressed = GameMode.glass
+	hyper.button_pressed = GameMode.hyper
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
-	if Input.is_action_pressed("grapple"):
-		if Input.is_action_pressed("content"):
-			if Input.is_action_pressed("interact"):
-				if Input.is_action_pressed("reload"):
+	if Input.is_action_pressed("reload"):
+		if Input.is_action_pressed("left"):
+			if Input.is_action_pressed("content"):
+				if Input.is_action_pressed("grapple"):
 					secret_menu.show()
 
 
