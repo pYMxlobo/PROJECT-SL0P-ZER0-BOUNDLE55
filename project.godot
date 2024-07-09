@@ -24,6 +24,7 @@ config/icon="res://images/FwLdQHuWAAAOBQY.png"
 
 Cash="*res://scripts/cash.gd"
 GameMode="*res://scripts/gamemodetoggles.gd"
+Level="*res://scripts/unlockedlevels.gd"
 
 [display]
 

@@ -13,7 +13,6 @@ extends Node
 @export var hyper : CheckButton
 
 
-@export var version : Label
 # Called when the node enters the scene tree for the first time.
 
 func _ready():

@@ -1,0 +1,369 @@
+[gd_scene load_steps=29 format=3 uid="uid://jfhoavvj0tbd"]
+
+[ext_resource type="Script" path="res://scripts/levelselect.gd" id="1_detos"]
+[ext_resource type="AudioStream" uid="uid://dubdwq80npmdc" path="res://music/waybackwhen.ogg" id="2_hinxx"]
+[ext_resource type="Script" path="res://scripts/rotate.gd" id="2_uhkga"]
+[ext_resource type="AudioStream" uid="uid://b2f1nphahqwuu" path="res://sounds/Extremely loud incorrect buzzer.mp3" id="4_usc7b"]
+[ext_resource type="Texture2D" uid="uid://70wsieotsv2u" path="res://images/Banban_Monster.png" id="4_xxnqr"]
+[ext_resource type="Texture2D" uid="uid://5j5q2uqdb0ad" path="res://images/F-aHZYlbYAEmA3j.png" id="5_4xba5"]
+[ext_resource type="Texture2D" uid="uid://07kd8jafjxs1" path="res://sprites/20220314_001359.png" id="6_36vgi"]
+[ext_resource type="Texture2D" uid="uid://hkqcyskbchbs" path="res://sprites/20230402_235518.png" id="7_n1spr"]
+[ext_resource type="Texture2D" uid="uid://1q2x0x5m142r" path="res://sprites/F_ikrnYWAAA2U0y.png" id="8_hofrq"]
+[ext_resource type="Texture2D" uid="uid://bj66r2bl0r1mo" path="res://sprites/GCxWXpkXQAAuWUS.png" id="9_ww7xv"]
+[ext_resource type="Texture2D" uid="uid://dyf0vavki745h" path="res://sprites/F_V49BLXYAAQS0j.png" id="10_x02s4"]
+[ext_resource type="Texture2D" uid="uid://3eeifwts8oup" path="res://sprites/FqN4insaMAUAXVQ.png" id="11_58p8u"]
+[ext_resource type="Texture2D" uid="uid://8w7o63eqitop" path="res://sprites/Fhxqa-XXkAQtibA.png" id="12_p02k5"]
+[ext_resource type="Texture2D" uid="uid://cwia1mgu13p3q" path="res://sprites/FiOJ31zWAAEQ13w.png" id="14_p3hc2"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lgk0t"]
+diffuse_mode = 3
+specular_mode = 1
+albedo_color = Color(2.11775e-06, 0.560671, 0.343166, 1)
+metallic = 0.19
+metallic_specular = 0.7
+roughness = 0.0
+emission_enabled = true
+emission = Color(1, 1, 1, 1)
+emission_energy_multiplier = 0.3
+
+[sub_resource type="BoxMesh" id="BoxMesh_mo1vg"]
+material = SubResource("StandardMaterial3D_lgk0t")
+flip_faces = true
+
+[sub_resource type="Gradient" id="Gradient_wft4t"]
+interpolation_mode = 2
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_pcnn6"]
+noise_type = 4
+frequency = 0.0123
+fractal_type = 0
+domain_warp_enabled = true
+domain_warp_type = 2
+domain_warp_amplitude = 25.565
+domain_warp_frequency = 0.53
+domain_warp_fractal_lacunarity = 6.96
+domain_warp_fractal_gain = 0.205
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_cqxsk"]
+height = 1
+color_ramp = SubResource("Gradient_wft4t")
+noise = SubResource("FastNoiseLite_pcnn6")
+
+[sub_resource type="Gradient" id="Gradient_5w01e"]
+colors = PackedColorArray(1, 0, 0, 1, 0, 1, 0, 1)
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_ngthl"]
+noise_type = 3
+seed = 210
+frequency = 0.051
+fractal_type = 2
+fractal_octaves = 1
+fractal_lacunarity = 0.955
+fractal_gain = -26.305
+fractal_weighted_strength = 0.48
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_l2ksr"]
+width = 16
+height = 16
+seamless = true
+as_normal_map = true
+color_ramp = SubResource("Gradient_5w01e")
+noise = SubResource("FastNoiseLite_ngthl")
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_o3apb"]
+noise_type = 5
+fractal_octaves = 10
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_e032s"]
+width = 64
+height = 64
+as_normal_map = true
+noise = SubResource("FastNoiseLite_o3apb")
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_o3qpr"]
+sky_top_color = Color(0.525633, 0.413012, 0.448401, 1)
+sky_horizon_color = Color(0.425433, 0.723059, 0.639985, 1)
+sky_curve = 0.395852
+sky_energy_multiplier = 4.95
+sky_cover = SubResource("NoiseTexture2D_e032s")
+sky_cover_modulate = Color(0.835294, 0.431373, 0.431373, 1)
+ground_bottom_color = Color(0.298983, 0.0779004, 0.194912, 1)
+ground_horizon_color = Color(0.743803, 0.652578, 0.276706, 1)
+ground_curve = 0.196984
+ground_energy_multiplier = 0.21
+sun_curve = 0.361374
+
+[sub_resource type="Sky" id="Sky_xlm6w"]
+sky_material = SubResource("ProceduralSkyMaterial_o3qpr")
+radiance_size = 0
+
+[sub_resource type="Environment" id="Environment_4kg18"]
+background_mode = 2
+sky = SubResource("Sky_xlm6w")
+ambient_light_source = 2
+ambient_light_color = Color(0.815125, 0.446224, 0.49695, 1)
+ambient_light_energy = 0.21
+reflected_light_source = 2
+tonemap_mode = 2
+tonemap_exposure = 1.32
+tonemap_white = 16.0
+glow_enabled = true
+glow_levels/1 = 0.9
+glow_levels/3 = 0.82
+glow_levels/7 = 0.35
+glow_intensity = 3.16
+glow_strength = 1.42
+glow_mix = 0.166
+glow_bloom = 0.05
+glow_blend_mode = 4
+glow_hdr_threshold = 1.04
+glow_hdr_scale = 1.83
+glow_hdr_luminance_cap = 81.9
+glow_map_strength = 1.0
+glow_map = SubResource("NoiseTexture2D_l2ksr")
+volumetric_fog_albedo = Color(1, 0, 0, 1)
+volumetric_fog_emission_energy = 0.0
+volumetric_fog_gi_inject = 2.43
+volumetric_fog_length = 182.57
+volumetric_fog_detail_spread = 5.27803
+volumetric_fog_sky_affect = 0.492
+adjustment_enabled = true
+adjustment_brightness = 0.75
+adjustment_contrast = 2.01
+adjustment_saturation = 0.41
+adjustment_color_correction = SubResource("NoiseTexture2D_cqxsk")
+
+[sub_resource type="LabelSettings" id="LabelSettings_drb08"]
+font_size = 40
+
+[node name="Node3D" type="Node3D" node_paths=PackedStringArray("wrong", "sigma1", "sigma2", "sigma3", "sigma4", "sigma5", "sigma6", "sigma7", "sigma8", "sigma9", "sigma10", "button1", "button2", "button3", "button4", "button5", "button6", "button7", "button8", "button9", "button10")]
+script = ExtResource("1_detos")
+wrong = NodePath("wrong")
+sigma1 = NodePath("BanbanMonster")
+sigma2 = NodePath("F-aHzYlbYaEmA3j")
+sigma3 = NodePath("20220314001359")
+sigma4 = NodePath("20230402235518")
+sigma5 = NodePath("GCxWXpkXqaAuWus")
+sigma6 = NodePath("FV49blxyaaqs0j")
+sigma7 = NodePath("Fhxqa-xXkAQtibA")
+sigma8 = NodePath("FqN4InsaMauaxvq")
+sigma9 = NodePath("FIkrnYwaaa2u0y")
+sigma10 = NodePath("FiOj31zWaaeq13w")
+button1 = NodePath("level1")
+button2 = NodePath("level2")
+button3 = NodePath("level3")
+button4 = NodePath("level4")
+button5 = NodePath("level5")
+button6 = NodePath("level6")
+button7 = NodePath("level7")
+button8 = NodePath("level8")
+button9 = NodePath("level9")
+button10 = NodePath("level10")
+
+[node name="backround" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_mo1vg")
+script = ExtResource("2_uhkga")
+spin = 3
+speed = 0.01
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 0, 0)
+light_color = Color(1, 0, 1, 1)
+light_energy = 3.198
+light_indirect_energy = 0.677
+light_volumetric_fog_energy = 0.03
+shadow_enabled = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_4kg18")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.902156)
+current = true
+fov = 37.8493
+
+[node name="bgm" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_hinxx")
+autoplay = true
+
+[node name="BanbanMonster" type="Sprite2D" parent="."]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(1, 0, 0, 1)
+position = Vector2(86, 139)
+scale = Vector2(0.232337, 0.232337)
+texture = ExtResource("4_xxnqr")
+
+[node name="F-aHzYlbYaEmA3j" type="Sprite2D" parent="."]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(1, 0, 0, 1)
+position = Vector2(210, 155)
+scale = Vector2(0.240588, 0.240588)
+texture = ExtResource("5_4xba5")
+
+[node name="20220314001359" type="Sprite2D" parent="."]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(1, 0, 0, 1)
+position = Vector2(335, 148)
+scale = Vector2(0.0623755, 0.0623755)
+texture = ExtResource("6_36vgi")
+
+[node name="20230402235518" type="Sprite2D" parent="."]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(1, 0, 0, 1)
+position = Vector2(439, 148)
+scale = Vector2(0.247653, 0.247653)
+texture = ExtResource("7_n1spr")
+
+[node name="GCxWXpkXqaAuWus" type="Sprite2D" parent="."]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(1, 0, 0, 1)
+position = Vector2(544, 145)
+scale = Vector2(0.439828, 0.439828)
+texture = ExtResource("9_ww7xv")
+
+[node name="FV49blxyaaqs0j" type="Sprite2D" parent="."]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(1, 0, 0, 1)
+position = Vector2(99, 302)
+scale = Vector2(0.186694, 0.186694)
+texture = ExtResource("10_x02s4")
+
+[node name="Fhxqa-xXkAQtibA" type="Sprite2D" parent="."]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(1, 0, 0, 1)
+position = Vector2(218, 309)
+scale = Vector2(0.171703, 0.171703)
+texture = ExtResource("12_p02k5")
+
+[node name="FqN4InsaMauaxvq" type="Sprite2D" parent="."]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(1, 0, 0, 1)
+position = Vector2(338, 309)
+scale = Vector2(0.0397916, 0.0397916)
+texture = ExtResource("11_58p8u")
+
+[node name="FIkrnYwaaa2u0y" type="Sprite2D" parent="."]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(1, 0, 0, 1)
+position = Vector2(449, 311)
+scale = Vector2(0.170391, 0.170391)
+texture = ExtResource("8_hofrq")
+
+[node name="FiOj31zWaaeq13w" type="Sprite2D" parent="."]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(1, 0, 0, 1)
+position = Vector2(559, 319)
+scale = Vector2(0.193937, 0.193937)
+texture = ExtResource("14_p3hc2")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 198.0
+offset_top = 20.0
+offset_right = 457.0
+offset_bottom = 75.0
+text = "LEVEL SELECT"
+label_settings = SubResource("LabelSettings_drb08")
+
+[node name="level1" type="Button" parent="."]
+offset_left = 55.0
+offset_top = 153.0
+offset_right = 122.0
+offset_bottom = 184.0
+text = "LEVEL 1"
+flat = true
+
+[node name="level2" type="Button" parent="."]
+offset_left = 180.0
+offset_top = 155.0
+offset_right = 247.0
+offset_bottom = 186.0
+disabled = true
+text = "LEVEL 2"
+flat = true
+
+[node name="level3" type="Button" parent="."]
+offset_left = 302.0
+offset_top = 156.0
+offset_right = 369.0
+offset_bottom = 187.0
+disabled = true
+text = "LEVEL 3"
+flat = true
+
+[node name="level4" type="Button" parent="."]
+offset_left = 409.0
+offset_top = 157.0
+offset_right = 476.0
+offset_bottom = 188.0
+disabled = true
+text = "LEVEL 4"
+flat = true
+
+[node name="level5" type="Button" parent="."]
+offset_left = 511.0
+offset_top = 157.0
+offset_right = 578.0
+offset_bottom = 188.0
+disabled = true
+text = "LEVEL 5"
+flat = true
+
+[node name="level6" type="Button" parent="."]
+offset_left = 63.0
+offset_top = 264.0
+offset_right = 130.0
+offset_bottom = 295.0
+disabled = true
+text = "LEVEL 6"
+flat = true
+
+[node name="level7" type="Button" parent="."]
+offset_left = 182.0
+offset_top = 268.0
+offset_right = 249.0
+offset_bottom = 299.0
+disabled = true
+text = "LEVEL 7"
+flat = true
+
+[node name="level8" type="Button" parent="."]
+offset_left = 307.0
+offset_top = 269.0
+offset_right = 374.0
+offset_bottom = 300.0
+disabled = true
+text = "LEVEL 8"
+flat = true
+
+[node name="level9" type="Button" parent="."]
+offset_left = 412.0
+offset_top = 270.0
+offset_right = 479.0
+offset_bottom = 301.0
+disabled = true
+text = "LEVEL 9"
+flat = true
+
+[node name="level10" type="Button" parent="."]
+offset_left = 518.0
+offset_top = 269.0
+offset_right = 594.0
+offset_bottom = 300.0
+disabled = true
+text = "LEVEL 10"
+flat = true
+
+[node name="wrong" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_usc7b")
+volume_db = -4.0
+
+[connection signal="pressed" from="level1" to="." method="_on_level_1_pressed"]
+[connection signal="pressed" from="level2" to="." method="_on_level_2_pressed"]
+[connection signal="pressed" from="level3" to="." method="_on_level_3_pressed"]
+[connection signal="pressed" from="level4" to="." method="_on_level_4_pressed"]
+[connection signal="pressed" from="level5" to="." method="_on_level_5_pressed"]
+[connection signal="pressed" from="level6" to="." method="_on_level_6_pressed"]
+[connection signal="pressed" from="level7" to="." method="_on_level_7_pressed"]
+[connection signal="pressed" from="level8" to="." method="_on_level_8_pressed"]
+[connection signal="pressed" from="level9" to="." method="_on_level_9_pressed"]
+[connection signal="pressed" from="level10" to="." method="_on_level_10_pressed"]
