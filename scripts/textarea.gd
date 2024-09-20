@@ -20,4 +20,3 @@ func _on_body_entered(body):
 				if disableorigin.activated == true:
 					body.textbox.hide()
 					activated = true
-

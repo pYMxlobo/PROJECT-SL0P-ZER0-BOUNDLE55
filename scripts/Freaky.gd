@@ -76,6 +76,7 @@ var gravity = ProjectSettings.get_setting("physics/3d/default_gravity") #its 6.3
 @onready var textname := $overlay/textbox/Name
 @onready var textface := $overlay/textbox/TextureRect
 
+@onready var fpslabel := $overlay/fps
 
 var interactavail : bool = false
 
@@ -244,6 +245,7 @@ func _process(delta):
 		yaysound.play()
 		#print("random hp gain")
 	lintcount.text = "       : " + str(Cash.lint)
+	fpslabel.text = "farts: " +  str( Engine.get_frames_per_second() )
 
 
 func movesound():
